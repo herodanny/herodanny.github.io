@@ -1973,7 +1973,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7195cb;
+  background: #ffbeda;
 }
 .feed-link,
 .chat {
@@ -3200,4 +3200,7 @@ pre {
 .code ::selection {
   background: #2593a6;
   color: #fff;
+}
+.headband {
+  display: none;
 }
