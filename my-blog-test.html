@@ -62,7 +62,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=7.1.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=7.1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
@@ -103,18 +103,22 @@
 
 
 
-  <meta name="description" content="目录第一章第1章 第二章第2章 第三章第3章">
-<meta name="keywords" content="hexo">
+  <meta name="description" content="Anima      Anima allows you to query database like SQL and Stream.a simple DSL syntax, supports multiple databases, integrates well with Java8,supports multiple relational mappings, and is a database">
+<meta name="keywords" content="test, java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="my blog test">
 <meta property="og:url" content="https://herodanny.github.io/my-blog-test.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="目录第一章第1章 第二章第2章 第三章第3章">
+<meta property="og:description" content="Anima      Anima allows you to query database like SQL and Stream.a simple DSL syntax, supports multiple databases, integrates well with Java8,supports multiple relational mappings, and is a database">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-14T05:18:10.501Z">
+<meta property="og:image" content="https://herodanny.github.io/screenshot/cover.png">
+<meta property="og:image" content="https://travis-ci.org/biezhi/anima.svg?branch=master">
+<meta property="og:image" content="https://img.shields.io/maven-central/v/io.github.biezhi/anima.svg">
+<meta property="og:updated_time" content="2019-04-14T13:56:29.750Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="my blog test">
-<meta name="twitter:description" content="目录第一章第1章 第二章第2章 第三章第3章">
+<meta name="twitter:description" content="Anima      Anima allows you to query database like SQL and Stream.a simple DSL syntax, supports multiple databases, integrates well with Java8,supports multiple relational mappings, and is a database">
+<meta name="twitter:image" content="https://herodanny.github.io/screenshot/cover.png">
 
 
 
@@ -477,7 +481,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-14 13:18:10" itemprop="dateModified" datetime="2019-04-14T13:18:10+08:00">2019-04-14</time>
+                <time title="修改时间：2019-04-14 21:56:29" itemprop="dateModified" datetime="2019-04-14T21:56:29+08:00">2019-04-14</time>
               
             
           </span>
@@ -529,7 +533,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">23</span>
+                <span title="本文字数">7.7k</span>
               
 
               
@@ -543,7 +547,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">7 分钟</span>
               
             </div>
           
@@ -563,9 +567,85 @@
       
 
       
-        <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><p>第1章</p>
-<h1 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h1><p>第2章</p>
-<h1 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h1><p>第3章</p>
+        <h1 id="Anima"><a href="#Anima" class="headerlink" title="Anima"></a>Anima</h1><p align="center"><br>    <a href="https://github.com/biezhi/anima/wiki" target="_blank" rel="noopener"><img src="screenshot/cover.png" width="623"></a><br></p>
+
+<p><code>Anima</code> allows you to query database like <code>SQL</code> and <code>Stream</code>.<br>a simple DSL syntax, supports multiple databases, integrates well with Java8,<br>supports multiple relational mappings, and is a database manipulation tool.</p>
+<p><strong><a href="https://github.com/biezhi/anima/wiki" target="_blank" rel="noopener">Document</a></strong></p>
+<p><a href="https://travis-ci.org/biezhi/anima" target="_blank" rel="noopener"><img src="https://travis-ci.org/biezhi/anima.svg?branch=master" alt="Travis Build"></a><br><a href="https://mvnrepository.com/artifact/io.github.biezhi/anima" target="_blank" rel="noopener"><img src="https://img.shields.io/maven-central/v/io.github.biezhi/anima.svg" alt></a></p>
+<h2 id="Feature"><a href="#Feature" class="headerlink" title="Feature"></a>Feature</h2><ul>
+<li>Simple DSL </li>
+<li>H2、MySQL、SQLite、PostgreSQL、Oracle、SqlServer </li>
+<li>Paging support </li>
+<li>Flexible configuration </li>
+<li>Connection pool support</li>
+<li>Support <code>LocalDate</code>、<code>LocalDateTime</code></li>
+<li>Support lambda expression</li>
+<li>Relationship (<code>hasOne</code>、<code>hasMany</code>、<code>belongsTo</code>)</li>
+<li>SQL performance statistics</li>
+<li>Based Java8</li>
+</ul>
+<h1 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h1><p><strong>Latest snapshot version</strong></p>
+<blockquote>
+<p>If you want to prioritize new features or some BUG fixes you can use it, you need to specify the snapshot repository in <code>pom.xml</code></p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>snapshots-repo<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://oss.sonatype.org/content/repositories/snapshots<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.biezhi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>anima<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.2.4-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Here’s the <code>RELEASE</code> version.</p>
+<p><strong>As Gradle</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile <span class="string">'io.github.biezhi:anima:0.2.3'</span></span><br></pre></td></tr></table></figure>
+<p><strong>As Maven</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.biezhi<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>anima<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>📒 Although <code>Anima</code> can also be used by adding a jar package, we do not recommend doing this.</p>
+</blockquote>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><p><strong>Open Connection</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// MySQL</span></span><br><span class="line">Anima.open(<span class="string">"jdbc:mysql://127.0.0.1:3306/demo"</span>, <span class="string">"root"</span>, <span class="string">"123456"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// SQLite</span></span><br><span class="line">Anima.open(<span class="string">"jdbc:sqlite:./demo.db"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// H2</span></span><br><span class="line">Anima.open(<span class="string">"jdbc:h2:file:~/demo;FILE_LOCK=FS;PAGE_SIZE=1024;CACHE_SIZE=8192"</span>, <span class="string">"sa"</span>, <span class="string">""</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// DataSource</span></span><br><span class="line">DruidDataSource dataSource = <span class="keyword">new</span> DruidDataSource();</span><br><span class="line">dataSource.setDriverClassName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">dataSource.setUrl(blade.environment().getOrNull(<span class="string">"jdbc.url"</span>));</span><br><span class="line">dataSource.setUsername(blade.environment().getOrNull(<span class="string">"jdbc.username"</span>));</span><br><span class="line">dataSource.setPassword(blade.environment().getOrNull(<span class="string">"jdbc.password"</span>));</span><br><span class="line">Anima.open(dataSource);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>📕 This operation only needs one time</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">extends</span> <span class="title">Model</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String  userName;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">User</span><span class="params">(String userName, Integer age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.userName = userName;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Table Structure</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="string">`users`</span> (</span><br><span class="line">  <span class="string">`id`</span> <span class="keyword">IDENTITY</span> PRIMARY <span class="keyword">KEY</span>,</span><br><span class="line">  <span class="string">`user_name`</span> <span class="built_in">varchar</span>(<span class="number">50</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">  <span class="string">`age`</span> <span class="built_in">int</span>(<span class="number">11</span>)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h3 id="Query"><a href="#Query" class="headerlink" title="Query"></a>Query</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> count = select().from(User.class).count();</span><br><span class="line"><span class="comment">// SELECT COUNT(*) FROM users</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">long</span> count = select().from(User.class).where(<span class="string">"age &gt; ?"</span>, <span class="number">15</span>).isNotNull(<span class="string">"user_name"</span>).count();</span><br><span class="line"><span class="comment">// SELECT COUNT(*) FROM users WHERE age &gt; ? AND user_name IS NOT NULL</span></span><br><span class="line"></span><br><span class="line">User user = select().from(User.class).byId(<span class="number">2</span>);</span><br><span class="line"><span class="comment">// SELECT * FROM users WHERE id = ?</span></span><br><span class="line"></span><br><span class="line">List&lt;User&gt; users = select().from(User.class).byIds(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>);</span><br><span class="line"><span class="comment">// SELECT * FROM users WHERE id IN (?, ?, ?)</span></span><br><span class="line"></span><br><span class="line">String name = select().bySQL(String.class, <span class="string">"select user_name from users limit 1"</span>).one();</span><br><span class="line"></span><br><span class="line">List&lt;String&gt; names = select().bySQL(String.class, <span class="string">"select user_name from users limit ?"</span>, <span class="number">3</span>);</span><br><span class="line"></span><br><span class="line">List&lt;User&gt; users = select().from(User.class).all();</span><br><span class="line"><span class="comment">// SELECT * FROM users</span></span><br><span class="line"></span><br><span class="line">List&lt;User&gt; users = select().from(User.class).like(<span class="string">"user_name"</span>, <span class="string">"%o%"</span>).all();</span><br><span class="line"><span class="comment">// SELECT * FROM users WHERE user_name LIKE ?</span></span><br></pre></td></tr></table></figure>
+<p><strong>Limit</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List&lt;User&gt; users = select().from(User.class).order(<span class="string">"id desc"</span>).limit(<span class="number">5</span>);</span><br><span class="line"><span class="comment">// SELECT * FROM users ORDER BY id desc</span></span><br></pre></td></tr></table></figure>
+<p><strong>Paging</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Page&lt;User&gt; userPage = select().from(User.class).order(<span class="string">"id desc"</span>).page(<span class="number">1</span>, <span class="number">3</span>);</span><br><span class="line"><span class="comment">// SELECT * FROM users ORDER BY id desc LIMIT ?, ?</span></span><br></pre></td></tr></table></figure>
+<p><strong>Map</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select().from(User.class).map(User::getUserName).limit(<span class="number">3</span>).collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
+<p><strong>Filter</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select().from(User.class).filter(u -&gt; u.getAge() &gt; <span class="number">10</span>).collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
+<p><strong>Lambda</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">User user = select().from(User.class).where(User::getUserName).eq(<span class="string">"jack"</span>).one();</span><br><span class="line"><span class="comment">// SELECT * FROM users WHERE user_name = ?</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">List&lt;User&gt; user = select().from(User.class)</span><br><span class="line">                .where(User::getUserName).notNull()</span><br><span class="line">                .and(User::getAge).gt(<span class="number">10</span>)</span><br><span class="line">                .all();</span><br><span class="line"><span class="comment">// SELECT * FROM users WHERE user_name IS NOT NULL AND age &gt; ?</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select().from(User.class).order(User::getId, OrderBy.DESC).order(User::getAge, OrderBy.ASC).all();</span><br><span class="line"><span class="comment">// SELECT * FROM users ORDER BY  id DESC, age ASC</span></span><br></pre></td></tr></table></figure>
+<p><strong>Join</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Table</span>(name = <span class="string">"order_info"</span>)</span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OrderInfo</span> <span class="keyword">extends</span> <span class="title">Model</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Integer uid;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Column</span>(name = <span class="string">"productname"</span>)</span><br><span class="line">    <span class="keyword">private</span> String productName;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> LocalDateTime createTime;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Ignore</span></span><br><span class="line">    <span class="keyword">private</span> User user;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Ignore</span></span><br><span class="line">    <span class="keyword">private</span> Address address;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HasOne</span></span><br><span class="line">OrderInfo orderInfo = select().from(OrderInfo.class)</span><br><span class="line">        .join(</span><br><span class="line">            Joins.with(Address.class).as(OrderInfo::getAddress)</span><br><span class="line">                 .on(OrderInfo::getId, Address::getOrderId)</span><br><span class="line">        ).byId(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line">orderInfo = select().from(OrderInfo.class)</span><br><span class="line">        .join(</span><br><span class="line">            Joins.with(Address.class).as(OrderInfo::getAddress)</span><br><span class="line">                 .on(OrderInfo::getId, Address::getOrderId)</span><br><span class="line">        )</span><br><span class="line">        .join(</span><br><span class="line">                Joins.with(User.class).as(OrderInfo::getUser)</span><br><span class="line">                        .on(OrderInfo::getUid, User::getId)</span><br><span class="line">        ).byId(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ManyToOne</span></span><br><span class="line">orderInfo = select().from(OrderInfo.class)</span><br><span class="line">        .join(</span><br><span class="line">            Joins.with(User.class).as(OrderInfo::getUser)</span><br><span class="line">                 .on(OrderInfo::getUid, User::getId)</span><br><span class="line">        ).byId(<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// OneToMany</span></span><br><span class="line">UserDto userDto = select().from(UserDto.class).join(</span><br><span class="line">            Joins.with(OrderInfo.class).as(UserDto::getOrders)</span><br><span class="line">                 .on(UserDto::getId, OrderInfo::getUid)</span><br><span class="line">        ).byId(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="Insert"><a href="#Insert" class="headerlink" title="Insert"></a>Insert</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer id = <span class="keyword">new</span> User(<span class="string">"biezhi"</span>, <span class="number">100</span>).save().asInt();</span><br><span class="line"><span class="comment">// INSERT INTO users(id,user_name,age) VALUES (?,?,?)</span></span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Anima.save(<span class="keyword">new</span> User(<span class="string">"jack"</span>, <span class="number">100</span>));</span><br></pre></td></tr></table></figure>
+<p><strong>Batch Save</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">List&lt;User&gt; users = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">users.add(<span class="keyword">new</span> User(<span class="string">"user1"</span>, <span class="number">10</span>));</span><br><span class="line">users.add(<span class="keyword">new</span> User(<span class="string">"user2"</span>, <span class="number">11</span>));</span><br><span class="line">users.add(<span class="keyword">new</span> User(<span class="string">"user3"</span>, <span class="number">12</span>));</span><br><span class="line">Anima.saveBatch(users);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>📘 This operation will begin a transaction and rollback when there is a transaction that is unsuccessful.</p>
+</blockquote>
+<h3 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> result  = update().from(User.class).set(<span class="string">"user_name"</span>, newName).where(<span class="string">"id"</span>, <span class="number">1</span>).execute();</span><br><span class="line"><span class="comment">// UPDATE users SET username = ? WHERE id = ?</span></span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> result = update().from(User.class).set(<span class="string">"user_name"</span>, newName).where(<span class="string">"id"</span>, <span class="number">1</span>).execute();</span><br><span class="line"><span class="comment">// UPDATE users SET user_name = ? WHERE id = ?</span></span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">User user = <span class="keyword">new</span> User();</span><br><span class="line">user.setId(<span class="number">1</span>);</span><br><span class="line">user.setUserName(<span class="string">"jack"</span>);</span><br><span class="line">user.update();</span><br><span class="line"><span class="comment">// UPDATE users SET user_name = ? WHERE id = ?</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update().from(User.class).set(User::getUserName, <span class="string">"base64"</span>).updateById(<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update().from(User.class).set(User::getUserName, <span class="string">"base64"</span>).where(User::getId).eq(<span class="number">2</span>).execute();</span><br></pre></td></tr></table></figure>
+<h3 id="Delete"><a href="#Delete" class="headerlink" title="Delete"></a>Delete</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> result = delete().from(User.class).where(<span class="string">"id"</span>, <span class="number">1</span>).execute();</span><br><span class="line"><span class="comment">// DELETE FROM users WHERE id = ?</span></span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">User user = <span class="keyword">new</span> User();</span><br><span class="line">user.setAge(<span class="number">15</span>);</span><br><span class="line">user.setUserName(<span class="string">"jack"</span>);</span><br><span class="line">user.delete();</span><br><span class="line"><span class="comment">// DELETE FROM users WHERE user_name = ? and age = ?</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">delete().from(User.class).where(User::getId).deleteById(<span class="number">3</span>);</span><br><span class="line">delete().from(User.class).where(User::getId).eq(<span class="number">1</span>).execute();</span><br><span class="line">delete().from(User.class).where(User::getAge).lte(<span class="number">20</span>).execute();</span><br></pre></td></tr></table></figure>
+<h3 id="Transaction"><a href="#Transaction" class="headerlink" title="Transaction"></a>Transaction</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Anima.atomic(() -&gt; &#123;</span><br><span class="line">    <span class="keyword">int</span> a = <span class="number">1</span> / <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">new</span> User(<span class="string">"apple"</span>, <span class="number">666</span>).save();</span><br><span class="line">&#125;).catchException(e -&gt; Assert.assertEquals(ArithmeticException.class, e.getClass()));</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>📗 <code>Anima</code> uses the <code>atomic</code> method to complete a transaction. normally, the code will not throw an exception.<br>when a <code>RuntimeException</code> is caught, the transaction will be <code>rollback</code>.</p>
+</blockquote>
+<h2 id="Test-Code"><a href="#Test-Code" class="headerlink" title="Test Code"></a>Test Code</h2><p>See <a href="https://github.com/biezhi/anima/tree/master/src/test/java/io/github/biezhi/anima" target="_blank" rel="noopener">here</a></p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Apache2</p>
 
       
     </div>
@@ -597,7 +677,7 @@
   <p><span>本文标题:</span><a href="/my-blog-test.html">my blog test</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 herodanny 的个人博客">herodanny</a></p>
   <p><span>发布时间:</span>2019年04月13日 - 11:04</p>
-  <p><span>最后更新:</span>2019年04月14日 - 13:04</p>
+  <p><span>最后更新:</span>2019年04月14日 - 21:04</p>
   <p><span>原始链接:</span><a href="/my-blog-test.html" title="my blog test">https://herodanny.github.io/my-blog-test.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/my-blog-test.html" aria-label="复制成功！"></i></span>
   </p>
@@ -657,7 +737,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+            <a href="/tags/test-java/" rel="tag"><i class="fa fa-tag"></i> test, java</a>
           
         </div>
       
@@ -867,7 +947,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章"><span class="nav-number">2.</span> <span class="nav-text">第一章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章"><span class="nav-number">3.</span> <span class="nav-text">第二章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章"><span class="nav-number">4.</span> <span class="nav-text">第三章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Anima"><span class="nav-number">1.</span> <span class="nav-text">Anima</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature"><span class="nav-number">1.1.</span> <span class="nav-text">Feature</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Usage"><span class="nav-number">2.</span> <span class="nav-text">Usage</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Examples"><span class="nav-number">2.1.</span> <span class="nav-text">Examples</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Query"><span class="nav-number">2.1.1.</span> <span class="nav-text">Query</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Insert"><span class="nav-number">2.1.2.</span> <span class="nav-text">Insert</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Update"><span class="nav-number">2.1.3.</span> <span class="nav-text">Update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Delete"><span class="nav-number">2.1.4.</span> <span class="nav-text">Delete</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Transaction"><span class="nav-number">2.1.5.</span> <span class="nav-text">Transaction</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Test-Code"><span class="nav-number">2.2.</span> <span class="nav-text">Test Code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#License"><span class="nav-number">2.3.</span> <span class="nav-text">License</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -907,7 +987,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">9k</span>
   
 
   
@@ -916,7 +996,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
   
 </div>
 
@@ -1525,4 +1605,6 @@
   
 
 </body>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/love.js"></script>
 </html>
