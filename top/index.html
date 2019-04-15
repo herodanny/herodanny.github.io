@@ -129,18 +129,18 @@
 
 
 
-  <meta name="description" content="学习笔记的记录">
-<meta name="keywords" content="linux, python, c++, go">
+  <meta name="description" content="博客文章阅读量排行榜">
+<meta name="keywords" content="top,文章阅读量排行榜">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ebooks">
-<meta property="og:url" content="https://herodanny.github.io/ebooks/index.html">
+<meta property="og:title" content="top">
+<meta property="og:url" content="https://herodanny.github.io/top/index.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="学习笔记的记录">
+<meta property="og:description" content="博客文章阅读量排行榜">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-14T05:53:03.671Z">
+<meta property="og:updated_time" content="2019-04-15T03:16:15.741Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ebooks">
-<meta name="twitter:description" content="学习笔记的记录">
+<meta name="twitter:title" content="top">
+<meta name="twitter:description" content="博客文章阅读量排行榜">
 
 
 
@@ -150,7 +150,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/ebooks/">
+  <link rel="canonical" href="https://herodanny.github.io/top/">
 
 
 
@@ -160,7 +160,7 @@
   };
 </script>
 
-  <title>ebooks | 从菜鸟到老鸟</title>
+  <title>top | 从菜鸟到老鸟</title>
   
 
 
@@ -328,7 +328,7 @@
         
         
           
-          <li class="menu-item menu-item-top">
+          <li class="menu-item menu-item-top menu-item-active">
 
     
     
@@ -345,7 +345,7 @@
         
         
           
-          <li class="menu-item menu-item-ebooks menu-item-active">
+          <li class="menu-item menu-item-ebooks">
 
     
     
@@ -479,11 +479,13 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">ebooks
+<h2 class="post-title" itemprop="name headline">top
 
 </h2>
 
 <div class="post-meta">
+  
+    <div class="post-description">博客文章阅读量排行榜</div>
   
   
 
@@ -499,7 +501,32 @@
       <div class="post-body">
         
         
-          
+          <p><div id="top"></div></p>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script>AV.initialize("yNds32hWK6bj2PDjLaBggMMq-9Nh9j0Va", "l5v6yQyOP5gBGm1HDjUcBCWo");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');
+  query.notEqualTo('id',0);
+  query.descending('time');
+  query.limit(1000);
+  query.find().then(function (todo) {
+    for (var i=0;i<1000;i++){
+      var result=todo[i].attributes;
+      time=result.time;
+      title=result.title;
+      url=result.url;
+      var content="<a href='"+"https://herodanny.github.io"+url+"'>"+title+"</a>"+"<br />"+"<font color='#555'>"+"阅读次数："+time+"</font>"+"<br /><br />";
+      document.getElementById("top").innerHTML+=content
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
+
+<style>.post-description { display: none; }</style>
         
       </div>
       

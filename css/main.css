@@ -1973,7 +1973,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2a3bff;
+  background: #11ff47;
 }
 .feed-link,
 .chat {
@@ -2125,6 +2125,7 @@ pre .javascript .function {
 .post-toc .nav-item {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   line-height: 1.8;
 }
 .post-toc .nav .nav-child {
@@ -3174,6 +3175,9 @@ ul.breadcrumb li+li:last-child {
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
+.site-meta {
+  background: #4d4d4d;
+}
 body {
   background: url("/images/bg.jpg");
   background-size: cover;
@@ -3203,14 +3207,4 @@ pre {
 }
 .headband {
   display: none;
-}
-.btn {
-  color: #49b1f5;
-  background: #fff;
-  border: 2px solid #49b1f5;
-}
-.btn:hover {
-  border-color: #49b1f5;
-  color: #fff;
-  background: #49b1f5;
 }
