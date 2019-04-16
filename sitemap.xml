@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://herodanny.github.io/blogs/index.html</loc>
+    
+    <lastmod>2019-04-16T01:48:57.272Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://herodanny.github.io/my-first-blog-article.html</loc>
     
-    <lastmod>2019-04-15T10:08:10.729Z</lastmod>
+    <lastmod>2019-04-16T01:17:15.603Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://herodanny.github.io/notes/index.html</loc>
+    
+    <lastmod>2019-04-15T16:36:20.673Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>https://herodanny.github.io/my-blog-test.html</loc>
     
     <lastmod>2019-04-15T10:05:00.642Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://herodanny.github.io/good-blog.html</loc>
-    
-    <lastmod>2019-04-15T09:04:14.086Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://herodanny.github.io/top/index.html</loc>
     
     <lastmod>2019-04-15T03:16:15.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://herodanny.github.io/ebooks/index.html</loc>
-    
-    <lastmod>2019-04-14T05:53:03.671Z</lastmod>
     
   </url>
   

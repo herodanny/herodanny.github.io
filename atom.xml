@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://herodanny.github.io/"/>
-  <updated>2019-04-15T09:04:14.086Z</updated>
+  <updated>2019-04-15T10:05:00.642Z</updated>
   <id>https://herodanny.github.io/</id>
   
   <author>
@@ -15,33 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>good blog</title>
-    <link href="https://herodanny.github.io/good-blog.html"/>
-    <id>https://herodanny.github.io/good-blog.html</id>
-    <published>2019-04-15T08:57:44.000Z</published>
-    <updated>2019-04-15T09:04:14.086Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="这是我碰到问题后，在互联网上找到的解答时，碰到的好博客，现记录下来："><a href="#这是我碰到问题后，在互联网上找到的解答时，碰到的好博客，现记录下来：" class="headerlink" title="这是我碰到问题后，在互联网上找到的解答时，碰到的好博客，现记录下来："></a>这是我碰到问题后，在互联网上找到的解答时，碰到的好博客，现记录下来：</h3><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;这是我碰到问题后，在互联网上找到的解答时，碰到的好博客，现记录下来：&quot;&gt;&lt;a href=&quot;#这是我碰到问题后，在互联网上找到的解答时，碰到的好博客，现记录下来：&quot; class=&quot;headerlink&quot; title=&quot;这是我碰到问题后，在互联网上找到的解答时，碰到的
-      
-    
-    </summary>
-    
-      <category term="tools" scheme="https://herodanny.github.io/categories/tools/"/>
-    
-    
-      <category term="test" scheme="https://herodanny.github.io/tags/test/"/>
-    
-      <category term="blog" scheme="https://herodanny.github.io/tags/blog/"/>
-    
-  </entry>
   
   <entry>
     <title>my blog test</title>
@@ -83,15 +56,15 @@
     <link href="https://herodanny.github.io/my-first-blog-article.html"/>
     <id>https://herodanny.github.io/my-first-blog-article.html</id>
     <published>2019-04-08T13:14:14.000Z</published>
-    <updated>2019-04-15T10:08:10.729Z</updated>
+    <updated>2019-04-16T01:17:15.603Z</updated>
     
-    <content type="html"><![CDATA[<p>摘要<br><img src="https://i.loli.net/2019/04/15/5cb4567574fa6.jpeg" alt="timg.jpeg"><br>摘要<br>测试文章。本文来自互联网。是关于markdown简明语法教程。现在让我们一起来学Markdown吧。</p><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul><li>我的技术小黑屋</li><li>不会写代码的菜鸟</li><li>我要返回火星了</li></ul><h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol><li>我们都是地球人</li><li>为啥你就不会 markdown?</li><li>看完还不会就要被安排</li></ol><h2 id="链接的写法"><a href="#链接的写法" class="headerlink" title="链接的写法"></a>链接的写法</h2><p><a href="https://herodanny.github.io">我的技术小屋</a></p><h2 id="带-Title"><a href="#带-Title" class="headerlink" title="带 Title"></a>带 Title</h2><p><a href="https://www.github.com/herodanny" title="此处可能有炸弹" target="_blank" rel="noopener">我的技术小屋</a></p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://i.loli.net/2019/04/15/5cb44054a29ee.jpg" alt></p><h2 id="带-Title-1"><a href="#带-Title-1" class="headerlink" title="带 Title"></a>带 Title</h2><p><img src="&quot;咯咯咯&quot;" alt="alt"></p><h2 id="引用方式"><a href="#引用方式" class="headerlink" title="引用方式"></a>引用方式</h2><p><img src="https://i.loli.net/2019/04/15/5cb44054a29ee.jpg" alt="alt" title="咯咯咯，会不会markdown"></p><p></p><blockquote><p>世界依旧很大,大到只能胡说。  </p></blockquote><p></p><h3 id="面朝大海，春暖花开"><a href="#面朝大海，春暖花开" class="headerlink" title="面朝大海，春暖花开"></a>面朝大海，春暖花开</h3><blockquote><p>从明天起，做一个幸福的人<br>喂马、劈柴，周游世界<br>从明天起，关心粮食和蔬菜<br>我有一所房子，面朝大海，春暖花开<br>从明天起，和每一个亲人通信<br>告诉他们我的幸福<br>那幸福的闪电告诉我的<br>我将告诉每一个人<br>给每一条河每一座山取一个温暖的名字<br>陌生人，我也为你祝福<br>愿你有一个灿烂的前程<br>愿你有情人终成眷属<br>愿你在尘世获得幸福<br>我只愿面朝大海，春暖花开  </p></blockquote><p><strong>粗体</strong></p><p><strong>粗体</strong></p><p><em>看，我斜了没</em></p><p><em>真的很斜</em></p><p><strong><em>粗体＋斜体</em></strong></p><p><del>此处的故事只能用泪水掩盖</del></p><h1 id="群里单身女生名单"><a href="#群里单身女生名单" class="headerlink" title="群里单身女生名单"></a>群里单身女生名单</h1><table><thead><tr><th>姓名</th><th style="text-align:center">年龄</th><th style="text-align:right">三围</th></tr></thead><tbody><tr><td>罗欲凤</td><td style="text-align:center">18</td><td style="text-align:right">18, 27, 30</td></tr><tr><td>秋刀鱼</td><td style="text-align:center">26</td><td style="text-align:right">28, 25, 33</td></tr><tr><td>窝不行</td><td style="text-align:center">22</td><td style="text-align:right">23, 28, 35</td></tr></tbody></table><p><code>单行代码引用</code></p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">   fmt.Println(<span class="string">"我的技术小屋"</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>分割线</p><hr>]]></content>
+    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul><li>我的技术小黑屋</li><li>不会写代码的菜鸟</li><li>我要返回火星了</li></ul><h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><ol><li>我们都是地球人</li><li>为啥你就不会 markdown?</li><li>看完还不会就要被安排</li></ol><h2 id="链接的写法"><a href="#链接的写法" class="headerlink" title="链接的写法"></a>链接的写法</h2><p><a href="https://herodanny.github.io">我的技术小屋</a></p><h2 id="带-Title"><a href="#带-Title" class="headerlink" title="带 Title"></a>带 Title</h2><p><a href="https://www.github.com/herodanny" title="此处可能有炸弹" target="_blank" rel="noopener">我的技术小屋</a></p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://i.loli.net/2019/04/15/5cb4572ff03d1.jpg" alt></p><h2 id="带-Title-1"><a href="#带-Title-1" class="headerlink" title="带 Title"></a>带 Title</h2><p><img src="&quot;咯咯咯&quot;" alt="alt"></p><h2 id="引用方式"><a href="#引用方式" class="headerlink" title="引用方式"></a>引用方式</h2><p><img src="https://i.loli.net/2019/04/15/5cb4572ff03d1.jpg" alt="alt" title="咯咯咯，会不会markdown"></p><p></p><blockquote><p>世界依旧很大,大到只能胡说。  </p></blockquote><p></p><h3 id="面朝大海，春暖花开"><a href="#面朝大海，春暖花开" class="headerlink" title="面朝大海，春暖花开"></a>面朝大海，春暖花开</h3><blockquote><p>从明天起，做一个幸福的人<br>喂马、劈柴，周游世界<br>从明天起，关心粮食和蔬菜<br>我有一所房子，面朝大海，春暖花开<br>从明天起，和每一个亲人通信<br>告诉他们我的幸福<br>那幸福的闪电告诉我的<br>我将告诉每一个人<br>给每一条河每一座山取一个温暖的名字<br>陌生人，我也为你祝福<br>愿你有一个灿烂的前程<br>愿你有情人终成眷属<br>愿你在尘世获得幸福<br>我只愿面朝大海，春暖花开  </p></blockquote><p><strong>粗体</strong></p><p><strong>粗体</strong></p><p><em>看，我斜了没</em></p><p><em>真的很斜</em></p><p><strong><em>粗体＋斜体</em></strong></p><p><del>此处的故事只能用泪水掩盖</del></p><h1 id="群里单身女生名单"><a href="#群里单身女生名单" class="headerlink" title="群里单身女生名单"></a>群里单身女生名单</h1><table><thead><tr><th>姓名</th><th style="text-align:center">年龄</th><th style="text-align:right">三围</th></tr></thead><tbody><tr><td>罗欲凤</td><td style="text-align:center">18</td><td style="text-align:right">18, 27, 30</td></tr><tr><td>秋刀鱼</td><td style="text-align:center">26</td><td style="text-align:right">28, 25, 33</td></tr><tr><td>窝不行</td><td style="text-align:center">22</td><td style="text-align:right">23, 28, 35</td></tr></tbody></table><p><code>单行代码引用</code></p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">   fmt.Println(<span class="string">"我的技术小屋"</span>);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>分割线</p><hr>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;摘要&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2019/04/15/5cb4567574fa6.jpeg&quot; alt=&quot;timg.jpeg&quot;&gt;&lt;br&gt;摘要&lt;br&gt;测试文章。本文来自互联网。是关于markdown简明语法教程。现在让我们一起来学Markd
+        &lt;h1 id=&quot;一级标题&quot;&gt;&lt;a href=&quot;#一级标题&quot; class=&quot;headerlink&quot; title=&quot;一级标题&quot;&gt;&lt;/a&gt;一级标题&lt;/h1&gt;&lt;h2 id=&quot;二级标题&quot;&gt;&lt;a href=&quot;#二级标题&quot; class=&quot;headerlink&quot; title=&quot;二级标题&quot;&gt;&lt;/a
       
     
     </summary>
