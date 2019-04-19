@@ -148,17 +148,18 @@
 
 
 
-  <meta name="description" content="学习过程的记录">
-<meta name="keywords" content="linux, python, c++, go">
-<meta property="og:type" content="website">
-<meta property="og:title" content="从菜鸟到老鸟">
-<meta property="og:url" content="https://herodanny.github.io/index.html">
+  <meta name="description" content="第一章 - Python 基础入门及安装和基础语法操作系统准备准备Linux最小系统即可。  如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+  Pyenv 安装 安装git   1yum install git -y  安装Python编译依赖   1yum -y install gcc make patch gdbm-devel openssl-devel sqlite-d">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python-mageedu-notes1">
+<meta property="og:url" content="https://herodanny.github.io/python-mageedu-notes1.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="学习过程的记录">
+<meta property="og:description" content="第一章 - Python 基础入门及安装和基础语法操作系统准备准备Linux最小系统即可。  如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+  Pyenv 安装 安装git   1yum install git -y  安装Python编译依赖   1yum -y install gcc make patch gdbm-devel openssl-devel sqlite-d">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-19T12:17:51.594Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从菜鸟到老鸟">
-<meta name="twitter:description" content="学习过程的记录">
+<meta name="twitter:title" content="python-mageedu-notes1">
+<meta name="twitter:description" content="第一章 - Python 基础入门及安装和基础语法操作系统准备准备Linux最小系统即可。  如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+  Pyenv 安装 安装git   1yum install git -y  安装Python编译依赖   1yum -y install gcc make patch gdbm-devel openssl-devel sqlite-d">
 
 
 
@@ -168,7 +169,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/">
+  <link rel="canonical" href="https://herodanny.github.io/python-mageedu-notes1">
 
 
 
@@ -178,7 +179,7 @@
   };
 </script>
 
-  <title>从菜鸟到老鸟</title>
+  <title>python-mageedu-notes1 | 从菜鸟到老鸟</title>
   
 
 
@@ -247,8 +248,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -290,7 +290,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -490,9 +490,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -524,10 +524,8 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/python-mageedu-notes1.html" class="post-title-link" itemprop="url">python-mageedu-notes1</a>
+          <h2 class="post-title" itemprop="name headline">python-mageedu-notes1
+
               
             
           </h2>
@@ -661,36 +659,71 @@
       
 
       
-
-      <!-- 以下是添加摘要图片 -->
-      
-      <!-- 以上是添加摘要图片 -->
-
-        
-          
-            <p>
-              第一章 - Python 基础入门及安装和基础语法操作系统准备准备Linux最小系统即可。 
-如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+ 
-Pyenv 安装
-安装git 
-
-yum install git -y
-
-安装Python编译依赖 
-
-yum -y install 
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/python-mageedu-notes1.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <h1 id="第一章-Python-基础入门及安装和基础语法"><a href="#第一章-Python-基础入门及安装和基础语法" class="headerlink" title="第一章 - Python 基础入门及安装和基础语法"></a>第一章 - Python 基础入门及安装和基础语法</h1><h2 id="操作系统准备"><a href="#操作系统准备" class="headerlink" title="操作系统准备"></a>操作系统准备</h2><p>准备Linux最小系统即可。 </p>
+<p>如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+ </p>
+<h2 id="Pyenv-安装"><a href="#Pyenv-安装" class="headerlink" title="Pyenv 安装"></a>Pyenv 安装</h2><ol>
+<li>安装git </li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git -y</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>安装Python编译依赖 </li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc make patch gdbm-devel openssl-devel sqlite-devel  readline-devel zlib-devel bzip2-devel</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>创建用户python </li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd python </span><br><span class="line">passwd python</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>使用python用户登录后安装Pyenv </li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash</span><br></pre></td></tr></table></figure>
+<p>下载的 pyenv-installer 是一个shell脚本。<br>注意： </p>
+<ol>
+<li>在 <a href="https://github.com/pyenv/pyenv-installer" target="_blank" rel="noopener">https://github.com/pyenv/pyenv-installer</a> 有安装文档 </li>
+<li><p>如果curl出现 curl: (35) SSL connect error ，是nss版本低的问题，更新它。 可能需要配置一个有较新包的yum源 </p>
+<pre><code>[updates] 
+name=CentOS-Updates 
+baseurl=https://mirrors.aliyun.com/centos/6.9/os/x86_64 
+gpgcheck=0 
+</code></pre></li>
+</ol>
+<p>然后更新nss<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update nss</span><br></pre></td></tr></table></figure></p>
+<ol start="5">
+<li>在python用户的~/.bash_profile中追加 </li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/home/python/.pyenv/bin:<span class="variable">$PATH</span>"</span> </span><br><span class="line"><span class="built_in">eval</span> <span class="string">"<span class="variable">$(pyenv init -)</span>"</span> </span><br><span class="line"><span class="built_in">eval</span> <span class="string">"<span class="variable">$(pyenv virtualenv-init -)</span>"</span> </span><br><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure>
+<p>这样当用户启动的时候，会执行用户的 .bash_profile 中的脚本，就会启动pyenv。 安装好的pyenv 就在~/.pyenv中 </p>
+<h2 id="Pyenv-使用"><a href="#Pyenv-使用" class="headerlink" title="Pyenv 使用"></a>Pyenv 使用</h2><p>python 版本及path路径<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python --version </span><br><span class="line">python -V </span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></p>
+<p>可以看到当前系统Python路径 </p>
+<p>pyenv 命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv</span><br><span class="line">pyenv <span class="built_in">help</span> install</span><br></pre></td></tr></table></figure></p>
+<p>列出所有可用版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install --list</span><br></pre></td></tr></table></figure></p>
+<p>安装指定版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv install 3.5.3 -v <span class="comment"># 加 -v 可以看详细过程 verbose</span></span><br><span class="line">pyenv versions</span><br></pre></td></tr></table></figure></p>
+<p>会从python官网下载安装压缩包到 /tmp 目录，很慢，为了提速，可选用cache方法。</p>
+<p>使用缓存方式安装<br>在~/.pyenv目录下，新建cache目录，放入下载好的待安装版本的文件。  </p>
+<p>不确定要哪一个文件，把下载的3个文件都放进去。一般放 ‘tar.xz’ 包。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ scp ~/Downloads/Python-3.5.3.tar.xz root@10.211.55.6:~/.pyenv/cache</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install 3.5.3 -v</span><br></pre></td></tr></table></figure>
+<p>安装后的python文件夹在 .pyenv/versions 下。<br>cache文件夹里有下载的压缩包。  </p>
+<p>pyenv 的 python版本控制<br>version 显示当前的python版本 versions 显示所有可用的python版本，和当前版本。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv version</span><br><span class="line">pyenv versions</span><br></pre></td></tr></table></figure></p>
+<p>global 全局设置<br><code>pyenv global 3.5.3</code> 可以看到所有受pyenv控制的窗口中都是3.5.3的python版本了。 这里用global是作用于非root用户python用户上，如果是root用户安装，请不要使用global，否则影响太大。比如，这里使用的CentOS6.5就是Python2.6，使用了global就成了3.x，会带来很不好的影响。 <code>pyenv global system</code> 回到原来系统版本。  </p>
+<p>shell 会话设置<br>影响只作用于当前会话 <code>pyenv shell 3.5.3</code><br>是会话级的，一旦断开sessionid也变了，也不好用。  </p>
+<p>local 本地设置<br>使用pyenv local设置从当前工作目录开始向下递归都继承这个设置。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pyenv <span class="built_in">local</span> 3.5.3</span><br><span class="line">python -V</span><br><span class="line"><span class="comment"># 可能还是显示原来的版本，用pyenv version，要用虚拟环境python -V 才会显示</span></span><br></pre></td></tr></table></figure></p>
+<p>也可以使用 anaconda，pyenv 是自己下源码编，某些情况下可能不如 anaconda 直接编好的二进制分发。  </p>
+<h2 id="Virtualenv-虚拟环境设置"><a href="#Virtualenv-虚拟环境设置" class="headerlink" title="Virtualenv 虚拟环境设置"></a>Virtualenv 虚拟环境设置</h2><p>为什么要使用虚拟环境？ 因为刚才使用的Python环境都是一个公共的空间，如果多个项目使用不同Python版本开发，或者使用不同的Python版本部署运行，或者使用同样的版本开发的但不同项目使用了不同版本的库，等等这些问题都会带来冲突。最好的解决办法就是每一个项目独立运行自己的“独立小环境”中。  </p>
+<p>使用插件，在plugins/pyenv-virtualenv中<br><code>pyenv virtualenv 3.5.3 mag353</code><br>使用python3.5.3版本创建出一个独立的虚拟空间 mag353。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pyenv versions</span><br><span class="line">* system (<span class="built_in">set</span> by /home/python/.pyenv/version)</span><br><span class="line">3.5.3</span><br><span class="line">3.5.3/envs/mag353</span><br><span class="line">mag353</span><br></pre></td></tr></table></figure>
+<p>可以在版本列表中存在，就和3.5.3是一样的，就是一个版本了。以后只要使用这个虚拟版本，包就会按照到这些对应的目录下去，而不是使用3.5.3。<br>可以看到真实的虚拟环境是下 envs/ 目录下。<br>.pyenv/versions/ 下是软链接。  </p>
+<p>在需要设置python版本的文件夹路径下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv <span class="built_in">local</span> mag353</span><br><span class="line">pyenv versions</span><br></pre></td></tr></table></figure></p>
+<p>怎么会起作用的，是利用了一堆隐藏文件和在 .bash_profile 中添加的那几指令。</p>
+<p>现在可以对python进行版本的管理，包的管理。</p>
+<h2 id="pip-通用配置"><a href="#pip-通用配置" class="headerlink" title="pip 通用配置"></a>pip 通用配置</h2><p>pip 是Python的包管理工具，3.x的版本直接带了，可以直接使用。 和yun一样为了使用国内镜像，如下配置。<br><code>mkdir ~/.pip</code><br>配置文件在 ~/.pip/pip.conf  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url=https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line">trusted-host=mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
+<h2 id="安装-ipython"><a href="#安装-ipython" class="headerlink" title="安装 ipython"></a>安装 ipython</h2><p>ipython 是增强的交互式 Python 命令行工具<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install ipython  </span><br><span class="line">ipython</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装-Jupyter"><a href="#安装-Jupyter" class="headerlink" title="安装 Jupyter"></a>安装 Jupyter</h2><p>Jupyter 是基于WEB的交互式笔记本，其中可以非常方便的使用Python。<br>安装Jupyter，也会安装ipython的。  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pip install jupyter</span><br><span class="line">jupyter notebook <span class="built_in">help</span></span><br><span class="line">jupyter notebook passwd <span class="comment"># 设置下浏览器访问时的密码</span></span><br><span class="line">jupyter notebook --ip=0.0.0.0 --no-browser</span><br><span class="line">ss -tanl</span><br></pre></td></tr></table></figure>
+<p>浏览器不能访问是服务器端防火墙问题。  </p>
+<p>快捷键：shift + enter(运行)、ctrl + enter(运行)、dd(删除一行)、m(用mardkown)</p>
+<h2 id="导出包"><a href="#导出包" class="headerlink" title="导出包"></a>导出包</h2><p>虚拟环境的好处就在于和其他项目运行环境隔离。每一个独立的环境都可以使用pip命令导出已经安装的包，在另一个环境中安装这些包。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(mag353) [python@node web]$ pip freeze &gt; requirement</span><br><span class="line">(mag353) [python@node web]$ mkdir ~/magedu/projects/pro1</span><br><span class="line">(mag353) [python@node web]$ <span class="built_in">cd</span> ~/magedu/projects/pro1</span><br><span class="line">[python@node pro1]$ pyenv install --list</span><br><span class="line">[python@node pro1]$ pyenv install 3.6.4</span><br><span class="line">[python@node pro1]$ pyenv virtualenv 3.6.4 mag364</span><br><span class="line">[python@node pro1]$ pyenv <span class="built_in">local</span> mag364</span><br><span class="line">(mag364) [python@node pro1]$ mv ../web/requirement ./</span><br><span class="line">(mag364) [python@node pro1]$ pip install -r requirement</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -701,10 +734,50 @@ yum -y install
     
     <div>
       
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------- 本文结束 <i class="fa fa-heart"></i> 感谢阅读 ----------</div>
+    
+</div>
+      
     </div>
 
     <div>
       
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>python-mageedu-notes1</p>
+  <p><span>文章作者:</span>herodanny</p>
+  <p><span>发布时间:</span>2019年04月19日 - 20:16:49</p>
+  <p><span>最后更新:</span>2019年04月19日 - 20:17:51</p>
+  <p><span>原始链接:</span><a href="/python-mageedu-notes1.html" title="python-mageedu-notes1">https://herodanny.github.io/python-mageedu-notes1.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-mageedu-notes1.html" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
     </div>
 
     
@@ -712,20 +785,66 @@ yum -y install
     
       
     
+    
+      <div>
+        <div id="reward-container">
+  <div>若本文对您有帮助，求打赏 ≧◇≦ 谢谢您的鼓励。</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="herodanny 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/vscodewritemarkdown.html" rel="next" title="用VsCode写Markdown">
+                <i class="fa fa-chevron-left"></i> 用VsCode写Markdown
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </div>
@@ -735,793 +854,19 @@ yum -y install
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/vscodewritemarkdown.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="herodanny">
-      <meta itemprop="description" content="学习过程的记录">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="从菜鸟到老鸟">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/vscodewritemarkdown.html" class="post-title-link" itemprop="url">用VsCode写Markdown</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 15:47:28 / 修改时间：20:52:19" itemprop="dateCreated datePublished" datetime="2019-04-18T15:47:28+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/before-development/" itemprop="url" rel="index"><span itemprop="name">before-development</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/vscodewritemarkdown.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/vscodewritemarkdown.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/vscodewritemarkdown.html" class="leancloud_visitors" data-flag-title="用VsCode写Markdown">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">4.7k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">4 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-
-      <!-- 以下是添加摘要图片 -->
-      
-      <!-- 以上是添加摘要图片 -->
-
-        
-          
-            <p>
-              Markdown 基本语法段落非常自然，一行文字就是一个段落。
-比如：
-这是一个段落
-会被解释成：
-&lt;p&gt;这是一个段落。&lt;/p&gt;
-如果你需要另起一段，请在两个段落之间隔一个空行。
-这是一个段落。
-
-这是另一个段落。
-会被解释成
-&lt;p&gt;这是一个段落&lt;/p&gt
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/vscodewritemarkdown.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/my-blog-test.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="herodanny">
-      <meta itemprop="description" content="学习过程的记录">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="从菜鸟到老鸟">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/my-blog-test.html" class="post-title-link" itemprop="url">my blog test</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-13 11:59:37" itemprop="dateCreated datePublished" datetime="2019-04-13T11:59:37+08:00">2019-04-13</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-15 18:05:00" itemprop="dateModified" datetime="2019-04-15T18:05:00+08:00">2019-04-15</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/test/" itemprop="url" rel="index"><span itemprop="name">test</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/my-blog-test.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/my-blog-test.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/my-blog-test.html" class="leancloud_visitors" data-flag-title="my blog test">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">7.7k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">7 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-
-      <!-- 以下是添加摘要图片 -->
-      
-        <div class="out-img-topic">
-          <img src="https://i.loli.net/2019/04/15/5cb4572ff03d1.jpg" class="img-topic">
-        </div>
-      
-      <!-- 以上是添加摘要图片 -->
-
-        
-          <h1 id="Anima"><a href="#Anima" class="headerlink" title="Anima"></a>Anima</h1><!--
-<p align="center">
-    <a href="https://github.com/biezhi/anima/wiki"><img src="screenshot/cover.png" width="623"/></a>
-</p>
--->
-<p><code>Anima</code> allows you to query database like <code>SQL</code> and <code>Stream</code>.<br>a simple DSL syntax, supports multiple databases, integrates well with Java8,<br>supports multiple relational mappings, and is a database manipulation tool.</p>
-<p><strong><a href="https://github.com/biezhi/anima/wiki" target="_blank" rel="noopener">Document</a></strong></p>
-<p><a href="https://travis-ci.org/biezhi/anima" target="_blank" rel="noopener"><img src="https://travis-ci.org/biezhi/anima.svg?branch=master" alt="Travis Build"></a><br><a href="https://mvnrepository.com/artifact/io.github.biezhi/anima" target="_blank" rel="noopener"><img src="https://img.shields.io/maven-central/v/io.github.biezhi/anima.svg" alt></a></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/my-blog-test.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/my-first-blog-article.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="herodanny">
-      <meta itemprop="description" content="学习过程的记录">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="从菜鸟到老鸟">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/my-first-blog-article.html" class="post-title-link" itemprop="url">my first blog article</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-08 21:14:14" itemprop="dateCreated datePublished" datetime="2019-04-08T21:14:14+08:00">2019-04-08</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-16 09:17:15" itemprop="dateModified" datetime="2019-04-16T09:17:15+08:00">2019-04-16</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/test/" itemprop="url" rel="index"><span itemprop="name">test</span></a></span>
-
-                
-                
-                  ，
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/my-first-blog-article.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/my-first-blog-article.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/my-first-blog-article.html" class="leancloud_visitors" data-flag-title="my first blog article">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">537</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-
-      <!-- 以下是添加摘要图片 -->
-      
-      <!-- 以上是添加摘要图片 -->
-
-        
-          
-            <p>
-              一级标题二级标题三级标题无序列表
-我的技术小黑屋
-不会写代码的菜鸟
-我要返回火星了
-
-有序列表
-我们都是地球人
-为啥你就不会 markdown?
-看完还不会就要被安排
-
-链接的写法我的技术小屋
-带 Title我的技术小屋
-图片
-带 Title
-引用方式
-
-
-世界依旧很大,大到只能胡说。  
-
-
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/my-first-blog-article.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1541,8 +886,17 @@ yum -y install
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1692,6 +1046,23 @@ yum -y install
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-Python-基础入门及安装和基础语法"><span class="nav-number">1.</span> <span class="nav-text">第一章 - Python 基础入门及安装和基础语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作系统准备"><span class="nav-number">1.1.</span> <span class="nav-text">操作系统准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pyenv-安装"><span class="nav-number">1.2.</span> <span class="nav-text">Pyenv 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pyenv-使用"><span class="nav-number">1.3.</span> <span class="nav-text">Pyenv 使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtualenv-虚拟环境设置"><span class="nav-number">1.4.</span> <span class="nav-text">Virtualenv 虚拟环境设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pip-通用配置"><span class="nav-number">1.5.</span> <span class="nav-text">pip 通用配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-ipython"><span class="nav-number">1.6.</span> <span class="nav-text">安装 ipython</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Jupyter"><span class="nav-number">1.7.</span> <span class="nav-text">安装 Jupyter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导出包"><span class="nav-number">1.8.</span> <span class="nav-text">导出包</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
 
@@ -1905,6 +1276,10 @@ setInterval("createtime()",250);
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
 
   
 
@@ -1950,6 +1325,8 @@ setInterval("createtime()",250);
 
 
 
+
+  
 
 
   
@@ -2281,38 +1658,37 @@ setInterval("createtime()",250);
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
+                .done(function() {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function() {
+                  console.log('Failed to create');
+                });
+            
           }
         })
         .fail(function ({ responseJSON }) {
@@ -2337,9 +1713,7 @@ setInterval("createtime()",250);
             });
           };
           
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
+            addCount(Counter);
           
         });
     });
