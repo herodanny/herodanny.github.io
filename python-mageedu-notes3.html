@@ -148,18 +148,18 @@
 
 
 
-  <meta name="description" content="学习过程的记录">
-<meta name="keywords" content="linux, python, c++, go">
-<meta property="og:type" content="website">
-<meta property="og:title" content="notes">
-<meta property="og:url" content="https://herodanny.github.io/notes/index.html">
+  <meta name="description" content="第三章 - Python 内置数据结构分类 数值型  int、float、complex、bool     序列对象  字符串 str 列表 list tuple   键值对  集合set 字典dict    数值型 数值型  int、float、complex、bool都是class，1、5.0、2+3j都是对象即实例 int：python3的int就是长整型，且没有大小限制，受限于内存区域的大">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python-mageedu-笔记3">
+<meta property="og:url" content="https://herodanny.github.io/python-mageedu-notes3.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="学习过程的记录">
+<meta property="og:description" content="第三章 - Python 内置数据结构分类 数值型  int、float、complex、bool     序列对象  字符串 str 列表 list tuple   键值对  集合set 字典dict    数值型 数值型  int、float、complex、bool都是class，1、5.0、2+3j都是对象即实例 int：python3的int就是长整型，且没有大小限制，受限于内存区域的大">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-15T16:36:20.673Z">
+<meta property="og:updated_time" content="2019-04-24T13:02:00.272Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="notes">
-<meta name="twitter:description" content="学习过程的记录">
+<meta name="twitter:title" content="python-mageedu-笔记3">
+<meta name="twitter:description" content="第三章 - Python 内置数据结构分类 数值型  int、float、complex、bool     序列对象  字符串 str 列表 list tuple   键值对  集合set 字典dict    数值型 数值型  int、float、complex、bool都是class，1、5.0、2+3j都是对象即实例 int：python3的int就是长整型，且没有大小限制，受限于内存区域的大">
 
 
 
@@ -169,7 +169,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/notes/">
+  <link rel="canonical" href="https://herodanny.github.io/python-mageedu-notes3">
 
 
 
@@ -179,7 +179,7 @@
   };
 </script>
 
-  <title>notes | 从菜鸟到老鸟</title>
+  <title>python-mageedu-笔记3 | 从菜鸟到老鸟</title>
   
 
 
@@ -375,7 +375,7 @@
         
         
           
-          <li class="menu-item menu-item-notes menu-item-active">
+          <li class="menu-item menu-item-notes">
 
     
     
@@ -487,87 +487,617 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-mageedu-notes3.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="herodanny">
+      <meta itemprop="description" content="学习过程的记录">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从菜鸟到老鸟">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">notes
-
-</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h2 class="post-title" itemprop="name headline">python-mageedu-笔记3
+
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-24 21:00:30 / 修改时间：21:02:00" itemprop="dateCreated datePublished" datetime="2019-04-24T21:00:30+08:00">2019-04-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python-mageedu/" itemprop="url" rel="index"><span itemprop="name">python-mageedu</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/python-mageedu-notes3.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/python-mageedu-notes3.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/python-mageedu-notes3.html" class="leancloud_visitors" data-flag-title="python-mageedu-笔记3">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">5.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">5 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="第三章-Python-内置数据结构"><a href="#第三章-Python-内置数据结构" class="headerlink" title="第三章 - Python 内置数据结构"></a>第三章 - Python 内置数据结构</h1><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
+<li><p>数值型</p>
+<ul>
+<li>int、float、complex、bool  </li>
+</ul>
+</li>
+<li><p>序列对象</p>
+<ul>
+<li>字符串 str</li>
+<li>列表 list</li>
+<li>tuple</li>
+</ul>
+</li>
+<li><p>键值对</p>
+<ul>
+<li>集合set</li>
+<li>字典dict</li>
+</ul>
+</li>
+</ul>
+<h2 id="数值型"><a href="#数值型" class="headerlink" title="数值型"></a>数值型</h2><ul>
+<li><p>数值型</p>
+<ul>
+<li>int、float、complex、bool都是class，1、5.0、2+3j都是对象即实例</li>
+<li>int：python3的int就是长整型，且没有大小限制，受限于内存区域的大小</li>
+<li>float：有整数部分和小数部分组成。支持十进制和科学计数法表示。只有双精度型。</li>
+<li>complex：有实数和虚数部分组成，实数和虚数部分都是浮点数，3+4.2J</li>
+<li>bool：int的子类，仅有2个实例True、False对应1和0，可以和整数直接运算</li>
+</ul>
+</li>
+<li><p>类型转换（built-in）</p>
+<ul>
+<li>int(x) 返回一个整数 ，int是与类型名相同的内置转换函数，如果字符串不合法抛出异常</li>
+<li>float(x) 返回一个浮点数</li>
+<li>complex(x)、complex(x,y) 返回一个复数</li>
+<li>bool(x) 返回布尔值，前面讲过False等价的对象</li>
+</ul>
+</li>
+</ul>
+<h2 id="数字的处理函数"><a href="#数字的处理函数" class="headerlink" title="数字的处理函数"></a>数字的处理函数</h2><ul>
+<li>round()，四舍五入？六入四舍五取偶</li>
+<li>math模块、floor()地板、天花板ceil()</li>
+<li>int() 、//</li>
+<li>举例：<br>&emsp; import math<br>&emsp; print(math.floor(2.5), math.floor(-2.5))<br>&emsp; print(math.ceil(2.5), math.ceil(-2.5))  </li>
+</ul>
+<p>&emsp; 以下打印什么结果？说明什么<br>&emsp; print(int(-3.6), int(-2.5), int(-1.4))<br>&emsp; print(int(3.6), int(2.5), int(1.4))<br>&emsp; print(7//2, 7//-2, -7//2, -(7//2))<br>&emsp; print(2//3, -2//3, -1//3)<br>&emsp; print(round(2.5), round(2.5001), round(2.6))<br>&emsp; print(round(3.5), round(3.5001), round(3.6), round(3.3))<br>&emsp; print(round(-2.5), round(-2.5001), round(-2.6))<br>&emsp; print(round(-3.5), round(-3.5001), round(-3.6), round(-3.3))  </p>
+<ul>
+<li>round()，四舍六入五取偶</li>
+<li>floor()向下取整、ceil()向上取整</li>
+<li>int() 取整数部分</li>
+<li><p>// 整除且向下取整</p>
+</li>
+<li><p>min()</p>
+</li>
+<li>max()</li>
+<li>pow(x,y) 等于 x**y</li>
+<li><p>math.sqrt()</p>
+</li>
+<li><p>进制函数，返回值是字符串</p>
+<ul>
+<li>bin()</li>
+<li>oct()</li>
+<li>hex()</li>
+</ul>
+</li>
+<li><p>math.pi π</p>
+</li>
+<li>math.e 自如常数</li>
+</ul>
+<h2 id="类型判断"><a href="#类型判断" class="headerlink" title="类型判断"></a>类型判断</h2><ul>
+<li>type(obj) ，返回类型，而不是字符串  </li>
+<li>isinstance(obj, class_or_tuple)，返回布尔值  </li>
+<li><p>举例：  </p>
+<ul>
+<li>type(a)</li>
+<li>type(‘abc’)</li>
+<li>type(123)</li>
+<li>isinstance(6, str)、type(6) == str</li>
+<li>isinstance(6, (str, bool, int))</li>
+</ul>
+</li>
+<li><p>type(1+True)  # bool型是int的子类</p>
+</li>
+<li>type(1+True+2.0) # 是什么？隐式转换 # 都是数值类型，往高精度转</li>
+</ul>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ul>
+<li>一个队列，一个排列整齐的队伍</li>
+<li>列表内的个体称作元素，由若干元素组成列表</li>
+<li>元素可以是任意对象（数字、字符串、对象、列表等）</li>
+<li>列表内元素有顺序，可以使用索引</li>
+<li>线性的数据结构</li>
+<li>使用 [ ] 表示</li>
+<li>列表是<strong>可变</strong>的</li>
+<li>列表list、链表、queue、stack的差异</li>
+</ul>
+<h2 id="列表list定义-初始化"><a href="#列表list定义-初始化" class="headerlink" title="列表list定义 初始化"></a>列表list定义 初始化</h2><p>赋值即定义，这也是静态语言和动态语言的区别。  </p>
+<ul>
+<li>list() -&gt; new empty list</li>
+<li>list(iterable) -&gt; new list initialized from iterable’s items</li>
+<li>列表不能一开始就定义大小</li>
+</ul>
+<p>&emsp;&emsp; lst = list()<br>&emsp;&emsp; lst = []<br>&emsp;&emsp; lst = [2, 6, 9, ‘ab’]<br>&emsp;&emsp; lst = list(range(5))  </p>
+<h2 id="列表索引访问"><a href="#列表索引访问" class="headerlink" title="列表索引访问"></a>列表索引访问</h2><ul>
+<li>索引，也叫下标</li>
+<li>正索引：从左至右，从0开始，为列表中每一个元素编号</li>
+<li>负索引：从右至左，从-1开始</li>
+<li>正负索引不可以超界，否则引发异常IndexError</li>
+<li>为了理解方便，可以认为列表是从左至右排列的，左边是头部，右边是尾部，左边是下界，右边是上界</li>
+<li>列表通过索引访问<ul>
+<li>list[index] ，index就是索引，使用中括号访问</li>
+</ul>
+</li>
+</ul>
+<h2 id="列表查询"><a href="#列表查询" class="headerlink" title="列表查询"></a>列表查询</h2><ul>
+<li><p>index(value,[start,[stop]])</p>
+<ul>
+<li>通过值value，从指定区间查找列表内的元素是否匹配</li>
+<li>匹配第一个就立即返回索引</li>
+<li>匹配不到，抛出异常ValueError</li>
+</ul>
+</li>
+<li><p>count(value)</p>
+<ul>
+<li>返回列表中匹配value的次数</li>
+</ul>
+</li>
+<li><p>时间复杂度</p>
+<ul>
+<li>index和count方法都是O(n)</li>
+<li>随着列表数据规模的增大，而效率下降</li>
+</ul>
+</li>
+<li><p>如何返回列表元素的个数？如何遍历？如何设计高效？</p>
+<ul>
+<li>len()</li>
+</ul>
+</li>
+</ul>
+<h2 id="如何查帮助"><a href="#如何查帮助" class="headerlink" title="如何查帮助"></a>如何查帮助</h2><ul>
+<li><p>官方帮助文档</p>
+<ul>
+<li>搜索关键字</li>
+</ul>
+</li>
+<li><p>IPython中</p>
+<ul>
+<li>help(keyword)</li>
+<li>keyword可以是变量、对象、类名、函数名、方法名</li>
+</ul>
+</li>
+</ul>
+<h2 id="列表元素修改"><a href="#列表元素修改" class="headerlink" title="列表元素修改"></a>列表元素修改</h2><ul>
+<li>索引访问修改<ul>
+<li>list[index] = value</li>
+<li>索引不要超界</li>
+</ul>
+</li>
+</ul>
+<h2 id="列表增加、插入元素"><a href="#列表增加、插入元素" class="headerlink" title="列表增加、插入元素"></a>列表增加、插入元素</h2><ul>
+<li><p>append(object) -&gt; None</p>
+<ul>
+<li>列表尾部追加元素，返回None</li>
+<li>返回None就意味着没有新的列表产生，就地修改</li>
+<li>时间复杂度是O(1)，因为直接可以索引到结尾添加</li>
+</ul>
+</li>
+<li><p>insert(index, object) -&gt; None</p>
+<ul>
+<li>在指定的索引index处插入元素object</li>
+<li>返回None就意味着没有新的列表产生，就地修改</li>
+<li>时间复杂度是O(n)，因为会调整内存布局</li>
+<li>索引能超上下界吗？</li>
+<li>超越上界，尾部追加</li>
+<li>超越下界，头部追加</li>
+</ul>
+</li>
+</ul>
+<h2 id="列表增加、插入元素-1"><a href="#列表增加、插入元素-1" class="headerlink" title="列表增加、插入元素"></a>列表增加、插入元素</h2><ul>
+<li><p>extend(iteratable) -&gt; None</p>
+<ul>
+<li>将可迭代对象的元素追加进来，返回None</li>
+<li>就地修改</li>
+</ul>
+</li>
+<li><p>+ -&gt; list</p>
+<ul>
+<li>连接操作，将两个列表连接起来</li>
+<li>产生新的列表，原列表不变</li>
+<li>本质上调用的是<strong>add</strong>()方法</li>
+</ul>
+</li>
+<li><p>* -&gt; list</p>
+<ul>
+<li>重复操作，将本列表元素重复n次，返回新的列表</li>
+</ul>
+</li>
+</ul>
+<h2 id="列表-重复的坑"><a href="#列表-重复的坑" class="headerlink" title="列表 *重复的坑"></a>列表 *重复的坑</h2><ul>
+<li>* -&gt; list  <ul>
+<li>重复操作，将本列表元素重复n次，返回新的列表  </li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp; x = [[1,2,3]]*3<br>&emsp;&emsp; print(x)<br>&emsp;&emsp; x[0][1] = 20<br>&emsp;&emsp; print(x)  </p>
+<p>&emsp;&emsp; y = [1]*5<br>&emsp;&emsp; y[0] = 6<br>&emsp;&emsp; y[1] = 7<br>&emsp;&emsp; print(y)<br>&emsp;&emsp; 上面代码运行结果是什么？为什么？</p>
+<h2 id="列表删除元素"><a href="#列表删除元素" class="headerlink" title="列表删除元素"></a>列表删除元素</h2><ul>
+<li><p>remove(value) -&gt; None</p>
+<ul>
+<li>从左至右查找第一个匹配value的值，移除该元素，返回None</li>
+<li>就地修改</li>
+<li>效率？</li>
+</ul>
+</li>
+<li><p>pop([index]) -&gt; item</p>
+<ul>
+<li>不指定索引index，就从列表尾部弹出一个元素</li>
+<li>指定索引index，就从索引处弹出一个元素，索引超界抛出IndexError错误</li>
+<li>效率？指定索引的的时间复杂度？不指定索引呢？</li>
+</ul>
+</li>
+<li><p>clear() -&gt; None</p>
+<ul>
+<li>清除列表所有元素，剩下一个空列表（一批元素不要，可能会引起垃圾回收gc）</li>
+</ul>
+</li>
+</ul>
+<h2 id="列表其它操作"><a href="#列表其它操作" class="headerlink" title="列表其它操作"></a>列表其它操作</h2><ul>
+<li><p>reverse() -&gt; None</p>
+<ul>
+<li>将列表元素<strong>反转</strong>，返回None</li>
+<li>就地修改</li>
+</ul>
+</li>
+<li><p>sort(key=None, reverse=False) -&gt; None</p>
+<ul>
+<li>只写一个参数，匹配的是第一个参数，要匹配第二个参数，要指明参数名字，这么写 lst.sort(reverse=True) </li>
+<li>对列表元素进行<strong>排序</strong>，就地修改，默认升序</li>
+<li>reverse为True，反转，降序</li>
+<li>key一个函数，指定key如何排序<ul>
+<li>lst.sort(key=functionname)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>in</p>
+<ul>
+<li>[3,4] in [1, 2, [3,4]]</li>
+<li>for x in [1,2,3,4]</li>
+</ul>
+</li>
+<li><p>not in</p>
+</li>
+</ul>
+<h2 id="列表复制"><a href="#列表复制" class="headerlink" title="列表复制"></a>列表复制</h2><ul>
+<li>先看一段代码  </li>
+</ul>
+<p>&emsp;&emsp; lst0 = list(range(4))<br>&emsp;&emsp; lst2 = list(range(4))<br>&emsp;&emsp; print(lst0 == lst2)<br>&emsp;&emsp; lst1 = lst0<br>&emsp;&emsp; lst1[2] = 10<br>&emsp;&emsp; print(lst0)  </p>
+<p>&emsp;&emsp; lst0 == lst2相等吗？为什么？lst0里面存的是什么？<br>&emsp;&emsp; == 比较的是对象的内容 (True)<br>&emsp;&emsp; is 比较的是对象的地址 (False) 即 id(lst0) == id(lst2)<br>&emsp;&emsp; 这里虽然都是创建 list(range(4)) 这个对象，解释器并没有优化为只创建一个  </p>
+<p>&emsp;&emsp; 请问lst0的索引为2的元素的值是什么？<br>&emsp;&emsp; 请问lst1 = lst0这个过程中有没有复制过程？  </p>
+<h2 id="列表复制-1"><a href="#列表复制-1" class="headerlink" title="列表复制"></a>列表复制</h2><ul>
+<li>copy() -&gt; List<ul>
+<li>shadow copy返回一个新的列表</li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp; lst0 = list(range(4))<br>&emsp;&emsp; lst5 = lst0.copy()<br>&emsp;&emsp; id(lst0) 和 id(lst5) 是不同的 ，与 lst5=lst0 还是不一样的<br>&emsp;&emsp; copy是把原列表的item复制到一个片新内存，创建一个新列表<br>&emsp;&emsp; print(lst5 == lst0)<br>&emsp;&emsp; lst5[2] = 10<br>&emsp;&emsp; print(lst5 == lst0)<br>&emsp;&emsp; lst0和lst5一样吗？  </p>
+<ul>
+<li>对比前面程序的差别  </li>
+</ul>
+<p>&emsp;&emsp; lst0 = [1, [2, 3, 4], 5]<br>&emsp;&emsp; lst5 = lst0.copy()<br>&emsp;&emsp; lst5 == lst0<br>&emsp;&emsp; lst5[2] = 10<br>&emsp;&emsp; lst5 == lst0<br>&emsp;&emsp; lst5[2] = 5<br>&emsp;&emsp; lst5[1][1] = 20<br>&emsp;&emsp; lst5 == lst0<br>&emsp;&emsp; list中间元素是个复杂元素，所以copy时只拷贝了它的引用，即它的地址。所以在一边修改之后，另一边也一同修改了。  </p>
+<h2 id="列表复制-2"><a href="#列表复制-2" class="headerlink" title="列表复制"></a>列表复制</h2><ul>
+<li><p>shadow copy</p>
+<ul>
+<li>影子拷贝，也叫浅拷贝，遇到引用类型，只是复制了一个引用而已</li>
+</ul>
+</li>
+<li><p>深拷贝</p>
+<ul>
+<li>copy模块提供了deepcopy  </li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp;&emsp;&emsp; import copy<br>&emsp;&emsp;&emsp;&emsp; lst0 = [1, [2, 3, 4], 5]<br>&emsp;&emsp;&emsp;&emsp; lst5 = copy.deepcopy(lst0)<br>&emsp;&emsp;&emsp;&emsp; lst5[1][1] = 20<br>&emsp;&emsp;&emsp;&emsp; lst5 == lst0  </p>
+<h2 id="随机数"><a href="#随机数" class="headerlink" title="随机数"></a>随机数</h2><ul>
+<li>random模块</li>
+<li>randint(a, b) 返回[a, b]之间的整数</li>
+<li>choice(seq) 从非空序列的元素中随机挑选一个元素，比如random.choice(range(10))，从0到9中随机挑选一个整数。random.choice([1,3,5,7])</li>
+<li>randrange ([start,] stop [,step]) 从指定范围内，按指定基数递增的集合中获取一个随机数，基数缺省值为1。 random.randrange(1,7,2)</li>
+<li>random.shuffle(list) -&gt;None 就地打乱列表元素</li>
+<li>sample(population, k) 从样本空间或总体（序列或者集合类型）中随机取出k个不同的元素，返回一个新的列表<ul>
+<li>random.sample([‘a’, ‘b’, ‘c’, ‘d’], 2)</li>
+<li>random.sample([‘a’, ‘a’], 2) 会返回什么结果</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------- 本文结束 <i class="fa fa-heart"></i> 感谢阅读 ----------</div>
+    
+</div>
+      
+    </div>
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>python-mageedu-笔记3</p>
+  <p><span>文章作者:</span>herodanny</p>
+  <p><span>发布时间:</span>2019年04月24日 - 21:00:30</p>
+  <p><span>最后更新:</span>2019年04月24日 - 21:02:00</p>
+  <p><span>原始链接:</span><a href="/python-mageedu-notes3.html" title="python-mageedu-笔记3">https://herodanny.github.io/python-mageedu-notes3.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-mageedu-notes3.html" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
+    </div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>若本文对您有帮助，求打赏 ≧◇≦ 谢谢您的鼓励。</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="herodanny 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/python-mageedu-notes2.html" rel="next" title="python-mageedu-笔记2">
+                <i class="fa fa-chevron-left"></i> python-mageedu-笔记2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -587,8 +1117,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -738,6 +1277,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">1.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数值型"><span class="nav-number">1.2.</span> <span class="nav-text">数值型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数字的处理函数"><span class="nav-number">1.3.</span> <span class="nav-text">数字的处理函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类型判断"><span class="nav-number">1.4.</span> <span class="nav-text">类型判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表"><span class="nav-number">1.5.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表list定义-初始化"><span class="nav-number">1.6.</span> <span class="nav-text">列表list定义 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表索引访问"><span class="nav-number">1.7.</span> <span class="nav-text">列表索引访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表查询"><span class="nav-number">1.8.</span> <span class="nav-text">列表查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何查帮助"><span class="nav-number">1.9.</span> <span class="nav-text">如何查帮助</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表元素修改"><span class="nav-number">1.10.</span> <span class="nav-text">列表元素修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表增加、插入元素"><span class="nav-number">1.11.</span> <span class="nav-text">列表增加、插入元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表增加、插入元素-1"><span class="nav-number">1.12.</span> <span class="nav-text">列表增加、插入元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表-重复的坑"><span class="nav-number">1.13.</span> <span class="nav-text">列表 *重复的坑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表删除元素"><span class="nav-number">1.14.</span> <span class="nav-text">列表删除元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表其它操作"><span class="nav-number">1.15.</span> <span class="nav-text">列表其它操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表复制"><span class="nav-number">1.16.</span> <span class="nav-text">列表复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表复制-1"><span class="nav-number">1.17.</span> <span class="nav-text">列表复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表复制-2"><span class="nav-number">1.18.</span> <span class="nav-text">列表复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#随机数"><span class="nav-number">1.19.</span> <span class="nav-text">随机数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
 
@@ -1000,6 +1556,8 @@ setInterval("createtime()",250);
 
 
 
+
+  
 
 
   
@@ -1331,38 +1889,37 @@ setInterval("createtime()",250);
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
+                .done(function() {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function() {
+                  console.log('Failed to create');
+                });
+            
           }
         })
         .fail(function ({ responseJSON }) {
@@ -1387,9 +1944,7 @@ setInterval("createtime()",250);
             });
           };
           
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
+            addCount(Counter);
           
         });
     });
