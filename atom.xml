@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://herodanny.github.io/"/>
-  <updated>2019-04-25T06:05:48.797Z</updated>
+  <updated>2019-04-25T06:23:34.476Z</updated>
   <id>https://herodanny.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://herodanny.github.io/python-mageedu-notes4.html"/>
     <id>https://herodanny.github.io/python-mageedu-notes4.html</id>
     <published>2019-04-25T06:04:39.000Z</published>
-    <updated>2019-04-25T06:05:48.797Z</updated>
+    <updated>2019-04-25T06:23:34.476Z</updated>
     
     <content type="html"><![CDATA[<h1 id="元组tuple"><a href="#元组tuple" class="headerlink" title="元组tuple"></a>元组tuple</h1><ul><li>一个有序的元素组成的集合<ul><li>使用小括号 ( ) 表示</li><li>元组是<strong>不可变</strong>对象</li></ul></li></ul><h2 id="元组的定义-初始化"><a href="#元组的定义-初始化" class="headerlink" title="元组的定义 初始化"></a>元组的定义 初始化</h2><ul><li>定义<ul><li>tuple() -&gt; empty tuple</li><li>tuple(iterable) -&gt; tuple initialized from iterable’s item</li></ul></li></ul><p>&emsp;&emsp; t = tuple() # 工厂方法，空元组是不能插入的<br>&emsp;&emsp; t = ()<br>&emsp;&emsp; t = tuple(range(1,7,2)) # iteratable<br>&emsp;&emsp; t = (2,4,6,3,4,2)<br>&emsp;&emsp; t = (1,) # 一个元素元组的定义，注意有个逗号<br>&emsp;&emsp; t = (1,)<em>5<br>&emsp;&emsp; t = (1,2,3) </em> 6<br>&emsp;&emsp; 元组就像个只读列表，好处就是比列表占用空间少。<br>&emsp;&emsp; t1 = (1, [2, 3], 4)<br>&emsp;&emsp; t1[1][0] = 10</p><h2 id="元组元素的访问"><a href="#元组元素的访问" class="headerlink" title="元组元素的访问"></a>元组元素的访问</h2><ul><li>支持索引（下标）</li><li>正索引：从左至右，从0开始，为列表中每一个元素编号</li><li>负索引：从右至左，从-1开始</li><li><p>正负索引不可以超界，否则引发异常IndexError</p></li><li><p>元组通过索引访问</p><ul><li>tuple[index] ，index就是索引，使用中括号访问</li></ul></li></ul><p>&emsp;&emsp; t[1]<br>&emsp;&emsp; t[-2]<br>&emsp;&emsp; t[1] = 5  </p><h2 id="元组查询"><a href="#元组查询" class="headerlink" title="元组查询"></a>元组查询</h2><ul><li><p>index(value,[start,[stop]])</p><ul><li>通过值value，从指定区间查找列表内的元素是否匹配</li><li>匹配第一个就立即返回索引</li><li>匹配不到，抛出异常ValueError</li></ul></li><li><p>count(value)</p><ul><li>返回列表中匹配value的次数</li></ul></li><li><p>时间复杂度</p><ul><li>index和count方法都是O(n)</li><li>随着列表数据规模的增大，而效率下降</li></ul></li><li><p>len(tuple)</p><ul><li>返回元素的个数</li></ul></li></ul><h2 id="元组其它操作"><a href="#元组其它操作" class="headerlink" title="元组其它操作"></a>元组其它操作</h2><ul><li>元组是只读的，所以增、改、删方法都没有</li></ul><h2 id="命名元组namedtuple"><a href="#命名元组namedtuple" class="headerlink" title="命名元组namedtuple"></a>命名元组namedtuple</h2><ul><li>帮助文档中，查阅namedtuple，有使用例程</li><li>namedtuple(typename, field_names, verbose=False, rename=False)<ul><li>命名元组，返回一个元组的子类，并定义了字段</li><li>field_names可以是空白符或逗号分割的字段的字符串，可以是字段的列表</li></ul></li></ul><p>&emsp;&emsp; from collections import namedtuple<br>&emsp;&emsp; Point = namedtuple(‘_Point’,[‘x’,’y’]) # Point为返回的类<br>&emsp;&emsp; p = Point(11, 22)  </p><p>&emsp;&emsp; Student = namedtuple(‘Student’, ‘name age’)<br>&emsp;&emsp; tom = Student(‘tom’, 20)<br>&emsp;&emsp; jerry = Student(‘jerry’, 18)<br>&emsp;&emsp; tom.name  </p><h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><ul><li>依次接收用户输入的3个数，排序后打印<ul><li><ol><li>转换int后，判断大小排序。使用分支结构完成</li></ol></li><li><ol start="2"><li>使用max函数</li></ol></li><li><ol start="3"><li>使用列表的sort方法</li></ol></li><li><ol start="4"><li>冒泡法</li></ol></li></ul></li></ul><h2 id="冒泡法"><a href="#冒泡法" class="headerlink" title="冒泡法"></a>冒泡法</h2><ul><li><p>冒泡法</p><ul><li>属于交换排序</li><li>两两比较大小，交换位置。如同水泡咕嘟咕嘟往上冒</li><li>结果分为升序和降序排列</li></ul></li><li><p>升序</p><ul><li>n个数从左至右，编号从0开始到n-1，索引0和1的值比较，如果索引0大，则交换两者位置，如果索引1大，则不交换。继续比较索引1和2的值，将大值放在右侧。直至n-2和n-1比较完，第一轮比较完成。第二轮从索引0比较到n-2，因为最右侧n-1位置上已经是最大值了。依次类推，每一轮都会减少最右侧的不参与比较，直至剩下最后2个数比较。</li></ul></li><li><p>降序</p><ul><li>和升序相反</li></ul></li></ul><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">num_list = [[<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span> ,<span class="number">2</span>],</span><br><span class="line">            [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">            [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">8</span>]]</span><br><span class="line"></span><br><span class="line">nums = num_list[<span class="number">2</span>]</span><br><span class="line">print(nums)</span><br><span class="line">length = len(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="comment"># bubble_sort</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length): <span class="comment"># 有n个数要排序</span></span><br><span class="line">    flag = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(length-i<span class="number">-1</span>): <span class="comment"># 比较的次数</span></span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[j] &gt; nums[j+<span class="number">1</span>]:</span><br><span class="line">            tmp = nums[j]</span><br><span class="line">            nums[j] = nums[j+<span class="number">1</span>]</span><br><span class="line">            nums[j+<span class="number">1</span>] = tmp</span><br><span class="line">            flag = <span class="literal">True</span> <span class="comment"># swapped</span></span><br><span class="line">            count_swap += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> flag:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">print(nums, count_swap, count)</span><br></pre></td></tr></table></figure><h2 id="冒泡法总结"><a href="#冒泡法总结" class="headerlink" title="冒泡法总结"></a>冒泡法总结</h2><ul><li>冒泡法需要数据一轮轮比较</li><li>可以设定一个标记判断此轮是否有数据交换发生，如果没有发生交换，可以结束排序，如果发生交换，继续下一轮排序</li><li>最差的排序情况是，初始顺序与目标顺序完全相反，遍历次数1,…,n-1之和n(n-1)/2</li><li>最好的排序情况是，初始顺序与目标顺序完全相同，遍历次数n-1</li><li>时间复杂度O(n2)</li></ul>]]></content>
     
@@ -37,6 +37,10 @@
     
     </summary>
     
+      <category term="python-mageedu" scheme="https://herodanny.github.io/categories/python-mageedu/"/>
+    
+    
+      <category term="python" scheme="https://herodanny.github.io/tags/python/"/>
     
   </entry>
   
@@ -167,9 +171,9 @@
       <category term="tools" scheme="https://herodanny.github.io/categories/tools/"/>
     
     
-      <category term="markdown" scheme="https://herodanny.github.io/tags/markdown/"/>
-    
       <category term="test" scheme="https://herodanny.github.io/tags/test/"/>
+    
+      <category term="markdown" scheme="https://herodanny.github.io/tags/markdown/"/>
     
       <category term="java" scheme="https://herodanny.github.io/tags/java/"/>
     
@@ -198,9 +202,9 @@
       <category term="tools" scheme="https://herodanny.github.io/categories/tools/"/>
     
     
-      <category term="markdown" scheme="https://herodanny.github.io/tags/markdown/"/>
-    
       <category term="test" scheme="https://herodanny.github.io/tags/test/"/>
+    
+      <category term="markdown" scheme="https://herodanny.github.io/tags/markdown/"/>
     
   </entry>
   
