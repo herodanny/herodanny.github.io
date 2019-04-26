@@ -156,7 +156,7 @@
 <meta property="og:site_name" content="从菜鸟到老鸟">
 <meta property="og:description" content="字符串 一个个字符组成的有序的序列，是字符的集合。 python中一个字符也是str类型。 使用单引号、双引号、三引号引住的字符序列 字符串是不可变对象 Python3起，字符串就是Unicode类型  字符串定义 初始化 举例    &amp;emsp;&amp;emsp; s1 = ‘string’&amp;emsp;&amp;emsp; s2 = “string2”&amp;emsp;&amp;emsp; s3 = ‘’’this’s a">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-26T13:28:14.576Z">
+<meta property="og:updated_time" content="2019-04-26T13:35:01.902Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python全栈-magedu-2018-笔记5">
 <meta name="twitter:description" content="字符串 一个个字符组成的有序的序列，是字符的集合。 python中一个字符也是str类型。 使用单引号、双引号、三引号引住的字符序列 字符串是不可变对象 Python3起，字符串就是Unicode类型  字符串定义 初始化 举例    &amp;emsp;&amp;emsp; s1 = ‘string’&amp;emsp;&amp;emsp; s2 = “string2”&amp;emsp;&amp;emsp; s3 = ‘’’this’s a">
@@ -550,7 +550,7 @@
                 
               
 
-              <time title="创建时间：2019-04-26 21:09:12 / 修改时间：21:28:14" itemprop="dateCreated datePublished" datetime="2019-04-26T21:09:12+08:00">2019-04-26</time>
+              <time title="创建时间：2019-04-26 21:09:12 / 修改时间：21:35:01" itemprop="dateCreated datePublished" datetime="2019-04-26T21:09:12+08:00">2019-04-26</time>
             
 
             
@@ -767,7 +767,8 @@
 </li>
 <li><p>大小写，做判断的时候用</p>
 </li>
-<li>swapcase()<ul>
+<li><p>swapcase()</p>
+<ul>
 <li>交互大小写</li>
 </ul>
 </li>
@@ -906,13 +907,11 @@
 </li>
 <li><p>格式要求</p>
 <ul>
-<li><p>占位符：使用%和格式字符组成，例如%s、%d等</p>
-<ul>
+<li>占位符：使用%和格式字符组成，例如%s、%d等<ul>
 <li>s调用str()，r会调用repr()。所有对象都可以被这两个转换。</li>
 </ul>
 </li>
-<li><p>占位符中还可以插入修饰字符，例如%03d表示打印3个位置，不够前面补零</p>
-</li>
+<li>占位符中还可以插入修饰字符，例如%03d表示打印3个位置，不够前面补零</li>
 <li>format % values，格式字符串和被格式的值之间使用%分隔</li>
 <li>values只能是一个对象，或是一个和格式字符串占位符数目相等的元组</li>
 </ul>
@@ -939,14 +938,11 @@
 </li>
 <li><p>{xxx}表示在关键字参数中搜索名称一致的</p>
 </li>
+<li><p> {{}} 表示打印花括号</p>
+</li>
 </ul>
 </li>
 </ul>
-
-
-  * {{}} 表示打印花括号  
-
-
 <h2 id="字符串格式化-3"><a href="#字符串格式化-3" class="headerlink" title="字符串格式化***"></a>字符串格式化***</h2><ul>
 <li><p>位置参数<br>“{}:{}”.format(‘192.168.1.100’,8888)，这就是按照位置顺序用位置参数替换前面的格式字符串的占位符中</p>
 </li>
@@ -954,10 +950,7 @@
 </li>
 <li><p>访问元素<br>“{0[0]}.{0[1]}”.format((‘github’,’com’))</p>
 </li>
-<li><p>对象属性访问<br>from collections import namedtuple<br>Point = namedtuple(‘Point’,’x y’)<br>p = Point(4,5)  </p>
-  
-"{{{0.x},{0.y}}}".format(p)  
-  
+<li><p>对象属性访问<br>from collections import namedtuple<br>Point = namedtuple(‘Point’,’x y’)<br>p = Point(4,5)<br>“{{{0.x},{0.y}}}“.format(p)  </p>
 </li>
 <li><p>有了这些字符串格式化方法，字符串拼接可以丢弃了。</p>
 </li>
@@ -1014,7 +1007,7 @@
   <p><span>本文标题:</span>python全栈-magedu-2018-笔记5</p>
   <p><span>文章作者:</span>herodanny</p>
   <p><span>发布时间:</span>2019年04月26日 - 21:09:12</p>
-  <p><span>最后更新:</span>2019年04月26日 - 21:28:14</p>
+  <p><span>最后更新:</span>2019年04月26日 - 21:35:01</p>
   <p><span>原始链接:</span><a href="/python-magedu-2018-notes5.html" title="python全栈-magedu-2018-笔记5">https://herodanny.github.io/python-magedu-2018-notes5.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes5.html" aria-label="复制成功！"></i></span>
   </p>
