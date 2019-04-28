@@ -156,7 +156,7 @@
 <meta property="og:site_name" content="从菜鸟到老鸟">
 <meta property="og:description" content="第三章 - Python 内置数据结构封装和解构 封装 将多个值使用逗号分割，组合在一起 本质上，返回一个元组，只是省掉了小括号 python特有语法，被很多语言学习和借鉴      &amp;emsp;&amp;emsp; t1 = (1,2) # 定义为元组&amp;emsp;&amp;emsp; t2 = 1,2 # 将1和2封装成元组，一般都这么写&amp;emsp;&amp;emsp; type(t1)&amp;emsp;&amp;emsp; typ">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-28T06:34:19.127Z">
+<meta property="og:updated_time" content="2019-04-28T06:40:17.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python全栈-magedu-2018-笔记9">
 <meta name="twitter:description" content="第三章 - Python 内置数据结构封装和解构 封装 将多个值使用逗号分割，组合在一起 本质上，返回一个元组，只是省掉了小括号 python特有语法，被很多语言学习和借鉴      &amp;emsp;&amp;emsp; t1 = (1,2) # 定义为元组&amp;emsp;&amp;emsp; t2 = 1,2 # 将1和2封装成元组，一般都这么写&amp;emsp;&amp;emsp; type(t1)&amp;emsp;&amp;emsp; typ">
@@ -550,7 +550,7 @@
                 
               
 
-              <time title="创建时间：2019-04-28 14:33:09 / 修改时间：14:34:19" itemprop="dateCreated datePublished" datetime="2019-04-28T14:33:09+08:00">2019-04-28</time>
+              <time title="创建时间：2019-04-28 14:33:09 / 修改时间：14:40:17" itemprop="dateCreated datePublished" datetime="2019-04-28T14:33:09+08:00">2019-04-28</time>
             
 
             
@@ -689,18 +689,18 @@
 <li>被 *变量名 收集后组成一个列表</li>
 <li>举例  </li>
 </ul>
-<p>&emsp;&emsp; lst = list(range(1, 101, 2))<br>&emsp;&emsp; head, <em>mid, tail = lst<br>&emsp;&emsp; </em>lst2 = lst<br>&emsp;&emsp; <em>body, tail = lst<br>&emsp;&emsp; head, </em>tail = lst<br>&emsp;&emsp; head, <em>m1, </em>m2, tail = lst<br>&emsp;&emsp; head, *mid, tail = “abcdefghijklmn”<br>&emsp;&emsp; type(mid)</p>
+<p>&emsp;&emsp; lst = list(range(1, 101, 2))<br>&emsp;&emsp; head, *mid, tail = lst<br>&emsp;&emsp; *lst2 = lst<br>&emsp;&emsp; *body, tail = lst<br>&emsp;&emsp; head, *tail = lst<br>&emsp;&emsp; head, *m1, *m2, tail = lst<br>&emsp;&emsp; head, *mid, tail = “abcdefghijklmn”<br>&emsp;&emsp; type(mid)</p>
 <h2 id="丢弃变量"><a href="#丢弃变量" class="headerlink" title="丢弃变量"></a>丢弃变量</h2><ul>
 <li>这是一个惯例，是一个不成文的约定，不是标准</li>
 <li>如果不关心一个变量，就可以定义改变量的名字为_</li>
 <li>_是一个合法的标识符，也可以作为一个有效的变量使用，但是定义成下划线就是希望不要被使用，除非你明确的知道这个数据需要使用  </li>
 <li>举例</li>
 </ul>
-<p>&emsp;&emsp; lst = [9,8,7,20]<br>&emsp;&emsp; first, <em>second = lst<br>&emsp;&emsp; head, </em><em>, tail = lst<br>&emsp;&emsp; jprint(head)<br>&emsp;&emsp; print(tail)<br>&emsp;&emsp; \</em>是合法的标识符，看到下划线就知道这个变量就是不想被使用<br>&emsp;&emsp; print(_)</p>
+<p>&emsp;&emsp; lst = [9,8,7,20]<br>&emsp;&emsp; first, *second = lst<br>&emsp;&emsp; head, *_, tail = lst<br>&emsp;&emsp; print(head)<br>&emsp;&emsp; print(tail)<br>&emsp;&emsp; _是合法的标识符，看到下划线就知道这个变量就是不想被使用<br>&emsp;&emsp; print(_)</p>
 <h2 id="丢弃变量-1"><a href="#丢弃变量-1" class="headerlink" title="丢弃变量"></a>丢弃变量</h2><ul>
 <li>举例  </li>
 </ul>
-<p>&emsp;&emsp; lst = [9,8,7,20]<br>&emsp;&emsp; first, <em>second = lst<br>&emsp;&emsp; _ , \</em>_, tail = lst<br>&emsp;&emsp; print(_)<br>&emsp;&emsp; print(tail)<br>&emsp;&emsp; print(_)</p>
+<p>&emsp;&emsp; lst = [9,8,7,20]<br>&emsp;&emsp; first, *second = lst<br>&emsp;&emsp; _ , *_, tail = lst<br>&emsp;&emsp; print(_)<br>&emsp;&emsp; print(tail)<br>&emsp;&emsp; print(_)</p>
 <h2 id="丢弃变量-2"><a href="#丢弃变量-2" class="headerlink" title="丢弃变量"></a>丢弃变量</h2><ul>
 <li><p>总结</p>
 <ul>
@@ -777,7 +777,7 @@
   <p><span>本文标题:</span>python全栈-magedu-2018-笔记9</p>
   <p><span>文章作者:</span>herodanny</p>
   <p><span>发布时间:</span>2019年04月28日 - 14:33:09</p>
-  <p><span>最后更新:</span>2019年04月28日 - 14:34:19</p>
+  <p><span>最后更新:</span>2019年04月28日 - 14:40:17</p>
   <p><span>原始链接:</span><a href="/python-magedu-2018-notes9.html" title="python全栈-magedu-2018-笔记9">https://herodanny.github.io/python-magedu-2018-notes9.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes9.html" aria-label="复制成功！"></i></span>
   </p>
