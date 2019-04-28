@@ -148,18 +148,18 @@
 
 
 
-  <meta name="description" content="第一章 - Python 环境搭建操作系统准备准备Linux最小系统即可。  如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+  Pyenv 安装 安装git   1yum install git -y  安装Python编译依赖   1yum -y install gcc make patch gdbm-devel openssl-devel sqlite-devel  re">
+  <meta name="description" content="第三章 - Python 内置数据结构封装和解构 封装 将多个值使用逗号分割，组合在一起 本质上，返回一个元组，只是省掉了小括号 python特有语法，被很多语言学习和借鉴      &amp;emsp;&amp;emsp; t1 = (1,2) # 定义为元组&amp;emsp;&amp;emsp; t2 = 1,2 # 将1和2封装成元组，一般都这么写&amp;emsp;&amp;emsp; type(t1)&amp;emsp;&amp;emsp; typ">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python全栈-magedu-2018-笔记1">
-<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes1.html">
+<meta property="og:title" content="python全栈-magedu-2018-笔记9">
+<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes9.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="第一章 - Python 环境搭建操作系统准备准备Linux最小系统即可。  如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+  Pyenv 安装 安装git   1yum install git -y  安装Python编译依赖   1yum -y install gcc make patch gdbm-devel openssl-devel sqlite-devel  re">
+<meta property="og:description" content="第三章 - Python 内置数据结构封装和解构 封装 将多个值使用逗号分割，组合在一起 本质上，返回一个元组，只是省掉了小括号 python特有语法，被很多语言学习和借鉴      &amp;emsp;&amp;emsp; t1 = (1,2) # 定义为元组&amp;emsp;&amp;emsp; t2 = 1,2 # 将1和2封装成元组，一般都这么写&amp;emsp;&amp;emsp; type(t1)&amp;emsp;&amp;emsp; typ">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-25T07:31:29.193Z">
+<meta property="og:updated_time" content="2019-04-28T06:34:19.127Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python全栈-magedu-2018-笔记1">
-<meta name="twitter:description" content="第一章 - Python 环境搭建操作系统准备准备Linux最小系统即可。  如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+  Pyenv 安装 安装git   1yum install git -y  安装Python编译依赖   1yum -y install gcc make patch gdbm-devel openssl-devel sqlite-devel  re">
+<meta name="twitter:title" content="python全栈-magedu-2018-笔记9">
+<meta name="twitter:description" content="第三章 - Python 内置数据结构封装和解构 封装 将多个值使用逗号分割，组合在一起 本质上，返回一个元组，只是省掉了小括号 python特有语法，被很多语言学习和借鉴      &amp;emsp;&amp;emsp; t1 = (1,2) # 定义为元组&amp;emsp;&amp;emsp; t2 = 1,2 # 将1和2封装成元组，一般都这么写&amp;emsp;&amp;emsp; type(t1)&amp;emsp;&amp;emsp; typ">
 
 
 
@@ -169,7 +169,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes1">
+  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes9">
 
 
 
@@ -179,7 +179,7 @@
   };
 </script>
 
-  <title>python全栈-magedu-2018-笔记1 | 从菜鸟到老鸟</title>
+  <title>python全栈-magedu-2018-笔记9 | 从菜鸟到老鸟</title>
   
 
 
@@ -507,7 +507,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes1.html">
+    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes9.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="herodanny">
@@ -524,7 +524,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记1
+          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记9
 
               
             
@@ -550,24 +550,12 @@
                 
               
 
-              <time title="创建时间：2019-04-19 20:16:49" itemprop="dateCreated datePublished" datetime="2019-04-19T20:16:49+08:00">2019-04-19</time>
+              <time title="创建时间：2019-04-28 14:33:09 / 修改时间：14:34:19" itemprop="dateCreated datePublished" datetime="2019-04-28T14:33:09+08:00">2019-04-28</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-25 15:31:29" itemprop="dateModified" datetime="2019-04-25T15:31:29+08:00">2019-04-25</time>
               
             
           </span>
@@ -603,8 +591,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/python-magedu-2018-notes1.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes1.html" itemprop="commentCount"></span>
+                <a href="/python-magedu-2018-notes9.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes9.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -612,7 +600,7 @@
 
           
           
-            <span id="/python-magedu-2018-notes1.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记1">
+            <span id="/python-magedu-2018-notes9.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记9">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -637,7 +625,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.7k</span>
+                <span title="本文字数">2.3k</span>
               
 
               
@@ -651,7 +639,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">3 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -671,71 +659,92 @@
       
 
       
-        <h1 id="第一章-Python-环境搭建"><a href="#第一章-Python-环境搭建" class="headerlink" title="第一章 - Python 环境搭建"></a>第一章 - Python 环境搭建</h1><h2 id="操作系统准备"><a href="#操作系统准备" class="headerlink" title="操作系统准备"></a>操作系统准备</h2><p>准备Linux最小系统即可。 </p>
-<p>如果在虚拟机中克隆，MAC地址会变。 这里使用CentOS 6.5+ </p>
-<h2 id="Pyenv-安装"><a href="#Pyenv-安装" class="headerlink" title="Pyenv 安装"></a>Pyenv 安装</h2><ol>
-<li>安装git </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git -y</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>安装Python编译依赖 </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install gcc make patch gdbm-devel openssl-devel sqlite-devel  readline-devel zlib-devel bzip2-devel</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>创建用户python </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">useradd python </span><br><span class="line">passwd python</span><br></pre></td></tr></table></figure>
-<ol start="4">
-<li>使用python用户登录后安装Pyenv </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash</span><br></pre></td></tr></table></figure>
-<p>下载的 pyenv-installer 是一个shell脚本。<br>注意： </p>
-<ol>
-<li>在 <a href="https://github.com/pyenv/pyenv-installer" target="_blank" rel="noopener">https://github.com/pyenv/pyenv-installer</a> 有安装文档 </li>
-<li><p>如果curl出现 curl: (35) SSL connect error ，是nss版本低的问题，更新它。 可能需要配置一个有较新包的yum源 </p>
-<pre><code>[updates] 
-name=CentOS-Updates 
-baseurl=https://mirrors.aliyun.com/centos/6.9/os/x86_64 
-gpgcheck=0 
-</code></pre></li>
-</ol>
-<p>然后更新nss<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update nss</span><br></pre></td></tr></table></figure></p>
-<ol start="5">
-<li>在python用户的~/.bash_profile中追加 </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/home/python/.pyenv/bin:<span class="variable">$PATH</span>"</span> </span><br><span class="line"><span class="built_in">eval</span> <span class="string">"<span class="variable">$(pyenv init -)</span>"</span> </span><br><span class="line"><span class="built_in">eval</span> <span class="string">"<span class="variable">$(pyenv virtualenv-init -)</span>"</span> </span><br><span class="line"><span class="built_in">source</span> ~/.bash_profile</span><br></pre></td></tr></table></figure>
-<p>这样当用户启动的时候，会执行用户的 .bash_profile 中的脚本，就会启动pyenv。 安装好的pyenv 就在~/.pyenv中 </p>
-<h2 id="Pyenv-使用"><a href="#Pyenv-使用" class="headerlink" title="Pyenv 使用"></a>Pyenv 使用</h2><p>python 版本及path路径<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python --version </span><br><span class="line">python -V </span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$PATH</span></span><br></pre></td></tr></table></figure></p>
-<p>可以看到当前系统Python路径 </p>
-<p>pyenv 命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv</span><br><span class="line">pyenv <span class="built_in">help</span> install</span><br></pre></td></tr></table></figure></p>
-<p>列出所有可用版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install --list</span><br></pre></td></tr></table></figure></p>
-<p>安装指定版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv install 3.5.3 -v <span class="comment"># 加 -v 可以看详细过程 verbose</span></span><br><span class="line">pyenv versions</span><br></pre></td></tr></table></figure></p>
-<p>会从python官网下载安装压缩包到 /tmp 目录，很慢，为了提速，可选用cache方法。</p>
-<p>使用缓存方式安装<br>在~/.pyenv目录下，新建cache目录，放入下载好的待安装版本的文件。  </p>
-<p>不确定要哪一个文件，把下载的3个文件都放进去。一般放 ‘tar.xz’ 包。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ scp ~/Downloads/Python-3.5.3.tar.xz root@10.211.55.6:~/.pyenv/cache</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv install 3.5.3 -v</span><br></pre></td></tr></table></figure>
-<p>安装后的python文件夹在 .pyenv/versions 下。<br>cache文件夹里有下载的压缩包。  </p>
-<p>pyenv 的 python版本控制<br>version 显示当前的python版本 versions 显示所有可用的python版本，和当前版本。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv version</span><br><span class="line">pyenv versions</span><br></pre></td></tr></table></figure></p>
-<p>global 全局设置<br><code>pyenv global 3.5.3</code> 可以看到所有受pyenv控制的窗口中都是3.5.3的python版本了。 这里用global是作用于非root用户python用户上，如果是root用户安装，请不要使用global，否则影响太大。比如，这里使用的CentOS6.5就是Python2.6，使用了global就成了3.x，会带来很不好的影响。 <code>pyenv global system</code> 回到原来系统版本。  </p>
-<p>shell 会话设置<br>影响只作用于当前会话 <code>pyenv shell 3.5.3</code><br>是会话级的，一旦断开sessionid也变了，也不好用。  </p>
-<p>local 本地设置<br>使用pyenv local设置从当前工作目录开始向下递归都继承这个设置。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pyenv <span class="built_in">local</span> 3.5.3</span><br><span class="line">python -V</span><br><span class="line"><span class="comment"># 可能还是显示原来的版本，用pyenv version，要在虚拟环境中python -V 才会显示新的版本</span></span><br></pre></td></tr></table></figure></p>
-<p>也可以使用 anaconda，pyenv 是自己下源码编，某些情况下可能不如 anaconda 直接编好的二进制分发。  </p>
-<h2 id="Virtualenv-虚拟环境设置"><a href="#Virtualenv-虚拟环境设置" class="headerlink" title="Virtualenv 虚拟环境设置"></a>Virtualenv 虚拟环境设置</h2><p>为什么要使用虚拟环境？ 因为刚才使用的Python环境都是一个公共的空间，如果多个项目使用不同Python版本开发，或者使用不同的Python版本部署运行，或者使用同样的版本开发的但不同项目使用了不同版本的库，等等这些问题都会带来冲突。最好的解决办法就是每一个项目独立运行自己的“独立小环境”中。  </p>
-<p>使用插件，在plugins/pyenv-virtualenv中<br><code>pyenv virtualenv 3.5.3 mag353</code><br>使用python3.5.3版本创建出一个独立的虚拟空间 mag353。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ pyenv versions</span><br><span class="line">* system (<span class="built_in">set</span> by /home/python/.pyenv/version)</span><br><span class="line">3.5.3</span><br><span class="line">3.5.3/envs/mag353</span><br><span class="line">mag353</span><br></pre></td></tr></table></figure>
-<p>可以在版本列表中存在，就和3.5.3是一样的，就是一个版本了。以后只要使用这个虚拟版本，包就会按照到这些对应的目录下去，而不是使用3.5.3。<br>可以看到真实的虚拟环境是下 envs/ 目录下。<br>.pyenv/versions/ 下是软链接。  </p>
-<p>在需要设置python版本的文件夹路径下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyenv <span class="built_in">local</span> mag353</span><br><span class="line">pyenv versions</span><br></pre></td></tr></table></figure></p>
-<p>怎么会起作用的，是利用了一堆隐藏文件和在 .bash_profile 中添加的那几指令。</p>
-<p>现在可以对python进行版本的管理，包的管理。</p>
-<h2 id="pip-通用配置"><a href="#pip-通用配置" class="headerlink" title="pip 通用配置"></a>pip 通用配置</h2><p>pip 是Python的包管理工具，3.x的版本直接带了，可以直接使用。 和yun一样为了使用国内镜像，如下配置。<br><code>mkdir ~/.pip</code><br>配置文件在 ~/.pip/pip.conf  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url=https://mirrors.aliyun.com/pypi/simple/</span><br><span class="line">trusted-host=mirrors.aliyun.com</span><br></pre></td></tr></table></figure>
-<h2 id="安装-ipython"><a href="#安装-ipython" class="headerlink" title="安装 ipython"></a>安装 ipython</h2><p>ipython 是增强的交互式 Python 命令行工具<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install ipython  </span><br><span class="line">ipython</span><br></pre></td></tr></table></figure></p>
-<h2 id="安装-Jupyter"><a href="#安装-Jupyter" class="headerlink" title="安装 Jupyter"></a>安装 Jupyter</h2><p>Jupyter 是基于WEB的交互式笔记本，其中可以非常方便的使用Python。<br>安装Jupyter，也会安装ipython的。  </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pip install jupyter</span><br><span class="line">jupyter notebook <span class="built_in">help</span></span><br><span class="line">jupyter notebook password <span class="comment"># 设置下浏览器访问时的密码</span></span><br><span class="line">jupyter notebook --ip=0.0.0.0 --no-browser</span><br><span class="line">ss -tanl</span><br></pre></td></tr></table></figure>
-<p>浏览器不能访问是服务器端防火墙问题。  </p>
-<p>快捷键：shift + enter(运行)、ctrl + enter(运行)、dd(删除一行)、m(用mardkown)</p>
-<h2 id="导出包"><a href="#导出包" class="headerlink" title="导出包"></a>导出包</h2><p>虚拟环境的好处就在于和其他项目运行环境隔离。每一个独立的环境都可以使用pip命令导出已经安装的包，在另一个环境中安装这些包。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(mag353) [python@node web]$ pip freeze &gt; requirement</span><br><span class="line">(mag353) [python@node web]$ mkdir ~/magedu/projects/pro1</span><br><span class="line">(mag353) [python@node web]$ <span class="built_in">cd</span> ~/magedu/projects/pro1</span><br><span class="line">[python@node pro1]$ pyenv install --list</span><br><span class="line">[python@node pro1]$ pyenv install 3.6.4</span><br><span class="line">[python@node pro1]$ pyenv virtualenv 3.6.4 mag364</span><br><span class="line">[python@node pro1]$ pyenv <span class="built_in">local</span> mag364</span><br><span class="line">(mag364) [python@node pro1]$ mv ../web/requirement ./</span><br><span class="line">(mag364) [python@node pro1]$ pip install -r requirement</span><br></pre></td></tr></table></figure>
+        <h1 id="第三章-Python-内置数据结构"><a href="#第三章-Python-内置数据结构" class="headerlink" title="第三章 - Python 内置数据结构"></a>第三章 - Python 内置数据结构</h1><h2 id="封装和解构"><a href="#封装和解构" class="headerlink" title="封装和解构"></a>封装和解构</h2><ul>
+<li>封装<ul>
+<li>将多个值使用逗号分割，组合在一起</li>
+<li>本质上，返回一个元组，只是省掉了小括号</li>
+<li>python特有语法，被很多语言学习和借鉴  </li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp; t1 = (1,2) # 定义为元组<br>&emsp;&emsp; t2 = 1,2 # 将1和2封装成元组，一般都这么写<br>&emsp;&emsp; type(t1)<br>&emsp;&emsp; type(t2)  </p>
+<h2 id="封装和解构-1"><a href="#封装和解构-1" class="headerlink" title="封装和解构"></a>封装和解构</h2><ul>
+<li>举例  </li>
+</ul>
+<p>&emsp;&emsp; a = 4<br>&emsp;&emsp; b = 5  </p>
+<p>&emsp;&emsp; <strong>temp = a</strong><br>&emsp;&emsp; <strong>a = b</strong><br>&emsp;&emsp; <strong>b = temp</strong>  </p>
+<p>&emsp;&emsp; 等价于<br>&emsp;&emsp; <strong>a, b = b, a</strong>  </p>
+<p>&emsp;&emsp; 上句中，等号右边使用了封装，而左边就使用了解构</p>
+<h2 id="解构"><a href="#解构" class="headerlink" title="解构"></a>解构</h2><ul>
+<li>把线性结构的元素解开，并顺序的赋给其它变量</li>
+<li><p>左边接纳的变量数要和右边解开的元素个数一致</p>
+</li>
+<li><p>举例  </p>
+</li>
+</ul>
+<p>&emsp;&emsp; lst = [3, 5]<br>&emsp;&emsp; first, second = lst<br>&emsp;&emsp; print(first, second)  </p>
+<h2 id="解构-1"><a href="#解构-1" class="headerlink" title="解构"></a>解构</h2><p>a,b = 1,2<br>a,b = (1,2)<br>a,b = [1,2]<br>a,b = [10,20]<br>a,b = {10,20}<br>a,b = {‘a’:10,’b’:20} # 非线性结构也可以解构，a为a是key值，b为b<br>a,b = {10,20,30}<br>a,*b = {10,20,30}  # a为1，b为[20,30]，*是匹配任意多个元素，因为解构时元素不确定，所以用列表<br>[a,b] = (1,2)<br>[a,b] = 10,20<br>(a,b) = {30,40}  </p>
+<h2 id="Python3的解构"><a href="#Python3的解构" class="headerlink" title="Python3的解构"></a>Python3的解构</h2><ul>
+<li>使用 *变量名 接收，但不能单独使用</li>
+<li>被 *变量名 收集后组成一个列表</li>
+<li>举例  </li>
+</ul>
+<p>&emsp;&emsp; lst = list(range(1, 101, 2))<br>&emsp;&emsp; head, <em>mid, tail = lst<br>&emsp;&emsp; </em>lst2 = lst<br>&emsp;&emsp; <em>body, tail = lst<br>&emsp;&emsp; head, </em>tail = lst<br>&emsp;&emsp; head, <em>m1, </em>m2, tail = lst<br>&emsp;&emsp; head, *mid, tail = “abcdefghijklmn”<br>&emsp;&emsp; type(mid)</p>
+<h2 id="丢弃变量"><a href="#丢弃变量" class="headerlink" title="丢弃变量"></a>丢弃变量</h2><ul>
+<li>这是一个惯例，是一个不成文的约定，不是标准</li>
+<li>如果不关心一个变量，就可以定义改变量的名字为_</li>
+<li>_是一个合法的标识符，也可以作为一个有效的变量使用，但是定义成下划线就是希望不要被使用，除非你明确的知道这个数据需要使用  </li>
+<li>举例</li>
+</ul>
+<p>&emsp;&emsp; lst = [9,8,7,20]<br>&emsp;&emsp; first, <em>second = lst<br>&emsp;&emsp; head, </em><em>, tail = lst<br>&emsp;&emsp; jprint(head)<br>&emsp;&emsp; print(tail)<br>&emsp;&emsp; \</em>是合法的标识符，看到下划线就知道这个变量就是不想被使用<br>&emsp;&emsp; print(_)</p>
+<h2 id="丢弃变量-1"><a href="#丢弃变量-1" class="headerlink" title="丢弃变量"></a>丢弃变量</h2><ul>
+<li>举例  </li>
+</ul>
+<p>&emsp;&emsp; lst = [9,8,7,20]<br>&emsp;&emsp; first, <em>second = lst<br>&emsp;&emsp; _ , \</em>_, tail = lst<br>&emsp;&emsp; print(_)<br>&emsp;&emsp; print(tail)<br>&emsp;&emsp; print(_)</p>
+<h2 id="丢弃变量-2"><a href="#丢弃变量-2" class="headerlink" title="丢弃变量"></a>丢弃变量</h2><ul>
+<li><p>总结</p>
+<ul>
+<li>_ 这个变量本身无任何语义，没有任何可读性，所以不是用来给人使用的</li>
+<li>Python中很多库，都使用这个变量，使用十分广泛。请不要在不明确变量作用域的情况下，使用 _ 导致和库中 _ 冲突</li>
+</ul>
+</li>
+<li><p>练习</p>
+<ul>
+<li>lst = list(range(10)) # 这样一个列表，取出第二个、第四个、倒数第二个</li>
+</ul>
+</li>
+</ul>
+<h2 id="练习"><a href="#练习" class="headerlink" title="练习"></a>练习</h2><ul>
+<li>练习<ul>
+<li>从lst = [1,(2,3,4),5]中，提取4出来</li>
+<li>环境变量JAVA_HOME=/usr/bin，返回环境变量名和路径</li>
+<li>对列表[1, 9, 8, 5, 6, 7, 4, 3, 2]使用冒泡法排序，要求使用封装和解构来交互数据</li>
+</ul>
+</li>
+</ul>
+<h2 id="练习-1"><a href="#练习-1" class="headerlink" title="练习"></a>练习</h2><ul>
+<li>练习<ul>
+<li>从lst = [1,(2,3,4),5]中，提取4出来  </li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp; lst = [1,(2,3,4),5]<br>&emsp;&emsp; a,(b,c,d),e = lst<br>&emsp;&emsp; print(a,b,c,d,e)  </p>
+<p>&emsp;&emsp; _, (*_, val), *_ = lst<br>&emsp;&emsp; print(val)  </p>
+<p>&emsp;&emsp; _, [*_, val], *_ = lst<br>&emsp;&emsp; print(val)  </p>
+<h2 id="练习-2"><a href="#练习-2" class="headerlink" title="练习"></a>练习</h2><ul>
+<li><p>练习</p>
+<ul>
+<li>环境变量JAVA_HOME=/usr/bin，返回变量名和路径<br>key, _ , val = “JAVA_HOME=/usr/bin”.partition(‘=’)<br>print(key)<br>print(val)  </li>
+</ul>
+</li>
+<li><p>总结：</p>
+<ul>
+<li>解构，是Python提供的很好的功能，可以方便的提取复杂数据结构的值</li>
+<li>配合 _ 的使用，会更加便利</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
 
@@ -765,12 +774,12 @@ gpgcheck=0
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>python全栈-magedu-2018-笔记1</p>
+  <p><span>本文标题:</span>python全栈-magedu-2018-笔记9</p>
   <p><span>文章作者:</span>herodanny</p>
-  <p><span>发布时间:</span>2019年04月19日 - 20:16:49</p>
-  <p><span>最后更新:</span>2019年04月25日 - 15:31:29</p>
-  <p><span>原始链接:</span><a href="/python-magedu-2018-notes1.html" title="python全栈-magedu-2018-笔记1">https://herodanny.github.io/python-magedu-2018-notes1.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes1.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年04月28日 - 14:33:09</p>
+  <p><span>最后更新:</span>2019年04月28日 - 14:34:19</p>
+  <p><span>原始链接:</span><a href="/python-magedu-2018-notes9.html" title="python全栈-magedu-2018-笔记9">https://herodanny.github.io/python-magedu-2018-notes9.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes9.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -842,8 +851,8 @@ gpgcheck=0
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/vscode-write-markdown.html" rel="next" title="用VsCode写Markdown">
-                <i class="fa fa-chevron-left"></i> 用VsCode写Markdown
+              <a href="/python-magedu-2018-notes8.html" rel="next" title="python全栈-magedu-2018-笔记8">
+                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记8
               </a>
             
           </div>
@@ -851,10 +860,6 @@ gpgcheck=0
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-magedu-2018-notes2.html" rel="prev" title="python全栈-magedu-2018-笔记2">
-                python全栈-magedu-2018-笔记2 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1073,7 +1078,7 @@ gpgcheck=0
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-Python-环境搭建"><span class="nav-number">1.</span> <span class="nav-text">第一章 - Python 环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作系统准备"><span class="nav-number">1.1.</span> <span class="nav-text">操作系统准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pyenv-安装"><span class="nav-number">1.2.</span> <span class="nav-text">Pyenv 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pyenv-使用"><span class="nav-number">1.3.</span> <span class="nav-text">Pyenv 使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Virtualenv-虚拟环境设置"><span class="nav-number">1.4.</span> <span class="nav-text">Virtualenv 虚拟环境设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pip-通用配置"><span class="nav-number">1.5.</span> <span class="nav-text">pip 通用配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-ipython"><span class="nav-number">1.6.</span> <span class="nav-text">安装 ipython</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Jupyter"><span class="nav-number">1.7.</span> <span class="nav-text">安装 Jupyter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#导出包"><span class="nav-number">1.8.</span> <span class="nav-text">导出包</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#封装和解构"><span class="nav-number">1.1.</span> <span class="nav-text">封装和解构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#封装和解构-1"><span class="nav-number">1.2.</span> <span class="nav-text">封装和解构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解构"><span class="nav-number">1.3.</span> <span class="nav-text">解构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解构-1"><span class="nav-number">1.4.</span> <span class="nav-text">解构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python3的解构"><span class="nav-number">1.5.</span> <span class="nav-text">Python3的解构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#丢弃变量"><span class="nav-number">1.6.</span> <span class="nav-text">丢弃变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#丢弃变量-1"><span class="nav-number">1.7.</span> <span class="nav-text">丢弃变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#丢弃变量-2"><span class="nav-number">1.8.</span> <span class="nav-text">丢弃变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#练习"><span class="nav-number">1.9.</span> <span class="nav-text">练习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#练习-1"><span class="nav-number">1.10.</span> <span class="nav-text">练习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#练习-2"><span class="nav-number">1.11.</span> <span class="nav-text">练习</span></a></li></ol></li></ol></div>
             
 
           </div>
