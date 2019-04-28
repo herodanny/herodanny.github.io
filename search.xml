@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python全栈-magedu-2018-笔记8]]></title>
+    <url>%2Fpython-magedu-2018-notes8.html</url>
+    <content type="text"><![CDATA[第四章 - IPython 使用帮助 ? Ipython的概述和简介 help(name) 查询指定名称的帮助，是python帮助 obj? 列出obj对象的详细信息 obj?? 列出更加详细的信息 特殊变量 _ 表示前一次输出 __ 表示倒数第二次输出 ___ 表示倒数第三次输出 _dh 目录历史 _oh 输出历史 shell命令 !command 执行shell命令 !ls -l !touch test.txt files = !ls -l | grep py 魔术方法 使用%百分号开头的，IPython内置的特殊方法 %magic 格式 % 开头是line magic %% 开头是 cell magic，notebook的cell %alias 定义一个系统命令的别名 alias ll ls -l %timeit statement -n 一个循环loop执行语句多少次 -r 循环执行多少次loop，取最好的结果 %%timeit setup_codecode….. 魔术方法 %cd 改变当前工作目录，cd可以认为是%cd的链接。路径历史在_dh中查看 %pwd、pwd 显示当前工作目录 %ls 、ls 返回文件列表 注意：%pwd这种是魔术方法，是IPython的内部实现，和操作系统无关。而!pwd 就要依赖当前操作系统的shell提供的命令执行，默认windows不支持pwd命令 %%js、%%javascript 在cell中运行js脚本%%jsalert(‘a’ + 1)]]></content>
+      <categories>
+        <category>python-magedu</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[python全栈-magedu-2018-笔记7]]></title>
     <url>%2Fpython-magedu-2018-notes7.html</url>
-    <content type="text"><![CDATA[第三章 - Python 内置数据结构线性结构 线性结构 可迭代 for … in len()可以获取长度 通过下标可以访问 可以切片 学过的线性结构 列表、元组、字符串、bytes、bytearray 切片 切片 通过索引区间访问线性结构的一段数据 sequence[start:stop] 表示返回[start, stop)区间的子序列 支持负索引 start为0，可以省略 stop为末尾，可以省略 超过上界（右边界），就取到末尾；超过下界（左边界），取到开头 start一定要在stop的左边 [:] 表示从头至尾，全部元素被取出，等效于copy()方法 切片 切片举例‘www.github.com&#39;[4:10]‘www.github.com&#39;[:10]‘www.github.com&#39;[4:]‘www.github.com&#39;[:]‘www.github.com&#39;[:-1]‘www.github.com&#39;[4:-4]‘www.github.com&#39;[4:50]b’www.github.com&#39;[-40:10]bytearray(b’www.magedu.com&#39;)[-4:10]tuple(‘www.magedu.com&#39;)[-10:10]list(‘www.magedu.com&#39;)[-10:-4] 步长切片 [start:stop:step] step为步长，可以正、负整数，默认是1 step要和start:stop同向，否则返回空序列‘www.github.com&#39;[4:10:2]list(‘www.github.com&#39;)[4:10:-2]tuple(‘www.github.com&#39;)[-10:-4:2]b’www.github.com&#39;[-4:-10:2]bytearray(b’www.github.com&#39;)[-4:-10:-2]]]></content>
+    <content type="text"><![CDATA[第三章 - Python 内置数据结构线性结构 线性结构 可迭代 for … in len()可以获取长度 通过下标可以访问 可以切片 学过的线性结构 列表、元组、字符串、bytes、bytearray 切片 切片 通过索引区间访问线性结构的一段数据 sequence[start:stop] 表示返回[start, stop)区间的子序列 支持负索引 start为0，可以省略 stop为末尾，可以省略 超过上界（右边界），就取到末尾；超过下界（左边界），取到开头 start一定要在stop的左边 [:] 表示从头至尾，全部元素被取出，等效于copy()方法 切片 切片举例‘www.github.com&#39;[4:10]‘www.github.com&#39;[:10]‘www.github.com&#39;[4:]‘www.github.com&#39;[:]‘www.github.com&#39;[:-1]‘www.github.com&#39;[4:-4]‘www.github.com&#39;[4:50]b’www.github.com&#39;[-40:10]bytearray(b’www.github.com&#39;)[-4:10]tuple(‘www.github.com&#39;)[-10:10]list(‘www.github.com&#39;)[-10:-4] 步长切片 [start:stop:step] step为步长，可以正、负整数，默认是1 step要和start:stop同向，否则返回空序列‘www.github.com&#39;[4:10:2]list(‘www.github.com&#39;)[4:10:-2]tuple(‘www.github.com&#39;)[-10:-4:2]b’www.github.com&#39;[-4:-10:2]bytearray(b’www.github.com&#39;)[-4:-10:-2]]]></content>
       <categories>
         <category>python-magedu</category>
       </categories>
