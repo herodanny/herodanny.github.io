@@ -148,18 +148,20 @@
 
 
 
-  <meta name="description" content="第四章 - IPython 使用帮助 ? Ipython的概述和简介   help(name) 查询指定名称的帮助，是python帮助   obj? 列出obj对象的详细信息   obj?? 列出更加详细的信息    特殊变量 _ 表示前一次输出 __ 表示倒数第二次输出 ___ 表示倒数第三次输出 _dh 目录历史 _oh 输出历史  shell命令 !command 执行shell命令 !ls">
+  <meta name="description" content="第三章 - Python 内置数据结构简单选择排序 简单选择排序  属于选择排序 两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端 结果分为升序和降序排列   降序  n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python全栈-magedu-2018-笔记8">
-<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes8.html">
+<meta property="og:title" content="python全栈-magedu-2018-笔记11">
+<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes11.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="第四章 - IPython 使用帮助 ? Ipython的概述和简介   help(name) 查询指定名称的帮助，是python帮助   obj? 列出obj对象的详细信息   obj?? 列出更加详细的信息    特殊变量 _ 表示前一次输出 __ 表示倒数第二次输出 ___ 表示倒数第三次输出 _dh 目录历史 _oh 输出历史  shell命令 !command 执行shell命令 !ls">
+<meta property="og:description" content="第三章 - Python 内置数据结构简单选择排序 简单选择排序  属于选择排序 两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端 结果分为升序和降序排列   降序  n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-28T02:35:41.363Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/jiandanxuanzepaixu.jpg">
+<meta property="og:updated_time" content="2019-04-29T15:18:23.045Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python全栈-magedu-2018-笔记8">
-<meta name="twitter:description" content="第四章 - IPython 使用帮助 ? Ipython的概述和简介   help(name) 查询指定名称的帮助，是python帮助   obj? 列出obj对象的详细信息   obj?? 列出更加详细的信息    特殊变量 _ 表示前一次输出 __ 表示倒数第二次输出 ___ 表示倒数第三次输出 _dh 目录历史 _oh 输出历史  shell命令 !command 执行shell命令 !ls">
+<meta name="twitter:title" content="python全栈-magedu-2018-笔记11">
+<meta name="twitter:description" content="第三章 - Python 内置数据结构简单选择排序 简单选择排序  属于选择排序 两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端 结果分为升序和降序排列   降序  n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/jiandanxuanzepaixu.jpg">
 
 
 
@@ -169,7 +171,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes8">
+  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes11">
 
 
 
@@ -179,7 +181,7 @@
   };
 </script>
 
-  <title>python全栈-magedu-2018-笔记8 | 从菜鸟到老鸟</title>
+  <title>python全栈-magedu-2018-笔记11 | 从菜鸟到老鸟</title>
   
 
 
@@ -507,7 +509,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes8.html">
+    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes11.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="herodanny">
@@ -524,7 +526,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记8
+          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记11
 
               
             
@@ -550,7 +552,7 @@
                 
               
 
-              <time title="创建时间：2019-04-28 10:34:30 / 修改时间：10:35:41" itemprop="dateCreated datePublished" datetime="2019-04-28T10:34:30+08:00">2019-04-28</time>
+              <time title="创建时间：2019-04-29 23:16:55 / 修改时间：23:18:23" itemprop="dateCreated datePublished" datetime="2019-04-29T23:16:55+08:00">2019-04-29</time>
             
 
             
@@ -591,8 +593,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/python-magedu-2018-notes8.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes8.html" itemprop="commentCount"></span>
+                <a href="/python-magedu-2018-notes11.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes11.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -600,7 +602,7 @@
 
           
           
-            <span id="/python-magedu-2018-notes8.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记8">
+            <span id="/python-magedu-2018-notes11.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记11">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -625,7 +627,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">679</span>
+                <span title="本文字数">4.3k</span>
               
 
               
@@ -639,7 +641,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -659,65 +661,46 @@
       
 
       
-        <h1 id="第四章-IPython-使用"><a href="#第四章-IPython-使用" class="headerlink" title="第四章 - IPython 使用"></a>第四章 - IPython 使用</h1><h2 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h2><ul>
-<li>?<ul>
-<li>Ipython的概述和简介</li>
+        <h1 id="第三章-Python-内置数据结构"><a href="#第三章-Python-内置数据结构" class="headerlink" title="第三章 - Python 内置数据结构"></a>第三章 - Python 内置数据结构</h1><h2 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h2><ul>
+<li><p>简单选择排序</p>
+<ul>
+<li>属于选择排序</li>
+<li>两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端</li>
+<li>结果分为升序和降序排列</li>
 </ul>
 </li>
-<li>help(name)<ul>
-<li>查询指定名称的帮助，是python帮助</li>
+<li><p>降序</p>
+<ul>
+<li>n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，如果它就在索引1位置则不交换。依次类推，每次左边都会固定下一个大数。</li>
 </ul>
 </li>
-<li>obj?<ul>
-<li>列出obj对象的详细信息</li>
-</ul>
-</li>
-<li>obj??<ul>
-<li>列出更加详细的信息</li>
-</ul>
-</li>
-</ul>
-<h2 id="特殊变量"><a href="#特殊变量" class="headerlink" title="特殊变量"></a>特殊变量</h2><ul>
-<li>_ 表示前一次输出</li>
-<li>__ 表示倒数第二次输出</li>
-<li>___ 表示倒数第三次输出</li>
-<li>_dh 目录历史</li>
-<li>_oh 输出历史</li>
-</ul>
-<h2 id="shell命令"><a href="#shell命令" class="headerlink" title="shell命令"></a>shell命令</h2><ul>
-<li>!command 执行shell命令<ul>
-<li>!ls -l</li>
-<li>!touch test.txt</li>
-<li>files = !ls -l | grep py</li>
+<li>升序<ul>
+<li>和降序相反</li>
 </ul>
 </li>
 </ul>
-<h2 id="魔术方法"><a href="#魔术方法" class="headerlink" title="魔术方法"></a>魔术方法</h2><ul>
-<li>使用%百分号开头的，IPython内置的特殊方法<ul>
-<li>%magic 格式<ul>
-<li>% 开头是line magic</li>
-<li>%% 开头是 cell magic，notebook的cell</li>
+<h2 id="简单选择排序-1"><a href="#简单选择排序-1" class="headerlink" title="简单选择排序"></a>简单选择排序</h2><p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/jiandanxuanzepaixu.jpg" alt="jiandanxuanzepaixu"></p>
+<h2 id="简单选择排序代码实现（一）"><a href="#简单选择排序代码实现（一）" class="headerlink" title="简单选择排序代码实现（一）*"></a>简单选择排序代码实现（一）*</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">m_list = [</span><br><span class="line">    [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">    [<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line">]</span><br><span class="line">nums = m_list[<span class="number">1</span>]</span><br><span class="line">length = len(nums)</span><br><span class="line">print(nums)</span><br><span class="line"></span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length):</span><br><span class="line">    maxindex = i</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length):</span><br><span class="line">        count_iter += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">            maxindex = j</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> i != maxindex:</span><br><span class="line">        tmp = nums[i]</span><br><span class="line">        nums[i] = nums[maxindex]</span><br><span class="line">        nums[maxindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
+<h2 id="简单选择排序代码实现（二）"><a href="#简单选择排序代码实现（二）" class="headerlink" title="简单选择排序代码实现（二）"></a>简单选择排序代码实现（二）</h2><ul>
+<li>优化实现<br>二元选择排序<br>同时固定左边最大值和右边最小值<br>优点：<br>减少迭代元素的次数  </li>
 </ul>
-</li>
-<li>%alias 定义一个系统命令的别名<ul>
-<li>alias ll ls -l</li>
+<p>&emsp; 1、length//2 整除，通过几次运算就可以发现规律<br>&emsp; 2、由于使用了负索引，所以条件中要增加<br>&emsp; i == length + minindex  </p>
+<p>&emsp; 还有没有优化的可能？  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 二元选择排序</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length // <span class="number">2</span>):</span><br><span class="line">    maxindex = i</span><br><span class="line">    minindex = -i - <span class="number">1</span></span><br><span class="line">    minorigin = minindex</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length - i): <span class="comment"># 每次左右都要少比较一个</span></span><br><span class="line">    count_iter += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">        maxindex = j</span><br><span class="line">    <span class="keyword">if</span> nums[minindex] &gt; nums[-j - <span class="number">1</span>]:</span><br><span class="line">        minindex = -j - <span class="number">1</span></span><br><span class="line">        <span class="comment"># print(maxindex, minindex)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> i != maxindex:</span><br><span class="line">        tmp = nums[i]</span><br><span class="line">        nums[i] = nums[maxindex]</span><br><span class="line">        nums[maxindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 如果最小值被交换过，要更新索引</span></span><br><span class="line">        <span class="keyword">if</span> i == minindex <span class="keyword">or</span> i == length + minindex:</span><br><span class="line">            minindex = maxindex</span><br><span class="line">    <span class="keyword">if</span> minorigin != minindex:</span><br><span class="line">        tmp = nums[minorigin]</span><br><span class="line">        nums[minorigin] = nums[minindex]</span><br><span class="line">        nums[minindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
+<h2 id="简单选择排序代码实现（二）-1"><a href="#简单选择排序代码实现（二）-1" class="headerlink" title="简单选择排序代码实现（二）"></a>简单选择排序代码实现（二）</h2><ul>
+<li>改进实现<br>如果一轮比较后，极大值、极小值的值相等，说明比较的序列元素全部相等</li>
 </ul>
-</li>
-<li>%timeit statement<ul>
-<li>-n 一个循环loop执行语句多少次</li>
-<li>-r 循环执行多少次loop，取最好的结果</li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">m_list = [</span><br><span class="line">    [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">    [<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">nums = m_list[<span class="number">3</span>]</span><br><span class="line">length = len(nums)</span><br><span class="line">print(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"><span class="comment"># 二元选择排序</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length // <span class="number">2</span>):</span><br><span class="line">    maxindex = i</span><br><span class="line">    minindex = -i - <span class="number">1</span></span><br><span class="line">    minorigin = minindex</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length - i): <span class="comment"># 每次左右都要少比较一个</span></span><br><span class="line">    count_iter += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">        maxindex = j</span><br><span class="line">    <span class="keyword">if</span> nums[minindex] &gt; nums[-j - <span class="number">1</span>]:</span><br><span class="line">        minindex = -j - <span class="number">1</span></span><br><span class="line"><span class="comment"># print(maxindex, minindex)</span></span><br><span class="line"><span class="keyword">if</span> nums[maxindex] == nums[minindex]: <span class="comment"># 元素全相同</span></span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line"><span class="keyword">if</span> i != maxindex:</span><br><span class="line">    tmp = nums[i]</span><br><span class="line">    nums[i] = nums[maxindex]</span><br><span class="line">    nums[maxindex] = tmp</span><br><span class="line">    count_swap += <span class="number">1</span></span><br><span class="line">    <span class="comment"># 如果最小值被交换过，要更新索引</span></span><br><span class="line">    <span class="keyword">if</span> i == minindex <span class="keyword">or</span> i == length + minindex:</span><br><span class="line">        minindex = maxindex</span><br><span class="line"><span class="keyword">if</span> minorigin != minindex:</span><br><span class="line">    tmp = nums[minorigin]</span><br><span class="line">    nums[minorigin] = nums[minindex]</span><br><span class="line">    nums[minindex] = tmp</span><br><span class="line">    count_swap += <span class="number">1</span></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
+<h2 id="简单选择排序代码实现（二"><a href="#简单选择排序代码实现（二" class="headerlink" title="简单选择排序代码实现（二)"></a>简单选择排序代码实现（二)</h2><ul>
+<li>改进实现<br>[1, 1, 1, 1, 1, 1, 1, 1, 2] 这种情况，找到的最小值索引是-2，最大值索引8，上面的代码会交换2次，最小值两个1交换是无用功，所以，增加一个判断</li>
 </ul>
-</li>
-<li>%%timeit setup_code<br>code…..</li>
-</ul>
-</li>
-</ul>
-<h2 id="魔术方法-1"><a href="#魔术方法-1" class="headerlink" title="魔术方法"></a>魔术方法</h2><ul>
-<li>%cd 改变当前工作目录，cd可以认为是%cd的链接。路径历史在_dh中查看</li>
-<li>%pwd、pwd 显示当前工作目录</li>
-<li>%ls 、ls 返回文件列表</li>
-<li>注意：%pwd这种是魔术方法，是IPython的内部实现，和操作系统无关。而!pwd 就要依赖当前操作系统的shell提供的命令执行，默认windows不支持pwd命令</li>
-<li>%%js、%%javascript 在cell中运行js脚本<br>%%js<br>alert(‘a’ + 1)  </li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">m_list = [</span><br><span class="line">    [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">    [<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">nums = m_list[<span class="number">4</span>]</span><br><span class="line">length = len(nums)</span><br><span class="line">print(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"><span class="comment"># 二元选择排序</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length // <span class="number">2</span>):</span><br><span class="line">    maxindex = i</span><br><span class="line">    minindex = -i - <span class="number">1</span></span><br><span class="line">    minorigin = minindex</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length - i): <span class="comment"># 每次左右都要少比较一个</span></span><br><span class="line">        count_iter += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">            maxindex = j</span><br><span class="line">        <span class="keyword">if</span> nums[minindex] &gt; nums[-j - <span class="number">1</span>]:</span><br><span class="line">            minindex = -j - <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    print(maxindex, minindex)</span><br><span class="line">    <span class="keyword">if</span> nums[maxindex] == nums[minindex]: <span class="comment"># 元素相同</span></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> i != maxindex:</span><br><span class="line">        tmp = nums[i]</span><br><span class="line">        nums[i] = nums[maxindex]</span><br><span class="line">        nums[maxindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 如果最小值被交换过，要更新索引</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> i == minindex <span class="keyword">or</span> i == length + minindex:</span><br><span class="line">            minindex = maxindex</span><br><span class="line">    <span class="comment"># 最小值索引不同，但值相同就没有必要交换了</span></span><br><span class="line">    <span class="keyword">if</span> minorigin != minindex <span class="keyword">and</span> nums[minorigin] != nums[minindex]:</span><br><span class="line">        tmp = nums[minorigin]</span><br><span class="line">        nums[minorigin] = nums[minindex]</span><br><span class="line">        nums[minindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
+<h2 id="简单选择排序总结"><a href="#简单选择排序总结" class="headerlink" title="简单选择排序总结"></a>简单选择排序总结</h2><ul>
+<li>简单选择排序需要数据一轮轮比较，并在每一轮中发现极值</li>
+<li>没有办法知道当前轮是否已经达到排序要求，但是可以知道极值是否在目标索引位置上</li>
+<li>遍历次数1,…,n-1之和n(n-1)/2</li>
+<li>时间复杂度O(n2)</li>
+<li>减少了交换次数，提高了效率，性能略好于冒泡法</li>
 </ul>
 
       
@@ -749,12 +732,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>python全栈-magedu-2018-笔记8</p>
+  <p><span>本文标题:</span>python全栈-magedu-2018-笔记11</p>
   <p><span>文章作者:</span>herodanny</p>
-  <p><span>发布时间:</span>2019年04月28日 - 10:34:30</p>
-  <p><span>最后更新:</span>2019年04月28日 - 10:35:41</p>
-  <p><span>原始链接:</span><a href="/python-magedu-2018-notes8.html" title="python全栈-magedu-2018-笔记8">https://herodanny.github.io/python-magedu-2018-notes8.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes8.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年04月29日 - 23:16:55</p>
+  <p><span>最后更新:</span>2019年04月29日 - 23:18:23</p>
+  <p><span>原始链接:</span><a href="/python-magedu-2018-notes11.html" title="python全栈-magedu-2018-笔记11">https://herodanny.github.io/python-magedu-2018-notes11.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes11.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -826,8 +809,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-magedu-2018-notes7.html" rel="next" title="python全栈-magedu-2018-笔记7">
-                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记7
+              <a href="/python-magedu-2018-notes10.html" rel="next" title="python全栈-magedu-2018-笔记10">
+                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记10
               </a>
             
           </div>
@@ -835,10 +818,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-magedu-2018-notes9.html" rel="prev" title="python全栈-magedu-2018-笔记9">
-                python全栈-magedu-2018-笔记9 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1057,7 +1036,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-IPython-使用"><span class="nav-number">1.</span> <span class="nav-text">第四章 - IPython 使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#帮助"><span class="nav-number">1.1.</span> <span class="nav-text">帮助</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊变量"><span class="nav-number">1.2.</span> <span class="nav-text">特殊变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell命令"><span class="nav-number">1.3.</span> <span class="nav-text">shell命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#魔术方法"><span class="nav-number">1.4.</span> <span class="nav-text">魔术方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#魔术方法-1"><span class="nav-number">1.5.</span> <span class="nav-text">魔术方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序"><span class="nav-number">1.1.</span> <span class="nav-text">简单选择排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序-1"><span class="nav-number">1.2.</span> <span class="nav-text">简单选择排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（一）"><span class="nav-number">1.3.</span> <span class="nav-text">简单选择排序代码实现（一）*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（二）"><span class="nav-number">1.4.</span> <span class="nav-text">简单选择排序代码实现（二）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（二）-1"><span class="nav-number">1.5.</span> <span class="nav-text">简单选择排序代码实现（二）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（二"><span class="nav-number">1.6.</span> <span class="nav-text">简单选择排序代码实现（二)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序总结"><span class="nav-number">1.7.</span> <span class="nav-text">简单选择排序总结</span></a></li></ol></li></ol></div>
             
 
           </div>
