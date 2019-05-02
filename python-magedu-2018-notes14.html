@@ -148,18 +148,18 @@
 
 
 
-  <meta name="description" content="第三章 - Python 内置数据结构bytes、bytearray Python3引入两个新类型 bytes 不可变字节序列   bytearray 字节数组 可变      bytes、bytearray 字符串与bytes  字符串是字符组成的有序序列，字符可以使用编码来理解 bytes是字节组成的有序的不可变序列 bytearray是字节组成的有序的可变序列   编码与解码  字符串按照不">
+  <meta name="description" content="第五章 - Python内建函数内建函数 标识 id 返回对象的唯一标识，CPython返回内存地址   哈希 hash() 返回一个对象的哈希值   类型 type() 返回对象的类型   类型转换 float() int() bin() hex() oct() bool() list() tuple() dict() set() complex() bytes() bytearray()">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python全栈-magedu-2018-笔记6">
-<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes6.html">
+<meta property="og:title" content="python全栈-magedu-2018-笔记14">
+<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes14.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="第三章 - Python 内置数据结构bytes、bytearray Python3引入两个新类型 bytes 不可变字节序列   bytearray 字节数组 可变      bytes、bytearray 字符串与bytes  字符串是字符组成的有序序列，字符可以使用编码来理解 bytes是字节组成的有序的不可变序列 bytearray是字节组成的有序的可变序列   编码与解码  字符串按照不">
+<meta property="og:description" content="第五章 - Python内建函数内建函数 标识 id 返回对象的唯一标识，CPython返回内存地址   哈希 hash() 返回一个对象的哈希值   类型 type() 返回对象的类型   类型转换 float() int() bin() hex() oct() bool() list() tuple() dict() set() complex() bytes() bytearray()">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-27T09:26:34.423Z">
+<meta property="og:updated_time" content="2019-05-02T07:50:52.793Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python全栈-magedu-2018-笔记6">
-<meta name="twitter:description" content="第三章 - Python 内置数据结构bytes、bytearray Python3引入两个新类型 bytes 不可变字节序列   bytearray 字节数组 可变      bytes、bytearray 字符串与bytes  字符串是字符组成的有序序列，字符可以使用编码来理解 bytes是字节组成的有序的不可变序列 bytearray是字节组成的有序的可变序列   编码与解码  字符串按照不">
+<meta name="twitter:title" content="python全栈-magedu-2018-笔记14">
+<meta name="twitter:description" content="第五章 - Python内建函数内建函数 标识 id 返回对象的唯一标识，CPython返回内存地址   哈希 hash() 返回一个对象的哈希值   类型 type() 返回对象的类型   类型转换 float() int() bin() hex() oct() bool() list() tuple() dict() set() complex() bytes() bytearray()">
 
 
 
@@ -169,7 +169,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes6">
+  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes14">
 
 
 
@@ -179,7 +179,7 @@
   };
 </script>
 
-  <title>python全栈-magedu-2018-笔记6 | 从菜鸟到老鸟</title>
+  <title>python全栈-magedu-2018-笔记14 | 从菜鸟到老鸟</title>
   
 
 
@@ -507,7 +507,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes6.html">
+    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes14.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="herodanny">
@@ -524,7 +524,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记6
+          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记14
 
               
             
@@ -550,7 +550,7 @@
                 
               
 
-              <time title="创建时间：2019-04-27 17:25:01 / 修改时间：17:26:34" itemprop="dateCreated datePublished" datetime="2019-04-27T17:25:01+08:00">2019-04-27</time>
+              <time title="创建时间：2019-05-02 15:49:55 / 修改时间：15:50:52" itemprop="dateCreated datePublished" datetime="2019-05-02T15:49:55+08:00">2019-05-02</time>
             
 
             
@@ -591,8 +591,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/python-magedu-2018-notes6.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes6.html" itemprop="commentCount"></span>
+                <a href="/python-magedu-2018-notes14.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes14.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -600,7 +600,7 @@
 
           
           
-            <span id="/python-magedu-2018-notes6.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记6">
+            <span id="/python-magedu-2018-notes14.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记14">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -625,7 +625,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.6k</span>
+                <span title="本文字数">2.8k</span>
               
 
               
@@ -639,7 +639,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -659,118 +659,144 @@
       
 
       
-        <h1 id="第三章-Python-内置数据结构"><a href="#第三章-Python-内置数据结构" class="headerlink" title="第三章 - Python 内置数据结构"></a>第三章 - Python 内置数据结构</h1><h2 id="bytes、bytearray"><a href="#bytes、bytearray" class="headerlink" title="bytes、bytearray"></a>bytes、bytearray</h2><ul>
-<li>Python3引入两个新类型<ul>
-<li>bytes<ul>
-<li><strong>不可变</strong>字节序列</li>
+        <h1 id="第五章-Python内建函数"><a href="#第五章-Python内建函数" class="headerlink" title="第五章 - Python内建函数"></a>第五章 - Python内建函数</h1><h2 id="内建函数"><a href="#内建函数" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>标识 id<ul>
+<li>返回对象的唯一标识，CPython返回内存地址</li>
 </ul>
 </li>
-<li>bytearray<ul>
-<li>字节数组</li>
-<li><strong>可变</strong></li>
+<li>哈希 hash()<ul>
+<li>返回一个对象的哈希值</li>
+</ul>
+</li>
+<li>类型 type()<ul>
+<li>返回对象的类型</li>
+</ul>
+</li>
+<li>类型转换<ul>
+<li>float() int() bin() hex() oct() bool() list() tuple() dict() set() complex() bytes() bytearray()</li>
+</ul>
+</li>
+<li>输入 input([prompt])<ul>
+<li>接收用户输入，返回一个字符串</li>
+</ul>
+</li>
+<li>打印 print(*objects, sep=’ ‘, end=’\n’, file=sys.stdout, flush=False)<ul>
+<li>打印输出，默认使用空格分割、换行结尾，输出到控制台</li>
 </ul>
 </li>
 </ul>
+<h2 id="内建函数-1"><a href="#内建函数-1" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>对象长度 len(s)<ul>
+<li>返回一个集合类型的元素个数</li>
+</ul>
+</li>
+<li>isinstance(obj, class_or_tuple)<ul>
+<li>判断对象obj是否属于某种类型或者元组中列出的某个类型</li>
+<li>isinstance(True, int)</li>
+</ul>
+</li>
+<li>issubclass(cls, class_or_tuple)<ul>
+<li>判断类型cls是否是某种类型的子类或元组中列出的某个类型的子类</li>
+<li>issubclass(bool, int)</li>
+</ul>
 </li>
 </ul>
-<h2 id="bytes、bytearray-1"><a href="#bytes、bytearray-1" class="headerlink" title="bytes、bytearray"></a>bytes、bytearray</h2><ul>
-<li><p>字符串与bytes</p>
+<h2 id="内建函数-2"><a href="#内建函数-2" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>绝对值abs(x) x为数值</li>
+<li>最大值max() 最小值min()<ul>
+<li>返回可迭代对象中最大或最小值</li>
+<li>返回多个参数中最大或最小值</li>
+</ul>
+</li>
+<li>round(x) 四舍六入五取偶(是银行家算法)，round(-0.5)</li>
+<li>pow(x , y) 等价于 x**y</li>
+<li>range(stop) 从0开始到stop-1的可迭代对象；range(start, stop[, step])从start开始到stop-1结束步长为step的可迭代对象</li>
+<li>divmod(x, y) 等价于 tuple (x//y, x%y)</li>
+<li>sum(iterable[, start]) 对可迭代对象的所有数值元素求和<ul>
+<li>sum(range(1,100,2))</li>
+</ul>
+</li>
+</ul>
+<h2 id="内建函数-3"><a href="#内建函数-3" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>chr(i) 给一个一定范围的整数返回对应的字符<ul>
+<li>chr(97) chr(20013)</li>
+</ul>
+</li>
+<li><p>ord(c) 返回字符对应的整数</p>
 <ul>
-<li>字符串是字符组成的有序序列，字符可以使用编码来理解</li>
-<li>bytes是字节组成的有序的<strong>不可变</strong>序列</li>
-<li>bytearray是字节组成的有序的<strong>可变</strong>序列</li>
+<li>ord(‘a’) ord(‘中’)</li>
 </ul>
 </li>
-<li><p>编码与解码</p>
-<ul>
-<li>字符串按照不同的字符集编码encode返回字节序列bytes<ul>
-<li>encode(encoding=’utf-8’, errors=’strict’) -&gt; bytes</li>
-</ul>
+<li><p>str() 、repr()、ascii() 后面说</p>
 </li>
-<li>字节序列按照不同的字符集解码decode返回字符串<ul>
-<li>bytes.decode(encoding=”utf-8”, errors=”strict”) -&gt; str</li>
-<li>bytearray.decode(encoding=”utf-8”, errors=”strict”) -&gt; str</li>
+</ul>
+<h2 id="内建函数-4"><a href="#内建函数-4" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>sorted(iterable[, key][, reverse]) 排序<ul>
+<li>返回一个新的<strong>列表</strong>，默认升序</li>
+<li>reverse是反转  </li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<h2 id="bytes定义"><a href="#bytes定义" class="headerlink" title="bytes定义"></a>bytes定义</h2><ul>
-<li>定义<ul>
-<li>bytes() 空bytes</li>
-<li>bytes(int) 指定长度的bytes，被0填充</li>
-<li>bytes(iterable_of_ints) -&gt; bytes [0,255]的int组成的可迭代对象</li>
-<li>bytes(string, encoding[, errors]) -&gt; bytes 等价于string.encode()</li>
-<li>bytes(bytes_or_buffer) -&gt; immutable copy of bytes_or_buffer 从一个字节序列或者buffer复制出 (是浅拷贝)  <ul>
-<li>一个新的不可变的bytes对象</li>
-</ul>
-</li>
-<li>使用b前缀定义<ul>
-<li>只允许基本ASCII使用字符形式b’abc9’</li>
-<li>使用16进制表示b”\x41\x61”<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a = bytes(range(<span class="number">15</span>))</span><br><span class="line">a</span><br><span class="line"><span class="string">b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e'</span></span><br><span class="line"><span class="comment"># 看ASCII表，9 是\t，10是\n，13是\r。前面那些 00 01 02 03，</span></span><br><span class="line"><span class="comment"># 也有自己的意思，但是没办法用字符表示出来，所以就用它的十六进制表示法表示出来。</span></span><br><span class="line"><span class="comment"># 类似当看到返回或自己写的是 b'hello' 其实应该是 \x68\x65\x6c\x6c\x6f </span></span><br><span class="line"><span class="comment"># 这样一串，只不过ipython等工具，把他优化成便于人类理解的形式。</span></span><br></pre></td></tr></table></figure>
-</li>
+<p>&emsp; sorted([1, 3, 5])<br>&emsp; sorted([1, 3, 5], reverse=True)<br>&emsp; sorted({‘c’:1, ‘b’:2, ‘a’:1})  # 返回的是key的列表<br>&emsp; sorted((100, 5)) # 返回的也是排好序的列表  </p>
+<h2 id="内建函数-5"><a href="#内建函数-5" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>翻转 reversed(seq)<ul>
+<li>返回一个翻转元素的迭代器</li>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-<h2 id="bytes操作"><a href="#bytes操作" class="headerlink" title="bytes操作"></a>bytes操作</h2><ul>
-<li><p>和str类型类似，都是不可变类型，所以方法很多都一样。只不过bytes的方法，输入是bytes，输出是bytes<br>&emsp; b’abcdef’.replace(b’f’,b’k’)<br>&emsp; b’abc’.find(b’b’)</p>
-</li>
-<li><p>类方法 bytes.fromhex(string)</p>
-<ul>
-<li>string必须是2个字符的16进制的形式，’6162 6a 6b’，空格将被忽略<br>&emsp; bytes.fromhex(‘6162 09 6a 6b00’)<br>&emsp; 输出：b’ab\tjk\x00’ # 即a:61 b:63 \t:09 j:6a k=6b 00:\x00  </li>
-</ul>
-</li>
-<li><p>hex()</p>
-<ul>
-<li>返回16进制表示的字符串<br>&emsp; ‘abc’.encode().hex()</li>
-</ul>
-</li>
-<li><p>索引<br>&emsp; b’abcdef’[2] 返回该字节对应的数，int类型</p>
-</li>
-</ul>
-<h2 id="bytearray定义"><a href="#bytearray定义" class="headerlink" title="bytearray定义"></a>bytearray定义</h2><ul>
-<li><p>定义</p>
-<ul>
-<li>bytearray() 空bytearray</li>
-<li>bytearray(int) 指定字节的bytearray，被0填充</li>
-<li>bytearray(iterable_of_ints) -&gt; bytearray [0,255]的int组成的可迭代对象</li>
-<li>bytearray(string, encoding[, errors]) -&gt; bytearray 近似string.encode()，不过返回可变对象</li>
-<li><p>bytearray(bytes_or_buffer) 从一个字节序列或者buffer复制出一个新的可变的bytearray对象 （有时也有从bytes转list对象）</p>
-</li>
-<li><p>注意，b前缀定义的类型是bytes类型</p>
-</li>
+<p>&emsp; list(reversed(“13579”))<br>&emsp; { reversed((2, 4)) } # 有几个元素？<br>&emsp; for x in reversed([‘c’,’b’,’a’]):<br>&emsp;&emsp; print(x)<br>&emsp; reversed(sorted({1, 5, 9}))  </p>
+<h2 id="内建函数-6"><a href="#内建函数-6" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>枚举 enumerate(seq, start=0)<ul>
+<li>迭代一个序列，返回索引数字和元素构成的二元组</li>
+<li>start表示索引开始的数字，默认是0  </li>
 </ul>
 </li>
 </ul>
-<h2 id="bytearray操作"><a href="#bytearray操作" class="headerlink" title="bytearray操作"></a>bytearray操作</h2><ul>
-<li>和bytes类型的方法相同<ul>
-<li>bytearray(b’abcdef’).replace(b’f’,b’k’)</li>
-<li>bytearray(b’abc’).find(b’b’)</li>
+<p>&emsp;&emsp; for x in enumerate([2,4,6,8]):<br>&emsp;&emsp;&emsp; print(x)  </p>
+<p>&emsp;&emsp; for x in enumerate(“abcde”):<br>&emsp;&emsp;&emsp; print(x,end=” “)</p>
+<h2 id="内建函数-7"><a href="#内建函数-7" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>迭代器和取元素 iter(iterable)、next(iterator[, default])<ul>
+<li>iter将一个可迭代对象封装成一个迭代器</li>
+<li>next对一个迭代器取下一个元素。如果全部元素都取过了，再次next会抛StopIteration异常</li>
 </ul>
 </li>
-<li>类方法 bytearray.fromhex(string)<ul>
-<li>string必须是2个字符的16进制的形式，’6162 6a 6b’，空格将被忽略<br>bytearray.fromhex(‘6162 09 6a 6b00’)</li>
+</ul>
+<p>&emsp; it = iter(range(5))<br>&emsp; next(it)</p>
+<p>&emsp; it = reversed([1,3,5])<br>&emsp; next(it)</p>
+<h2 id="可迭代对象"><a href="#可迭代对象" class="headerlink" title="可迭代对象"></a>可迭代对象</h2><ul>
+<li>可迭代对象<ul>
+<li>能够通过迭代一次次返回<strong>不同的元素</strong>的对象。<ul>
+<li>所谓相同，不是指值是否相同，而是元素在容器中是否是同一个，例如列表中值可以重复的，[‘a’,’a’]，虽然这个列表有2个元素，值一样，但是两个’a’是不同的元素</li>
 </ul>
 </li>
-<li>hex()<ul>
-<li>返回16进制表示的字符串<br>bytearray(‘abc’.encode()).hex()  </li>
+<li>可以迭代，但是未必有序，未必可索引</li>
+<li>可迭代对象有：list、tuple、string、bytes、bytearray、range、set、dict、生成器(迭代器)等</li>
+<li>可以使用成员操作符in、not in，in本质上就是在遍历对象</li>
 </ul>
 </li>
-<li>索引<br>bytearray(b’abcdef’)[2] 返回该字节对应的数，int类型</li>
 </ul>
-<h2 id="bytearray操作-1"><a href="#bytearray操作-1" class="headerlink" title="bytearray操作"></a>bytearray操作</h2><ul>
-<li>append(int) 尾部追加一个元素</li>
-<li>insert(index, int) 在指定索引位置插入元素</li>
-<li>extend(iterable_of_ints) 将一个可迭代的整数集合追加到当前bytearray</li>
-<li>pop(index=-1) 从指定索引上移除元素，默认从尾部移除</li>
-<li>remove(value) 找到第一个value移除，找不到抛ValueError异常</li>
-<li>注意：上述方法若需要使用int类型，值在[0, 255]</li>
-<li>clear() 清空bytearray</li>
-<li>reverse() 翻转bytearray，就地修改</li>
+<p>&emsp; 3 in range(10)<br>&emsp; 3 in (x for x in range(10))<br>&emsp; 3 in {x:y for x,y in zip(range(4),range(4,10))}  </p>
+<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><ul>
+<li>迭代器<ul>
+<li>特殊的对象，一定是可迭代对象，具备可迭代对象的特征</li>
+<li>通过iter方法把一个可迭代对象封装成迭代器</li>
+<li>通过next方法，迭代 迭代器对象</li>
+<li>生成器对象，就是迭代器对象</li>
 </ul>
-<p>&emsp;&emsp; b = bytearray()<br>&emsp;&emsp; b.append(97)<br>&emsp;&emsp; b.append(99)<br>&emsp;&emsp; b.insert(1,98)<br>&emsp;&emsp; b.extend([65,66,67])<br>&emsp;&emsp; b.remove(66)<br>&emsp;&emsp; b.pop()<br>&emsp;&emsp; b.reverse()<br>&emsp;&emsp; b.clear()  </p>
+</li>
+</ul>
+<p>&emsp; for x in iter(range(10)):<br>&emsp;&emsp; print(x)  </p>
+<p>&emsp; range()可以看成类似生成器的可迭代对象，它是惰性求值的.<br>&emsp; 因为 next(range(10))，会报类型错误 TypeError: ‘range’ object is not an iterator.<br>&emsp; 一般生成器是迭代器，迭代器不一定是生成器。  </p>
+<p>&emsp; g = (x for x in range(10))<br>&emsp; print(type(g))<br>&emsp; print(next(g))<br>&emsp; print(next(g))  </p>
+<h2 id="内建函数-8"><a href="#内建函数-8" class="headerlink" title="内建函数"></a>内建函数</h2><ul>
+<li>拉链函数zip(*iterables)<ul>
+<li>像拉链一样，把多个可迭代对象合并在一起，返回一个迭代器</li>
+<li>将每次从不同对象中取到的元素合并成一个元组</li>
+</ul>
+</li>
+</ul>
+<p>&emsp; list(zip(range(10),range(10)))<br>&emsp; list(zip(range(10),range(10),range(<strong>5</strong>),range(10)))</p>
+<p>&emsp; dict(zip(range(10),range(10)))<br>&emsp; {str(x):y for x,y in zip(range(10),range(10))}</p>
 
       
     </div>
@@ -801,12 +827,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>python全栈-magedu-2018-笔记6</p>
+  <p><span>本文标题:</span>python全栈-magedu-2018-笔记14</p>
   <p><span>文章作者:</span>herodanny</p>
-  <p><span>发布时间:</span>2019年04月27日 - 17:25:01</p>
-  <p><span>最后更新:</span>2019年04月27日 - 17:26:34</p>
-  <p><span>原始链接:</span><a href="/python-magedu-2018-notes6.html" title="python全栈-magedu-2018-笔记6">https://herodanny.github.io/python-magedu-2018-notes6.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes6.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年05月02日 - 15:49:55</p>
+  <p><span>最后更新:</span>2019年05月02日 - 15:50:52</p>
+  <p><span>原始链接:</span><a href="/python-magedu-2018-notes14.html" title="python全栈-magedu-2018-笔记14">https://herodanny.github.io/python-magedu-2018-notes14.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes14.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -878,8 +904,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-magedu-2018-notes5.html" rel="next" title="python全栈-magedu-2018-笔记5">
-                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记5
+              <a href="/python-magedu-2018-notes13.html" rel="next" title="python全栈-magedu-2018-笔记13">
+                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记13
               </a>
             
           </div>
@@ -887,10 +913,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-magedu-2018-notes7.html" rel="prev" title="python全栈-magedu-2018-笔记7">
-                python全栈-magedu-2018-笔记7 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1109,7 +1131,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#bytes、bytearray"><span class="nav-number">1.1.</span> <span class="nav-text">bytes、bytearray</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bytes、bytearray-1"><span class="nav-number">1.2.</span> <span class="nav-text">bytes、bytearray</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bytes定义"><span class="nav-number">1.3.</span> <span class="nav-text">bytes定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bytes操作"><span class="nav-number">1.4.</span> <span class="nav-text">bytes操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bytearray定义"><span class="nav-number">1.5.</span> <span class="nav-text">bytearray定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bytearray操作"><span class="nav-number">1.6.</span> <span class="nav-text">bytearray操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bytearray操作-1"><span class="nav-number">1.7.</span> <span class="nav-text">bytearray操作</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第五章-Python内建函数"><span class="nav-number">1.</span> <span class="nav-text">第五章 - Python内建函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数"><span class="nav-number">1.1.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-1"><span class="nav-number">1.2.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-2"><span class="nav-number">1.3.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-3"><span class="nav-number">1.4.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-4"><span class="nav-number">1.5.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-5"><span class="nav-number">1.6.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-6"><span class="nav-number">1.7.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-7"><span class="nav-number">1.8.</span> <span class="nav-text">内建函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可迭代对象"><span class="nav-number">1.9.</span> <span class="nav-text">可迭代对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迭代器"><span class="nav-number">1.10.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内建函数-8"><span class="nav-number">1.11.</span> <span class="nav-text">内建函数</span></a></li></ol></li></ol></div>
             
 
           </div>

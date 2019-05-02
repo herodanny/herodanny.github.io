@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://herodanny.github.io/"/>
-  <updated>2019-05-01T15:58:18.999Z</updated>
+  <updated>2019-05-02T07:50:52.793Z</updated>
   <id>https://herodanny.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python全栈-magedu-2018-笔记14</title>
+    <link href="https://herodanny.github.io/python-magedu-2018-notes14.html"/>
+    <id>https://herodanny.github.io/python-magedu-2018-notes14.html</id>
+    <published>2019-05-02T07:49:55.000Z</published>
+    <updated>2019-05-02T07:50:52.793Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第五章-Python内建函数"><a href="#第五章-Python内建函数" class="headerlink" title="第五章 - Python内建函数"></a>第五章 - Python内建函数</h1><h2 id="内建函数"><a href="#内建函数" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>标识 id<ul><li>返回对象的唯一标识，CPython返回内存地址</li></ul></li><li>哈希 hash()<ul><li>返回一个对象的哈希值</li></ul></li><li>类型 type()<ul><li>返回对象的类型</li></ul></li><li>类型转换<ul><li>float() int() bin() hex() oct() bool() list() tuple() dict() set() complex() bytes() bytearray()</li></ul></li><li>输入 input([prompt])<ul><li>接收用户输入，返回一个字符串</li></ul></li><li>打印 print(*objects, sep=’ ‘, end=’\n’, file=sys.stdout, flush=False)<ul><li>打印输出，默认使用空格分割、换行结尾，输出到控制台</li></ul></li></ul><h2 id="内建函数-1"><a href="#内建函数-1" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>对象长度 len(s)<ul><li>返回一个集合类型的元素个数</li></ul></li><li>isinstance(obj, class_or_tuple)<ul><li>判断对象obj是否属于某种类型或者元组中列出的某个类型</li><li>isinstance(True, int)</li></ul></li><li>issubclass(cls, class_or_tuple)<ul><li>判断类型cls是否是某种类型的子类或元组中列出的某个类型的子类</li><li>issubclass(bool, int)</li></ul></li></ul><h2 id="内建函数-2"><a href="#内建函数-2" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>绝对值abs(x) x为数值</li><li>最大值max() 最小值min()<ul><li>返回可迭代对象中最大或最小值</li><li>返回多个参数中最大或最小值</li></ul></li><li>round(x) 四舍六入五取偶(是银行家算法)，round(-0.5)</li><li>pow(x , y) 等价于 x**y</li><li>range(stop) 从0开始到stop-1的可迭代对象；range(start, stop[, step])从start开始到stop-1结束步长为step的可迭代对象</li><li>divmod(x, y) 等价于 tuple (x//y, x%y)</li><li>sum(iterable[, start]) 对可迭代对象的所有数值元素求和<ul><li>sum(range(1,100,2))</li></ul></li></ul><h2 id="内建函数-3"><a href="#内建函数-3" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>chr(i) 给一个一定范围的整数返回对应的字符<ul><li>chr(97) chr(20013)</li></ul></li><li><p>ord(c) 返回字符对应的整数</p><ul><li>ord(‘a’) ord(‘中’)</li></ul></li><li><p>str() 、repr()、ascii() 后面说</p></li></ul><h2 id="内建函数-4"><a href="#内建函数-4" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>sorted(iterable[, key][, reverse]) 排序<ul><li>返回一个新的<strong>列表</strong>，默认升序</li><li>reverse是反转  </li></ul></li></ul><p>&emsp; sorted([1, 3, 5])<br>&emsp; sorted([1, 3, 5], reverse=True)<br>&emsp; sorted({‘c’:1, ‘b’:2, ‘a’:1})  # 返回的是key的列表<br>&emsp; sorted((100, 5)) # 返回的也是排好序的列表  </p><h2 id="内建函数-5"><a href="#内建函数-5" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>翻转 reversed(seq)<ul><li>返回一个翻转元素的迭代器</li></ul></li></ul><p>&emsp; list(reversed(“13579”))<br>&emsp; { reversed((2, 4)) } # 有几个元素？<br>&emsp; for x in reversed([‘c’,’b’,’a’]):<br>&emsp;&emsp; print(x)<br>&emsp; reversed(sorted({1, 5, 9}))  </p><h2 id="内建函数-6"><a href="#内建函数-6" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>枚举 enumerate(seq, start=0)<ul><li>迭代一个序列，返回索引数字和元素构成的二元组</li><li>start表示索引开始的数字，默认是0  </li></ul></li></ul><p>&emsp;&emsp; for x in enumerate([2,4,6,8]):<br>&emsp;&emsp;&emsp; print(x)  </p><p>&emsp;&emsp; for x in enumerate(“abcde”):<br>&emsp;&emsp;&emsp; print(x,end=” “)</p><h2 id="内建函数-7"><a href="#内建函数-7" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>迭代器和取元素 iter(iterable)、next(iterator[, default])<ul><li>iter将一个可迭代对象封装成一个迭代器</li><li>next对一个迭代器取下一个元素。如果全部元素都取过了，再次next会抛StopIteration异常</li></ul></li></ul><p>&emsp; it = iter(range(5))<br>&emsp; next(it)</p><p>&emsp; it = reversed([1,3,5])<br>&emsp; next(it)</p><h2 id="可迭代对象"><a href="#可迭代对象" class="headerlink" title="可迭代对象"></a>可迭代对象</h2><ul><li>可迭代对象<ul><li>能够通过迭代一次次返回<strong>不同的元素</strong>的对象。<ul><li>所谓相同，不是指值是否相同，而是元素在容器中是否是同一个，例如列表中值可以重复的，[‘a’,’a’]，虽然这个列表有2个元素，值一样，但是两个’a’是不同的元素</li></ul></li><li>可以迭代，但是未必有序，未必可索引</li><li>可迭代对象有：list、tuple、string、bytes、bytearray、range、set、dict、生成器(迭代器)等</li><li>可以使用成员操作符in、not in，in本质上就是在遍历对象</li></ul></li></ul><p>&emsp; 3 in range(10)<br>&emsp; 3 in (x for x in range(10))<br>&emsp; 3 in {x:y for x,y in zip(range(4),range(4,10))}  </p><h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><ul><li>迭代器<ul><li>特殊的对象，一定是可迭代对象，具备可迭代对象的特征</li><li>通过iter方法把一个可迭代对象封装成迭代器</li><li>通过next方法，迭代 迭代器对象</li><li>生成器对象，就是迭代器对象</li></ul></li></ul><p>&emsp; for x in iter(range(10)):<br>&emsp;&emsp; print(x)  </p><p>&emsp; range()可以看成类似生成器的可迭代对象，它是惰性求值的.<br>&emsp; 因为 next(range(10))，会报类型错误 TypeError: ‘range’ object is not an iterator.<br>&emsp; 一般生成器是迭代器，迭代器不一定是生成器。  </p><p>&emsp; g = (x for x in range(10))<br>&emsp; print(type(g))<br>&emsp; print(next(g))<br>&emsp; print(next(g))  </p><h2 id="内建函数-8"><a href="#内建函数-8" class="headerlink" title="内建函数"></a>内建函数</h2><ul><li>拉链函数zip(*iterables)<ul><li>像拉链一样，把多个可迭代对象合并在一起，返回一个迭代器</li><li>将每次从不同对象中取到的元素合并成一个元组</li></ul></li></ul><p>&emsp; list(zip(range(10),range(10)))<br>&emsp; list(zip(range(10),range(10),range(<strong>5</strong>),range(10)))</p><p>&emsp; dict(zip(range(10),range(10)))<br>&emsp; {str(x):y for x,y in zip(range(10),range(10))}</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第五章-Python内建函数&quot;&gt;&lt;a href=&quot;#第五章-Python内建函数&quot; class=&quot;headerlink&quot; title=&quot;第五章 - Python内建函数&quot;&gt;&lt;/a&gt;第五章 - Python内建函数&lt;/h1&gt;&lt;h2 id=&quot;内建函数&quot;&gt;&lt;a href
+      
+    
+    </summary>
+    
+      <category term="python-magedu" scheme="https://herodanny.github.io/categories/python-magedu/"/>
+    
+    
+      <category term="python" scheme="https://herodanny.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>python全栈-magedu-2018-笔记13</title>
