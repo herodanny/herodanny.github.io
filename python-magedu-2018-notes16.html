@@ -148,18 +148,25 @@
 
 
 
-  <meta name="description" content="第三章 - Python 内置数据结构字典dict key-value键值对的数据的集合 可变的、无序的、key不重复  字典dict定义 初始化 d = dict() 或者 d = {} dict(**kwargs) 使用name=value对初始化一个字典 dict(iterable, **kwarg) 使用可迭代对象和name=value对构造字典，不过可迭代对象的元素必须是一个二元结构 d">
+  <meta name="description" content="第七章 - Python函数返回值、作用域函数的返回值 举例def showplus(x):&amp;emsp; print(x)&amp;emsp; return x + 1  &amp;emsp;&amp;emsp; showplus(5)  举例def showplus(x):&amp;emsp; print(x)&amp;emsp; return x + 1&amp;emsp; print(x+1) # 会执行吗？    &amp;emsp;&amp;emsp">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python全栈-magedu-2018-笔记12">
-<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes12.html">
+<meta property="og:title" content="python全栈-magedu-2018-笔记16">
+<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes16.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="第三章 - Python 内置数据结构字典dict key-value键值对的数据的集合 可变的、无序的、key不重复  字典dict定义 初始化 d = dict() 或者 d = {} dict(**kwargs) 使用name=value对初始化一个字典 dict(iterable, **kwarg) 使用可迭代对象和name=value对构造字典，不过可迭代对象的元素必须是一个二元结构 d">
+<meta property="og:description" content="第七章 - Python函数返回值、作用域函数的返回值 举例def showplus(x):&amp;emsp; print(x)&amp;emsp; return x + 1  &amp;emsp;&amp;emsp; showplus(5)  举例def showplus(x):&amp;emsp; print(x)&amp;emsp; return x + 1&amp;emsp; print(x+1) # 会执行吗？    &amp;emsp;&amp;emsp">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-30T14:15:42.113Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/zuoyongyu.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/bibao1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/bibao2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/nonlocal1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/nonlocal2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/legb.jpg">
+<meta property="og:updated_time" content="2019-05-07T09:44:45.028Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python全栈-magedu-2018-笔记12">
-<meta name="twitter:description" content="第三章 - Python 内置数据结构字典dict key-value键值对的数据的集合 可变的、无序的、key不重复  字典dict定义 初始化 d = dict() 或者 d = {} dict(**kwargs) 使用name=value对初始化一个字典 dict(iterable, **kwarg) 使用可迭代对象和name=value对构造字典，不过可迭代对象的元素必须是一个二元结构 d">
+<meta name="twitter:title" content="python全栈-magedu-2018-笔记16">
+<meta name="twitter:description" content="第七章 - Python函数返回值、作用域函数的返回值 举例def showplus(x):&amp;emsp; print(x)&amp;emsp; return x + 1  &amp;emsp;&amp;emsp; showplus(5)  举例def showplus(x):&amp;emsp; print(x)&amp;emsp; return x + 1&amp;emsp; print(x+1) # 会执行吗？    &amp;emsp;&amp;emsp">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/zuoyongyu.jpg">
 
 
 
@@ -169,7 +176,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes12">
+  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes16">
 
 
 
@@ -179,7 +186,7 @@
   };
 </script>
 
-  <title>python全栈-magedu-2018-笔记12 | 从菜鸟到老鸟</title>
+  <title>python全栈-magedu-2018-笔记16 | 从菜鸟到老鸟</title>
   
 
 
@@ -507,7 +514,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes12.html">
+    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes16.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="herodanny">
@@ -524,7 +531,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记12
+          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记16
 
               
             
@@ -550,7 +557,7 @@
                 
               
 
-              <time title="创建时间：2019-04-30 22:14:41 / 修改时间：22:15:42" itemprop="dateCreated datePublished" datetime="2019-04-30T22:14:41+08:00">2019-04-30</time>
+              <time title="创建时间：2019-05-07 17:43:54 / 修改时间：17:44:45" itemprop="dateCreated datePublished" datetime="2019-05-07T17:43:54+08:00">2019-05-07</time>
             
 
             
@@ -591,8 +598,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/python-magedu-2018-notes12.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes12.html" itemprop="commentCount"></span>
+                <a href="/python-magedu-2018-notes16.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes16.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -600,7 +607,7 @@
 
           
           
-            <span id="/python-magedu-2018-notes12.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记12">
+            <span id="/python-magedu-2018-notes16.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记16">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -625,7 +632,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.7k</span>
+                <span title="本文字数">7.9k</span>
               
 
               
@@ -639,7 +646,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">7 分钟</span>
               
             </div>
           
@@ -659,181 +666,292 @@
       
 
       
-        <h1 id="第三章-Python-内置数据结构"><a href="#第三章-Python-内置数据结构" class="headerlink" title="第三章 - Python 内置数据结构"></a>第三章 - Python 内置数据结构</h1><h2 id="字典dict"><a href="#字典dict" class="headerlink" title="字典dict"></a>字典dict</h2><ul>
-<li>key-value键值对的数据的集合</li>
-<li><strong>可变的、无序的、key不重复</strong></li>
+        <h1 id="第七章-Python函数返回值、作用域"><a href="#第七章-Python函数返回值、作用域" class="headerlink" title="第七章 - Python函数返回值、作用域"></a>第七章 - Python函数返回值、作用域</h1><h2 id="函数的返回值"><a href="#函数的返回值" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><ul>
+<li>举例<br>def showplus(x):<br>&emsp; print(x)<br>&emsp; return x + 1</li>
 </ul>
-<h2 id="字典dict定义-初始化"><a href="#字典dict定义-初始化" class="headerlink" title="字典dict定义 初始化"></a>字典dict定义 初始化</h2><ul>
-<li>d = dict() 或者 <strong>d = {}</strong></li>
-<li><strong>dict(**kwargs)</strong> 使用name=value对初始化一个字典</li>
-<li>dict(iterable, **kwarg) 使用可迭代对象和name=value对构造字典，不过可迭代对象的元素必须是一个<strong>二元</strong>结构<ul>
-<li>d = dict(((1,’a’),(2,’b’))) 或者 d = dict(([1,’a’],[2,’b’]))</li>
-<li>**kwarg是表示在二元结构后面还是可以加k-v参数来初始化<br>d2 = dict(d, c=3)</li>
-</ul>
-</li>
-<li>dict(mapping, **kwarg) 使用一个字典构建另一个字典</li>
-<li><strong>d = {‘a’:10, ‘b’:20, ‘c’:None, ‘d’:[1,2,3]}</strong></li>
-<li>类方法dict.fromkeys(iterable, value)<ul>
-<li>d = dict.fromkeys(range(5))</li>
-<li>d = dict.fromkeys(range(5),0)  </li>
-</ul>
-</li>
-</ul>
-<p>&emsp; (类方法就相当于java中的静态方法)<br>&emsp; d1 = dict.fromkeys(range(1, 11), [1, 2])<br>&emsp; 这样产生的字典中所有的value都是列表[1,2]的引用，如果append这个列表，所有的value都会被修改。</p>
-<h2 id="字典元素的访问"><a href="#字典元素的访问" class="headerlink" title="字典元素的访问"></a>字典元素的访问</h2><ul>
-<li>d[key]<ul>
-<li>返回key对应的值value</li>
-<li>key不存在抛出KeyError异常</li>
-</ul>
-</li>
-<li>get(key[, default])<ul>
-<li>返回key对应的值value</li>
-<li>key不存在返回缺省值，如果没有设置缺省值就返回None</li>
-</ul>
-</li>
-<li>setdefault(key[, default])<ul>
-<li>返回key对应的值value</li>
-<li>key不存在，添加kv对，value为default，并返回default，如果default没有设置，缺省为None</li>
-</ul>
-</li>
-</ul>
-<h2 id="字典增加和修改"><a href="#字典增加和修改" class="headerlink" title="字典增加和修改"></a>字典增加和修改</h2><ul>
-<li>d[key] = value<ul>
-<li>将key对应的值修改为value</li>
-<li><strong>key不存在添加新的kv对</strong></li>
-</ul>
-</li>
-<li>update([other]) -&gt; None<ul>
-<li>使用另一个字典的kv对更新本字典</li>
-<li>key不存在，就添加</li>
-<li>key存在，覆盖已经存在的key对应的值</li>
-<li>就地修改</li>
-</ul>
-</li>
-</ul>
-<p>&emsp; d.update(red=1)<br>&emsp; d.update(((‘red’,2),))<br>&emsp; d.update({‘red’:3})  </p>
-<h2 id="字典删除"><a href="#字典删除" class="headerlink" title="字典删除"></a>字典删除</h2><ul>
-<li>pop(key[, default])<ul>
-<li>key存在，移除它，并返回它的value</li>
-<li>key不存在，返回给定的default</li>
-<li>default未设置，key不存在则抛出KeyError异常</li>
-</ul>
-</li>
-<li>popitem()<ul>
-<li>移除并返回一个任意的键值对</li>
-<li>字典为empty，抛出KeyError异常</li>
-</ul>
-</li>
-<li>clear()<ul>
-<li>清空字典</li>
-</ul>
-</li>
-</ul>
-<h2 id="字典删除-1"><a href="#字典删除-1" class="headerlink" title="字典删除"></a>字典删除</h2><ul>
-<li>del语句<br>a = True<br>b = [6]<br>d = {‘a’: 1, ‘b’: b, ‘c’: [1,3,5]}<br>del a<br>del d[‘c’] # 删除了一个对象[1,3,5]？<br>del b[0]<br>c = b<br>del c<br>del b<br>b = d[‘b’]<br>p del a[‘c’]  # 看着像删除了一个对象，本质上减少了一个对象的引用，del 实际上删除的是名称，而不是对象  </li>
-</ul>
-<h2 id="字典遍历"><a href="#字典遍历" class="headerlink" title="字典遍历"></a>字典遍历</h2><ul>
-<li>for … in dict<ul>
-<li>遍历key  </li>
-</ul>
-</li>
-</ul>
-<p>&emsp;&emsp; for k in d:<br>&emsp;&emsp;&emsp; print(k)  </p>
-<p>&emsp;&emsp; for k in d.keys():<br>&emsp;&emsp;&emsp; print(k)  </p>
-<h2 id="字典遍历-1"><a href="#字典遍历-1" class="headerlink" title="字典遍历"></a>字典遍历</h2><ul>
-<li>for … in dict<ul>
-<li>遍历value</li>
-</ul>
-</li>
-</ul>
-<p>&emsp;&emsp; for k in d:<br>&emsp;&emsp;&emsp; print(d[k])</p>
-<p>&emsp;&emsp; for k in d.keys():<br>&emsp;&emsp;&emsp; print(d.get(k))</p>
-<p>&emsp;&emsp; for v in d.values():<br>&emsp;&emsp;&emsp; print(v)</p>
-<h2 id="字典遍历-2"><a href="#字典遍历-2" class="headerlink" title="字典遍历"></a>字典遍历</h2><ul>
-<li>for … in dict<ul>
-<li>遍历item，即k-v对</li>
-</ul>
-</li>
-</ul>
-<p>&emsp;&emsp; for item in d.items():<br>&emsp;&emsp;&emsp; print(item)</p>
-<p>&emsp;&emsp; for item in d.items():<br>&emsp;&emsp;&emsp; print(item[0], item[1])</p>
-<p>&emsp;&emsp; for k,v in d.items():<br>&emsp;&emsp;&emsp; print(k, v)</p>
-<p>&emsp;&emsp; for k, _ in d.items():<br>&emsp;&emsp;&emsp; print(k)</p>
-<p>&emsp;&emsp; for _ ,v in d.items():<br>&emsp;&emsp;&emsp; print(v)</p>
-<h2 id="字典遍历-3"><a href="#字典遍历-3" class="headerlink" title="字典遍历"></a>字典遍历</h2><ul>
-<li><p>总结</p>
+<p>&emsp;&emsp; showplus(5)</p>
 <ul>
-<li><p>Python3中，keys、values、items方法返回一个类似一个生成器的可迭代对象，不会把函数的返回结果复制到内存中 (可以把返回的 dict_items()、dict_keys()、dict_values() 想象成是帮你到字典中取数据)</p>
+<li>举例<br>def showplus(x):<br>&emsp; print(x)<br>&emsp; return x + 1<br>&emsp; print(x+1) # 会执行吗？  </li>
+</ul>
+<p>&emsp;&emsp; showplus(5)</p>
+<h2 id="函数的返回值-1"><a href="#函数的返回值-1" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><ul>
+<li>多条return语句<br>def guess(x):<br>&emsp; if x &gt; 3:<br>&emsp;&emsp; return “&gt; 3”<br>&emsp; else:<br>&emsp;&emsp; return “&lt;= 3”  </li>
+</ul>
+<p>&emsp;&emsp; print(guess(10))  </p>
 <ul>
-<li>是 Dictionary view 对象</li>
-<li>字典的entry的动态的视图，字典变化，视图将反映出这些变化</li>
+<li>return可以执行多次吗？  </li>
+<li>多条return语句<br>def showplus(x):<br>&emsp; print(x)<br>&emsp; return x + 1<br>&emsp; return x + 2  </li>
 </ul>
-</li>
-<li><p>Python2中，上面的方法会返回一个新的列表，占据新的内存空间。所以Python2建议使用iterkeys、itervalues、iteritems版本，返回一个迭代器，而不是一个copy</p>
-</li>
+<p>&emsp;&emsp; showplus(5)</p>
+<h2 id="函数返回值"><a href="#函数返回值" class="headerlink" title="函数返回值"></a>函数返回值</h2><ul>
+<li>举例<br>def fn(x):<br>&emsp; for i in range(x):<br>&emsp;&emsp; if i &gt; 3:<br>&emsp;&emsp;&emsp; return i<br>&emsp;&emsp; else:<br>&emsp;&emsp;&emsp; print(“{} is not greater than 3”.format(x))</li>
 </ul>
-</li>
-</ul>
-<h2 id="字典遍历和移除"><a href="#字典遍历和移除" class="headerlink" title="字典遍历和移除"></a>字典遍历和移除</h2><ul>
-<li>如何在遍历的时候移除元素  </li>
-</ul>
-<p>&emsp;&emsp; 错误的做法:<br>&emsp;&emsp; d = dict(a=1, b=2, c=’abc’)<br>&emsp;&emsp; for k,v in d.items():<br>&emsp;&emsp;&emsp;&emsp; d.pop(k) # RuntimeError: dictionary changed size during iteration<br>&emsp;&emsp; 用字典视图的对象迭代时，是不能修改字典的大小的<br>&emsp;&emsp; 另外在用for 迭代时，字典的大小是不允许改变的，即不允许增删元素。  </p>
-<p>&emsp;&emsp; while len(d): # 相当于清空，不如直接clear()<br>&emsp;&emsp;&emsp;&emsp; print(d.popitem())</p>
-<p>&emsp;&emsp; 正确的做法:<br>&emsp;&emsp; d = dict(a=1, b=2, c=’abc’)<br>&emsp;&emsp; keys = []<br>&emsp;&emsp; for k,v in d.items():<br>&emsp;&emsp;&emsp;&emsp; if isinstance(v, str):<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; keys.append(k)<br>&emsp;&emsp; for k in keys:<br>&emsp;&emsp;&emsp;&emsp; d.pop(k)<br>&emsp;&emsp; print(d)</p>
-<h2 id="字典的key"><a href="#字典的key" class="headerlink" title="字典的key"></a>字典的key</h2><ul>
-<li>key的要求和set的元素要求一致<ul>
-<li>set的元素可以就是看做key，set可以看做dict的简化版</li>
-<li>hashable 可哈希才可以作为key，可以使用hash()测试，即key不可变的，key变了，通过哈希函数找到的值也就变了。</li>
-<li>d = {1 : 0, 2.0 : 3, “abc” : None, (‘hello’, ‘world’, ‘python’) : “string”, b’abc’ : ‘135’}</li>
+<p>&emsp; print(fn(5)) # 打印什么？<br>&emsp; print(fn(3)) # 打印什么？</p>
+<h2 id="函数的返回值-2"><a href="#函数的返回值-2" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><ul>
+<li>总结<ul>
+<li>Python函数使用return语句返回“返回值”</li>
+<li>所有函数都有返回值，如果没有return语句，隐式调用return None</li>
+<li>return 语句并不一定是函数的语句块的最后一条语句</li>
+<li>一个函数可以存在多个return语句，但是只有一条可以被执行。如果没有一条return语句被执行到，隐式调用return None</li>
+<li>如果有必要，可以显示调用return None，可以简写为return</li>
+<li>如果函数执行了return语句，函数就会返回，当前被执行的return语句之后的其它语句就不会被执行了</li>
+<li>作用：结束函数调用、返回值</li>
 </ul>
 </li>
 </ul>
-<h2 id="defaultdict"><a href="#defaultdict" class="headerlink" title="defaultdict"></a>defaultdict</h2><ul>
-<li>collections.defaultdict([default_factory[, …]])<ul>
-<li>第一个参数是default_factory，缺省是None，它提供一个初始化函数。<strong>当key不存在的时候，会调用这个工厂函数来生成key对应的value</strong></li>
+<h2 id="函数的返回值-3"><a href="#函数的返回值-3" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><ul>
+<li>返回多个值<br>def showlist():<br>&emsp; return [1, 3, 5]<br>showlist函数是返回了多个值吗？<br>def showlist():<br>&emsp; return 1, 3, 5<br>这次showlist函数是否返回了多个值呢？</li>
+</ul>
+<h2 id="函数的返回值-4"><a href="#函数的返回值-4" class="headerlink" title="函数的返回值"></a>函数的返回值</h2><ul>
+<li>返回多个值<ul>
+<li>函数不能同时返回多个值</li>
+<li>return [1, 3, 5] 是指明返回一个列表，是<strong>一个</strong>列表对象</li>
+<li>return 1, 3, 5 看似返回多个值，隐式的被python封装成了<strong>一个</strong>元组<br>def showlist():<br>&emsp; return 1, 3, 5<br>x, y, z = showlist() # 使用解构提取更为方便</li>
 </ul>
 </li>
 </ul>
-<p>&emsp; import random<br>&emsp; d1 = {}<br>&emsp; for k in ‘abcdef’:<br>&emsp;&emsp; for i in range(random.randint(1,5)):<br>&emsp;&emsp;&emsp; if k not in d1.keys():<br>&emsp;&emsp;&emsp;&emsp; d1[k] = []<br>&emsp;&emsp;&emsp; d1[k].append(i)  </p>
-<p>&emsp; print(d1)  </p>
+<h2 id="函数嵌套"><a href="#函数嵌套" class="headerlink" title="函数嵌套"></a>函数嵌套</h2><ul>
+<li>函数嵌套  <ul>
+<li>在一个函数中定义了另外一个函数<br>def outer():<br>&emsp; def inner():<br>&emsp;&emsp; print(“inner”)<br>&emsp; print(“outer”)<br>&emsp; inner()<br>outer()<br>inner()  </li>
+</ul>
+</li>
+<li>函数有可见范围，这就是<strong>作用域</strong>的概念  </li>
+<li>内部函数不能在外部直接使用，会抛NameError异常，因为它不可见</li>
+</ul>
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li>作用域<ul>
+<li>一个标识符的可见范围，这就是标识符的作用域。一般常说的是变量的作用域</li>
+<li>举例，对比左右2个函数  </li>
+</ul>
+</li>
+</ul>
+<p>&emsp; x = 5 </p>
+<p>&emsp; def foo():<br>&emsp;&emsp; print(x)</p>
+<p>&emsp; foo() </p>
 <p><br></p>
-<p>&emsp; from collections import defaultdict<br>&emsp; import random  </p>
-<p>&emsp; d1 = defaultdict(list)<br>&emsp; for k in ‘abcdef’:<br>&emsp;&emsp; for i in range(random.randint(1,5)):<br>&emsp;&emsp;&emsp; d1[k].append(i)  </p>
-<p>&emsp; print(d1)  </p>
-<h2 id="OrderedDict"><a href="#OrderedDict" class="headerlink" title="OrderedDict"></a>OrderedDict</h2><ul>
-<li>collections.OrderedDict([items])<ul>
-<li>key并不是按照加入的顺序排列，可以使用OrderedDict记录顺序</li>
+<p>&emsp; x = 5  </p>
+<p>&emsp; def foo():<br>&emsp;&emsp; x += 1<br>&emsp;&emsp; print(x)</p>
+<p>&emsp; foo()<br>&emsp; 这会报x在赋值之前就引用了的错误<br>&emsp; UnboundLocalError: local variable ‘x’ referenced before assignment  </p>
+<p>&emsp; x到底可见还是不可见？</p>
+<h2 id="作用域-1"><a href="#作用域-1" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li>全局作用域<ul>
+<li>在整个程序运行环境中都可见</li>
+</ul>
+</li>
+<li>局部作用域<ul>
+<li>在函数、类等内部可见</li>
+<li>局部变量使用范围不能超过其所在的局部作用域</li>
 </ul>
 </li>
 </ul>
-<p>&emsp; from collections import OrderedDict<br>&emsp; import random<br>&emsp; d = {‘banana’: 3, ‘apple’: 4, ‘pear’: 1, ‘orange’: 2}<br>&emsp; print(d)<br>&emsp; keys = list(d.keys())<br>&emsp; random.shuffle(keys)<br>&emsp; print(keys)<br>&emsp; od = OrderedDict()<br>&emsp; for key in keys:<br>&emsp;&emsp; od[key] = d[key]<br>&emsp; print(od)<br>&emsp; print(od.keys())  </p>
-<h2 id="OrderedDict-1"><a href="#OrderedDict-1" class="headerlink" title="OrderedDict"></a>OrderedDict</h2><ul>
-<li>有序字典可以记录元素插入的顺序，打印的时候也是按照这个顺序输出打印</li>
-<li><p>3.6版本的Python的字典就是记录key插入的顺序（IPython不一定有效果）</p>
-</li>
-<li><p>应用场景：</p>
+<p>&emsp; def fn1():<br>&emsp;&emsp; x = 1 # 局部作用域，在fn1内  </p>
+<p>&emsp; def fn2():<br>&emsp;&emsp; print(x) # x可见吗</p>
+<p>&emsp; print(x) # x可见吗</p>
+<h2 id="作用域-2"><a href="#作用域-2" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li>嵌套结构  </li>
+</ul>
+<p>def outer1(): #<br>&emsp; o = 65<br>&emsp; def inner():<br>&emsp;&emsp; print(“inner {}”.format(o))<br>&emsp;&emsp; print(chr(o))<br>&emsp; print(“outer {}”.format(o))<br>&emsp; inner()  </p>
+<p>outer1()</p>
 <ul>
-<li>假如使用字典记录了N个产品，这些产品使用ID由小到大加入到字典中</li>
-<li>除了使用字典检索的遍历，有时候需要取出ID，但是希望是按照输入的顺序，因为输入顺序是有序的</li>
-<li>否则还需要重新把遍历到的值排序</li>
+<li>嵌套结构  </li>
+</ul>
+<p>def outer2(): #<br>&emsp; o = 65<br>&emsp; def inner():<br>&emsp;&emsp; o = 97<br>&emsp;&emsp; print(“inner {}”.format(o))<br>&emsp;&emsp; print(chr(o))<br>&emsp; print(“outer {}”.format(o))<br>&emsp; inner()  </p>
+<p>outer2()</p>
+<ul>
+<li>代码中变量o的差别</li>
+</ul>
+<h2 id="作用域-3"><a href="#作用域-3" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li>从嵌套结构例子看出<ul>
+<li>外层变量作用域在内层作用域可见</li>
+<li>内层作用域inner中，如果定义了o=97，相当于当前作用域中重新定义了一个新的变量o，但是这个o并没有覆盖外层作用域outer中的o</li>
+<li>再看下面代码<br>x = 5<br>def foo():<br>&emsp; y = x + 1 # 报错吗<br>&emsp; x += 1 # 报错，报什么错？为什么？换成x=1还有错吗？<br>&emsp; print(x) # 为什么它不报错<br>foo()<br>为什么会报错？就是因为赋值即定义。x在赋值之前就用，会报错。  </li>
 </ul>
 </li>
 </ul>
-<h2 id="字典练习"><a href="#字典练习" class="headerlink" title="字典练习"></a>字典练习</h2><ul>
-<li>用户输入一个数字<ul>
-<li>打印每一位数字及其重复的次数</li>
+<h2 id="作用域-4"><a href="#作用域-4" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li>代码<br>x = 5<br>def foo():<br>&emsp; x += 1  </li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/zuoyongyu.jpg" alt="zuoyongyu"></p>
+<ul>
+<li>x += 1 其实是 x = x + 1</li>
+<li>相当于在foo内部定义一个局部变量x，那么foo内部所有x都是这个局部变量x了</li>
+<li>但是这个x还没有完成赋值，就被右边拿来做加1操作了</li>
+<li>如何解决这个问题</li>
+</ul>
+<h2 id="作用域-5"><a href="#作用域-5" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li><p>全局变量global<br>x = 5<br>def foo():<br>&emsp; global x<br>&emsp; x += 1  </p>
+</li>
+<li><p>使用global关键字的变量，将foo内的x声明为使用外部的全局作用域中定义的x</p>
+</li>
+<li>全局作用域中必须有x的定义</li>
+<li>如果全局作用域中没有x定义会怎样？</li>
+</ul>
+<h2 id="作用域-6"><a href="#作用域-6" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li>全局变量global<br>&emsp; # x = 5<br>&emsp; def foo():<br>&emsp;&emsp; global x<br>&emsp;&emsp; x = 10<br>&emsp;&emsp; x += 1 # 报错吗？<br>&emsp;&emsp; print(x) # 打印什么？<br>&emsp; print(x) #打印什么？<br>做这些实验建议不要使用ipython、jupyter，因为它会上下文中有x定义，可能测试不出效果，也可以先用del x。  </li>
+<li>使用global关键字的变量，将foo内的x声明为使用外部的全局作用域中定义的x</li>
+<li>但是，x = 10 赋值即定义，在内部作用域为一个外部作用域的变量x赋值，<strong>不是在内部作用域定义一个新变量</strong>，所以x+=1不会报错。注意，<strong>这里x的作用域还是全局的</strong></li>
+</ul>
+<h2 id="作用域-7"><a href="#作用域-7" class="headerlink" title="作用域***"></a>作用域***</h2><ul>
+<li><p>global总结</p>
+<ul>
+<li>x+=1这种是特殊形式产生的错误的原因？先引用后赋值，而python动态语言是赋值才算定义，才能被引用。解决办法，在这条语句前增加x=0之类的赋值语句，或者使用global 告诉内部作用域，去全局作用域查找变量定义</li>
+<li><p><strong>内部作用域使用x = 5之类的赋值语句会重新定义局部作用域使用的变量x，但是，一旦这个作用域中使用global声明x为全局的，那么x=5相当于在为全局作用域的变量x赋值</strong></p>
+</li>
+<li><p>global使用原则</p>
+<ul>
+<li>外部作用域变量会内部作用域可见，但也不要在这个内部的局部作用域中直接使用，因为函数的目的就是为了封装，尽量与外界隔离</li>
+<li>如果函数需要使用外部全局变量，请使用函数的<strong>形参传参</strong>解决</li>
+<li>一句话：<strong>不用global</strong>。学习它就是为了深入理解变量作用域</li>
 </ul>
 </li>
-<li>数字重复统计<ul>
-<li>随机产生100个整数</li>
-<li>数字的范围[-1000, 1000]</li>
-<li>升序输出所有不同的数字及其重复的次数</li>
 </ul>
 </li>
-<li>字符串重复统计<ul>
-<li>字符表’abcdefghijklmnopqrstuvwxyz’</li>
-<li>随机挑选2个字母组成字符串，共挑选100个</li>
-<li>降序输出所有不同的字符串及重复的次数</li>
+</ul>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包*"></a>闭包*</h2><ul>
+<li>自由变量：未在本地作用域中定义的变量。例如定义在内层函数外的外层函数的作用域中的变量</li>
+<li><p>闭包：就是一个概念，出现在嵌套函数中，指的是<strong>内层函数引用到了外层函数的自由变量</strong>，就形成了闭包。很多语言都有这个概念，最熟悉就是JavaScript。（注意：是指引用了外层函数中的，如果引用的变量是在全局作用域内，或是有global 修饰的变量，就不是闭包了。  ）  </p>
+</li>
+<li><p>先看下边一段代码</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/bibao1.jpg" alt="bibao1"></p>
+<ul>
+<li>第4行会报错吗？为什么</li>
+<li>第8行打印什么结果？</li>
+<li>第10行打印什么结果？</li>
+</ul>
+<p>c是列表的引用, return inc 是返回一个标识符是函数对象，是callable的。<br>foo = counter() 增加了counter函数对象的引用计数，所以它的作用域空间还在。  </p>
+<h2 id="闭包-1"><a href="#闭包-1" class="headerlink" title="闭包*"></a>闭包*</h2><ul>
+<li>代码解析<ul>
+<li>第4行会报错吗？为什么<ul>
+<li>不会报错，c已经在counter函数中定义过了。而且inc中的使用方式是为c的元素修改值，而不是重新定义变量。<br>如果c不是引用列表，是c=0,c+=1这种，还是会报 UnboundLocalError: local variable ‘c’ referenced before assignment  </li>
+</ul>
+</li>
+<li>第8行打印什么结果？<ul>
+<li>打印 1 2</li>
+</ul>
+</li>
+<li>第10行打印什么结果？<ul>
+<li>打印 3</li>
+<li>第9行的c和counter中的c不一样，而inc引用的是自由变量真是counter的变量c</li>
+</ul>
+</li>
+<li>这是Python2中实现闭包的方式，Python3还可以使用nonlocal关键字</li>
+</ul>
+</li>
+</ul>
+<p>为什么要用闭包？就是内层函数要使用外层的自由变量。  </p>
+<h2 id="闭包-2"><a href="#闭包-2" class="headerlink" title="闭包*"></a>闭包*</h2><ul>
+<li>下面这段代码会报错吗？为什么？</li>
+<li>使用global能否解决？</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/bibao2.jpg" alt="bibao2"></p>
+<ul>
+<li><p>使用global可以解决，但是这使用的是全局变量，而不是闭包<br>def counter():<br>&emsp; count = 0<br>&emsp; def inc():<br>&emsp;&emsp; global c  # 本地和最外层没有定义c还是会报错<br>&emsp;&emsp; count +=1<br>&emsp;&emsp; return count<br>&emsp; return inc<br>foo = counter()<br>foo()<br>foo()<br>global的作用域范围，只在声明的inc()函数当前作用域内 和 全局作用域有效。  </p>
+</li>
+<li><p>如果要对普通变量的闭包，Python3中可以使用nonlocal  </p>
+</li>
+</ul>
+<h2 id="nonlocal关键字"><a href="#nonlocal关键字" class="headerlink" title="nonlocal关键字"></a>nonlocal关键字</h2><ul>
+<li>使用了nonlocal关键字，将变量标记为不在本地作用域定义，而在<strong>上级的某一级局部作用域中</strong>定义，但<strong>不能是全局作用域中</strong>定义  </li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/nonlocal1.jpg" alt="nonlocal1"></p>
+<ul>
+<li>count 是外层函数的局部变量，被内部函数引用</li>
+<li>内部函数使用nonlocal关键字声明count变量在上级作用域而非本地作用域中定义</li>
+<li>上边代码可以正常使用，且形成闭包</li>
+<li>下边代码不能正常运行，变量 a 不能在全局作用域中</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/nonlocal2.jpg" alt="nonlocal2"></p>
+<h2 id="默认值的作用域"><a href="#默认值的作用域" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><ul>
+<li><p>默认值举例<br>def foo(xyz=1):<br>&emsp; print(xyz)<br>foo() # 打印什么？<br>foo() # 打印什么？<br>print(xyz) # 打印什么？<br>默认值是形参，它的作用域看成是函数局部作用域。  </p>
+</li>
+<li><p>默认值举例<br>def foo(xyz=[]):<br>&emsp; xyz.append(1)<br>&emsp; print(xyz)<br>foo() # 打印什么？<br>foo() # 打印什么？<br>print(xyz) # 打印什么？<br>不知是否对：变量名xyz在函数调用时压栈，函数结束时就出栈了。临时的本地变量xyz就消亡了。<br>默认值的对象一直都在，因为 python 中一切皆对象。<br>函数形参就是</p>
+</li>
+</ul>
+<h2 id="默认值的作用域-1"><a href="#默认值的作用域-1" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><ul>
+<li><p>默认值举例<br>def foo(xyz=[]):<br>&emsp; xyz.append(1)<br>&emsp; print(xyz)<br>foo() # [1]<br>foo() # [1,1]<br>print(xyz) # NameError ，当前作用域没有xyz变量  </p>
+</li>
+<li><p>为什么第二次调用foo函数打印的是[1,1]？  </p>
+<ul>
+<li>因为<strong>函数</strong>也是<strong>对象</strong>，python把函数的默认值放在了属性中，这个属性就伴随着这个函数对象的整个生命周期</li>
+<li>查看foo.<strong>defaults</strong>属性</li>
+</ul>
+</li>
+</ul>
+<h2 id="默认值的作用域-2"><a href="#默认值的作用域-2" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><ul>
+<li>运行这个例子<br>def foo(xyz=[], u=’abc’, z=123):<br>&emsp; xyz.append(1)<br>&emsp; return xyz<br>print(1, foo.__defaults__)<br>print(foo(), id(foo))<br>print(2, foo.__defaults__)<br>print(foo(), id(foo))<br>print(3, foo.__defaults__)  </li>
+<li>函数地址并没有变，就是说函数这个对象的没有变，调用它，它的属性<strong>defaults</strong>中使用<strong>元组</strong>保存默认值</li>
+<li>xyz默认值是引用类型，引用类型的元素变动，并不是元组的变化</li>
+</ul>
+<h2 id="默认值的作用域-3"><a href="#默认值的作用域-3" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><ul>
+<li>非引用类型例子<br>def foo(w, u=’abc’, z=123):<br>&emsp; u = ‘xyz’<br>&emsp; z = 789<br>&emsp; print(w, u, z)<br>print(foo.__defaults__)<br>foo(‘github’)<br>print(foo.__defaults__)  </li>
+<li>属性__defaults__中使用元组保存所有位置参数默认值，它不会因为在函数体内使用了它而发生改变</li>
+</ul>
+<h2 id="默认值的作用域-4"><a href="#默认值的作用域-4" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><ul>
+<li>举例<br>def foo(w, u=’abc’, *, z=123, zz=[456]):<br>&emsp; u = ‘xyz’<br>&emsp; z = 789<br>&emsp; zz.append(1)<br>&emsp; print(w, u, z, zz)<br>print(foo.__defaults__)<br>foo(‘magedu’)<br>print(foo.__kwdefaults__)</li>
+<li>属性__defaults__中使用元组保存所有位置参数默认值</li>
+<li>属性__kwdefaults__中使用字典保存所有keyword-only参数的默认值</li>
+</ul>
+<h2 id="默认值的作用域-5"><a href="#默认值的作用域-5" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><ul>
+<li>使用可变类型作为默认值(如list)，就可能修改这个默认值</li>
+<li>有时候这个特性是好的，有的时候这种特性是不好的，有副作用</li>
+<li>如何做到按需改变呢？看下面的2种方法</li>
+</ul>
+<h2 id="默认值的作用域-6"><a href="#默认值的作用域-6" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><p>def foo(xyz=[], u=’abc’, z=123):<br>&emsp; xyz = xyz[:] # 影子拷贝<br>&emsp; xyz.append(1)<br>&emsp; print(xyz)<br>foo()<br>print(1, foo.__defaults__)<br>foo() # xyz还是浅拷贝新的list<br>print(2, foo.__defaults__)<br>foo([10])<br>print(3, foo.__defaults__)<br>foo([10,5])<br>print(4, foo.__defaults__)</p>
+<ul>
+<li>1、函数体内，不改变默认值<ul>
+<li>xyz都是传入参数或者默认参数的副本，如果就想修改原参数，无能为力</li>
+</ul>
+</li>
+</ul>
+<h2 id="默认值的作用域-7"><a href="#默认值的作用域-7" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><p>def foo(xyz=None, u=’abc’, z=123):<br>&emsp; if xyz is None:<br>&emsp;&emsp; xyz = []<br>&emsp; xyz.append(1)<br>&emsp; print(xyz)<br>foo()<br>print(1, foo.__defaults__)<br>foo()<br>print(2, foo.__defaults__)<br>foo([10])<br>print(3, foo.__defaults__)<br>foo([10,5])<br>print(4, foo.__defaults__)</p>
+<ul>
+<li>2、使用不可变类型默认值<ul>
+<li>如果使用缺省值None就创建一个列表</li>
+<li>如果传入一个列表，就修改这个列表</li>
+</ul>
+</li>
+</ul>
+<h2 id="默认值的作用域-8"><a href="#默认值的作用域-8" class="headerlink" title="默认值的作用域"></a>默认值的作用域</h2><ul>
+<li>第一种方法<ul>
+<li>使用影子拷贝创建一个新的对象，永远不能改变传入的参数</li>
+</ul>
+</li>
+<li>第二种方法<ul>
+<li>通过值的判断就可以灵活的选择创建或者修改传入对象</li>
+<li>这种方式灵活，应用广泛</li>
+<li>很多函数的定义，都可以看到使用None这个不可变的值作为默认参数，可以说这是一种惯用法</li>
+</ul>
+</li>
+</ul>
+<h2 id="变量名解析原则LEGB"><a href="#变量名解析原则LEGB" class="headerlink" title="变量名解析原则LEGB"></a>变量名解析原则LEGB</h2><ul>
+<li>Local，本地作用域、局部作用域的local命名空间。函数调用时创建，调用结束消亡</li>
+<li>Enclosing，Python2.2时引入了嵌套函数，实现了闭包，这个就是嵌套函数的外部函数的命名空间</li>
+<li>Global，全局作用域，即一个模块的命名空间。模块被import时创建，解释器退出时消亡</li>
+<li>Build-in，内置模块的命名空间，生命周期从python解释器启动时创建到解释器退出时消亡。例如 print(open)，print和open都是内置的变量</li>
+<li>所以一个名词的查找顺序就是LEGB</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/legb.jpg" alt="legb"></p>
+<h2 id="函数的销毁"><a href="#函数的销毁" class="headerlink" title="函数的销毁"></a>函数的销毁</h2><ul>
+<li>全局函数<br>def foo(xyz=[], u=’abc’, z=123):<br>&emsp; xyz.append(1)<br>&emsp; return xyz<br>print(foo(), id(foo), foo.__defaults__)<br>def foo(xyz=[], u=’abc’, z=123):<br>&emsp; xyz.append(1)<br>&emsp; return xyz<br>print(foo(), id(foo), foo.__defaults__)<br>del foo<br>print(foo(), id(foo), foo.__defaults__)</li>
+</ul>
+<h2 id="函数的销毁-1"><a href="#函数的销毁-1" class="headerlink" title="函数的销毁"></a>函数的销毁</h2><ul>
+<li>全局函数销毁<ul>
+<li>重新定义同名函数</li>
+<li>del 语句删除函数对象</li>
+<li>程序结束时</li>
+</ul>
+</li>
+</ul>
+<h2 id="函数的销毁-2"><a href="#函数的销毁-2" class="headerlink" title="函数的销毁"></a>函数的销毁</h2><ul>
+<li>局部函数<br>def foo(xyz=[], u=’abc’, z=123):<br>&emsp; xyz.append(1)<br>&emsp; def inner(a=10):<br>&emsp;&emsp; pass<br>&emsp; print(inner)<br>&emsp; def inner(a=100):<br>&emsp;&emsp; print(xyz)<br>&emsp; print(inner)<br>&emsp; return inner<br>bar = foo()<br>print(id(foo),id(bar), foo.__defaults__, bar.__defaults__)<br>del bar<br>print(id(foo),id(bar), foo.__defaults__, bar.__defaults__)  </li>
+</ul>
+<h2 id="函数的销毁-3"><a href="#函数的销毁-3" class="headerlink" title="函数的销毁"></a>函数的销毁</h2><ul>
+<li>局部函数销毁<ul>
+<li>重新在上级作用域定义同名函数</li>
+<li>del 语句删除函数名称，函数对象的引用计数减1</li>
+<li>上级作用域销毁时</li>
 </ul>
 </li>
 </ul>
@@ -867,12 +985,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>python全栈-magedu-2018-笔记12</p>
+  <p><span>本文标题:</span>python全栈-magedu-2018-笔记16</p>
   <p><span>文章作者:</span>herodanny</p>
-  <p><span>发布时间:</span>2019年04月30日 - 22:14:41</p>
-  <p><span>最后更新:</span>2019年04月30日 - 22:15:42</p>
-  <p><span>原始链接:</span><a href="/python-magedu-2018-notes12.html" title="python全栈-magedu-2018-笔记12">https://herodanny.github.io/python-magedu-2018-notes12.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes12.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年05月07日 - 17:43:54</p>
+  <p><span>最后更新:</span>2019年05月07日 - 17:44:45</p>
+  <p><span>原始链接:</span><a href="/python-magedu-2018-notes16.html" title="python全栈-magedu-2018-笔记16">https://herodanny.github.io/python-magedu-2018-notes16.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes16.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -944,8 +1062,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-magedu-2018-notes11.html" rel="next" title="python全栈-magedu-2018-笔记11">
-                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记11
+              <a href="/python-magedu-2018-notes15.html" rel="next" title="python全栈-magedu-2018-笔记15">
+                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记15
               </a>
             
           </div>
@@ -953,10 +1071,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-magedu-2018-notes13.html" rel="prev" title="python全栈-magedu-2018-笔记13">
-                python全栈-magedu-2018-笔记13 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1175,7 +1289,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字典dict"><span class="nav-number">1.1.</span> <span class="nav-text">字典dict</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典dict定义-初始化"><span class="nav-number">1.2.</span> <span class="nav-text">字典dict定义 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典元素的访问"><span class="nav-number">1.3.</span> <span class="nav-text">字典元素的访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典增加和修改"><span class="nav-number">1.4.</span> <span class="nav-text">字典增加和修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典删除"><span class="nav-number">1.5.</span> <span class="nav-text">字典删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典删除-1"><span class="nav-number">1.6.</span> <span class="nav-text">字典删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典遍历"><span class="nav-number">1.7.</span> <span class="nav-text">字典遍历</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典遍历-1"><span class="nav-number">1.8.</span> <span class="nav-text">字典遍历</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典遍历-2"><span class="nav-number">1.9.</span> <span class="nav-text">字典遍历</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典遍历-3"><span class="nav-number">1.10.</span> <span class="nav-text">字典遍历</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典遍历和移除"><span class="nav-number">1.11.</span> <span class="nav-text">字典遍历和移除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典的key"><span class="nav-number">1.12.</span> <span class="nav-text">字典的key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#defaultdict"><span class="nav-number">1.13.</span> <span class="nav-text">defaultdict</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OrderedDict"><span class="nav-number">1.14.</span> <span class="nav-text">OrderedDict</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OrderedDict-1"><span class="nav-number">1.15.</span> <span class="nav-text">OrderedDict</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典练习"><span class="nav-number">1.16.</span> <span class="nav-text">字典练习</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第七章-Python函数返回值、作用域"><span class="nav-number">1.</span> <span class="nav-text">第七章 - Python函数返回值、作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的返回值"><span class="nav-number">1.1.</span> <span class="nav-text">函数的返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的返回值-1"><span class="nav-number">1.2.</span> <span class="nav-text">函数的返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数返回值"><span class="nav-number">1.3.</span> <span class="nav-text">函数返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的返回值-2"><span class="nav-number">1.4.</span> <span class="nav-text">函数的返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的返回值-3"><span class="nav-number">1.5.</span> <span class="nav-text">函数的返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的返回值-4"><span class="nav-number">1.6.</span> <span class="nav-text">函数的返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数嵌套"><span class="nav-number">1.7.</span> <span class="nav-text">函数嵌套</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域"><span class="nav-number">1.8.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域-1"><span class="nav-number">1.9.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域-2"><span class="nav-number">1.10.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域-3"><span class="nav-number">1.11.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域-4"><span class="nav-number">1.12.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域-5"><span class="nav-number">1.13.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域-6"><span class="nav-number">1.14.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域-7"><span class="nav-number">1.15.</span> <span class="nav-text">作用域***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">1.16.</span> <span class="nav-text">闭包*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包-1"><span class="nav-number">1.17.</span> <span class="nav-text">闭包*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包-2"><span class="nav-number">1.18.</span> <span class="nav-text">闭包*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nonlocal关键字"><span class="nav-number">1.19.</span> <span class="nav-text">nonlocal关键字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域"><span class="nav-number">1.20.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-1"><span class="nav-number">1.21.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-2"><span class="nav-number">1.22.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-3"><span class="nav-number">1.23.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-4"><span class="nav-number">1.24.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-5"><span class="nav-number">1.25.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-6"><span class="nav-number">1.26.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-7"><span class="nav-number">1.27.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#默认值的作用域-8"><span class="nav-number">1.28.</span> <span class="nav-text">默认值的作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量名解析原则LEGB"><span class="nav-number">1.29.</span> <span class="nav-text">变量名解析原则LEGB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的销毁"><span class="nav-number">1.30.</span> <span class="nav-text">函数的销毁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的销毁-1"><span class="nav-number">1.31.</span> <span class="nav-text">函数的销毁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的销毁-2"><span class="nav-number">1.32.</span> <span class="nav-text">函数的销毁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的销毁-3"><span class="nav-number">1.33.</span> <span class="nav-text">函数的销毁</span></a></li></ol></li></ol></div>
             
 
           </div>
