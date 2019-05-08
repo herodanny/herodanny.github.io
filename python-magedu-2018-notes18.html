@@ -148,18 +148,18 @@
 
 
 
-  <meta name="description" content="博客文章阅读量排行榜">
-<meta name="keywords" content="top,文章阅读量排行榜">
-<meta property="og:type" content="website">
-<meta property="og:title" content="top">
-<meta property="og:url" content="https://herodanny.github.io/top/index.html">
+  <meta name="description" content="第八章 - Python 匿名函数匿名函数 匿名函数，即没有名字的函数 没有名字如何定义 没有名字如何调用 如果能调用，如何使用    匿名函数 Python 借助 Lambda 表达式构建匿名函数 格式 lambda 参数列表 : 表达式lambda x : x  2(lambda x : x  2)(4) # 调用foo = lambda x, y : (x + y)  2 # 不推荐这么用，">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python-magedu-2018-notes18">
+<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes18.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="博客文章阅读量排行榜">
+<meta property="og:description" content="第八章 - Python 匿名函数匿名函数 匿名函数，即没有名字的函数 没有名字如何定义 没有名字如何调用 如果能调用，如何使用    匿名函数 Python 借助 Lambda 表达式构建匿名函数 格式 lambda 参数列表 : 表达式lambda x : x  2(lambda x : x  2)(4) # 调用foo = lambda x, y : (x + y)  2 # 不推荐这么用，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-15T03:16:15.741Z">
+<meta property="og:updated_time" content="2019-05-08T07:39:29.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="top">
-<meta name="twitter:description" content="博客文章阅读量排行榜">
+<meta name="twitter:title" content="python-magedu-2018-notes18">
+<meta name="twitter:description" content="第八章 - Python 匿名函数匿名函数 匿名函数，即没有名字的函数 没有名字如何定义 没有名字如何调用 如果能调用，如何使用    匿名函数 Python 借助 Lambda 表达式构建匿名函数 格式 lambda 参数列表 : 表达式lambda x : x  2(lambda x : x  2)(4) # 调用foo = lambda x, y : (x + y)  2 # 不推荐这么用，">
 
 
 
@@ -169,7 +169,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/top/">
+  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes18">
 
 
 
@@ -179,7 +179,7 @@
   };
 </script>
 
-  <title>top | 从菜鸟到老鸟</title>
+  <title>python-magedu-2018-notes18 | 从菜鸟到老鸟</title>
   
 
 
@@ -358,7 +358,7 @@
         
         
           
-          <li class="menu-item menu-item-top menu-item-active">
+          <li class="menu-item menu-item-top">
 
     
     
@@ -487,114 +487,372 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes18.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="herodanny">
+      <meta itemprop="description" content="学习过程的记录">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="从菜鸟到老鸟">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">top
-
-</h2>
-
-<div class="post-meta">
-  
-    <div class="post-description">博客文章阅读量排行榜</div>
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p><div id="top"></div></p>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script>AV.initialize("yNds32hWK6bj2PDjLaBggMMq-9Nh9j0Va", "l5v6yQyOP5gBGm1HDjUcBCWo");</script>
-<script type="text/javascript">
-  var time=0
-  var title=""
-  var url=""
-  var query = new AV.Query('Counter');
-  query.notEqualTo('id',0);
-  query.descending('time');
-  query.limit(1000);
-  query.find().then(function (todo) {
-    for (var i=0;i<1000;i++){
-      var result=todo[i].attributes;
-      time=result.time;
-      title=result.title;
-      url=result.url;
-      var content="<a href='"+"https://herodanny.github.io"+url+"'>"+title+"</a>"+"<br />"+"<font color='#555'>"+"阅读次数："+time+"</font>"+"<br /><br />";
-      document.getElementById("top").innerHTML+=content
-    }
-  }, function (error) {
-    console.log("error");
-  });
-</script>
+          <h2 class="post-title" itemprop="name headline">python-magedu-2018-notes18
 
-<style>.post-description { display: none; }</style>
+              
+            
+          </h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-08 15:38:40 / 修改时间：15:39:29" itemprop="dateCreated datePublished" datetime="2019-05-08T15:38:40+08:00">2019-05-08</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python-magedu/" itemprop="url" rel="index"><span itemprop="name">python-magedu</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/python-magedu-2018-notes18.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes18.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/python-magedu-2018-notes18.html" class="leancloud_visitors" data-flag-title="python-magedu-2018-notes18">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="第八章-Python-匿名函数"><a href="#第八章-Python-匿名函数" class="headerlink" title="第八章 - Python 匿名函数"></a>第八章 - Python 匿名函数</h1><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul>
+<li>匿名函数，即没有名字的函数<ul>
+<li>没有名字如何定义</li>
+<li>没有名字如何调用</li>
+<li>如果能调用，如何使用</li>
+</ul>
+</li>
+</ul>
+<h2 id="匿名函数-1"><a href="#匿名函数-1" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul>
+<li>Python 借助 Lambda 表达式构建匿名函数</li>
+<li>格式<ul>
+<li>lambda 参数列表 : 表达式<br>lambda x : x <strong> 2<br>(lambda x : x </strong> 2)(4) # 调用<br>foo = lambda x, y : (x + y) <strong> 2 # 不推荐这么用，因为用lambda就是为了匿名使用<br>foo(2, 1)<br>def foo(x,y): #  建议使用普通函数<br>&emsp; return (x + y) </strong> 2<br>foo(2, 1)  </li>
+</ul>
+</li>
+</ul>
+<h2 id="匿名函数-2"><a href="#匿名函数-2" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul>
+<li>使用 lambda 关键字来定义匿名函数</li>
+<li>参数列表不需要小括号</li>
+<li>冒号是用来分割参数列表和表达式的</li>
+<li>不需要使用 return，表达式的值，就是匿名函数返回值</li>
+<li>lambda 表达式（匿名函数）<strong>只能写在一行上</strong>，被称为单行函数</li>
+<li>用途<ul>
+<li>在高阶函数传参时，使用 lambda 表达式，往往能简化代码</li>
+</ul>
+</li>
+</ul>
+<h2 id="匿名函数-3"><a href="#匿名函数-3" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul>
+<li>print((lambda :0)())  </li>
+<li>print((lambda x, y=3: x + y)(5))  </li>
+<li>print((lambda x, y=3: x + y)(5, 6))</li>
+<li>print((lambda x, *, y=30: x + y)(5))</li>
+<li>print((lambda x, *, y=30: x + y)(5, y=10))</li>
+<li>print((lambda *args: (x for x in args))(*range(5))) <ul>
+<li>#*args是可变位置参数组成一个元组 表达式是生成器表达式是惰性求值的 最后是实参解构</li>
+</ul>
+</li>
+<li>print((lambda *args: [x+1 for x in args])(*range(5)))<ul>
+<li>表达式是列表解析式</li>
+</ul>
+</li>
+<li>print((lambda *args: {x+2 for x in args})(*range(5)))<ul>
+<li>集合解析式</li>
+</ul>
+</li>
+<li>[x for x in (lambda *args: map(lambda x: x+1, args))(*range(5))] # 高阶函数<ul>
+<li>是一个大的列表解析式</li>
+</ul>
+</li>
+<li>[x for x in (lambda *args: map(lambda x: (x+1,args), args))(*range(5))] # map中的lambda中的表达式是在凑个元组</li>
+</ul>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------- 本文结束 <i class="fa fa-heart"></i> 感谢阅读 ----------</div>
+    
+</div>
+      
+    </div>
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>python-magedu-2018-notes18</p>
+  <p><span>文章作者:</span>herodanny</p>
+  <p><span>发布时间:</span>2019年05月08日 - 15:38:40</p>
+  <p><span>最后更新:</span>2019年05月08日 - 15:39:29</p>
+  <p><span>原始链接:</span><a href="/python-magedu-2018-notes18.html" title="python-magedu-2018-notes18">https://herodanny.github.io/python-magedu-2018-notes18.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes18.html" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
+    </div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>若本文对您有帮助，求打赏 ≧◇≦ 谢谢您的鼓励。</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.jpg" alt="herodanny 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/python-magedu-2018-notes17.html" rel="next" title="python全栈-magedu-2018-笔记17">
+                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记17
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -614,8 +872,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -767,6 +1034,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第八章-Python-匿名函数"><span class="nav-number">1.</span> <span class="nav-text">第八章 - Python 匿名函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#匿名函数"><span class="nav-number">1.1.</span> <span class="nav-text">匿名函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匿名函数-1"><span class="nav-number">1.2.</span> <span class="nav-text">匿名函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匿名函数-2"><span class="nav-number">1.3.</span> <span class="nav-text">匿名函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匿名函数-3"><span class="nav-number">1.4.</span> <span class="nav-text">匿名函数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
 
@@ -1029,6 +1313,8 @@ setInterval("createtime()",250);
 
 
 
+
+  
 
 
   
@@ -1360,38 +1646,37 @@ setInterval("createtime()",250);
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
+                .done(function() {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function() {
+                  console.log('Failed to create');
+                });
+            
           }
         })
         .fail(function ({ responseJSON }) {
@@ -1416,9 +1701,7 @@ setInterval("createtime()",250);
             });
           };
           
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
+            addCount(Counter);
           
         });
     });

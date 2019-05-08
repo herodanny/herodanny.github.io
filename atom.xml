@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://herodanny.github.io/"/>
-  <updated>2019-05-08T05:05:39.687Z</updated>
+  <updated>2019-05-08T07:39:29.944Z</updated>
   <id>https://herodanny.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python-magedu-2018-notes18</title>
+    <link href="https://herodanny.github.io/python-magedu-2018-notes18.html"/>
+    <id>https://herodanny.github.io/python-magedu-2018-notes18.html</id>
+    <published>2019-05-08T07:38:40.000Z</published>
+    <updated>2019-05-08T07:39:29.944Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第八章-Python-匿名函数"><a href="#第八章-Python-匿名函数" class="headerlink" title="第八章 - Python 匿名函数"></a>第八章 - Python 匿名函数</h1><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul><li>匿名函数，即没有名字的函数<ul><li>没有名字如何定义</li><li>没有名字如何调用</li><li>如果能调用，如何使用</li></ul></li></ul><h2 id="匿名函数-1"><a href="#匿名函数-1" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul><li>Python 借助 Lambda 表达式构建匿名函数</li><li>格式<ul><li>lambda 参数列表 : 表达式<br>lambda x : x <strong> 2<br>(lambda x : x </strong> 2)(4) # 调用<br>foo = lambda x, y : (x + y) <strong> 2 # 不推荐这么用，因为用lambda就是为了匿名使用<br>foo(2, 1)<br>def foo(x,y): #  建议使用普通函数<br>&emsp; return (x + y) </strong> 2<br>foo(2, 1)  </li></ul></li></ul><h2 id="匿名函数-2"><a href="#匿名函数-2" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul><li>使用 lambda 关键字来定义匿名函数</li><li>参数列表不需要小括号</li><li>冒号是用来分割参数列表和表达式的</li><li>不需要使用 return，表达式的值，就是匿名函数返回值</li><li>lambda 表达式（匿名函数）<strong>只能写在一行上</strong>，被称为单行函数</li><li>用途<ul><li>在高阶函数传参时，使用 lambda 表达式，往往能简化代码</li></ul></li></ul><h2 id="匿名函数-3"><a href="#匿名函数-3" class="headerlink" title="匿名函数"></a>匿名函数</h2><ul><li>print((lambda :0)())  </li><li>print((lambda x, y=3: x + y)(5))  </li><li>print((lambda x, y=3: x + y)(5, 6))</li><li>print((lambda x, *, y=30: x + y)(5))</li><li>print((lambda x, *, y=30: x + y)(5, y=10))</li><li>print((lambda *args: (x for x in args))(*range(5))) <ul><li>#*args是可变位置参数组成一个元组 表达式是生成器表达式是惰性求值的 最后是实参解构</li></ul></li><li>print((lambda *args: [x+1 for x in args])(*range(5)))<ul><li>表达式是列表解析式</li></ul></li><li>print((lambda *args: {x+2 for x in args})(*range(5)))<ul><li>集合解析式</li></ul></li><li>[x for x in (lambda *args: map(lambda x: x+1, args))(*range(5))] # 高阶函数<ul><li>是一个大的列表解析式</li></ul></li><li>[x for x in (lambda *args: map(lambda x: (x+1,args), args))(*range(5))] # map中的lambda中的表达式是在凑个元组</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第八章-Python-匿名函数&quot;&gt;&lt;a href=&quot;#第八章-Python-匿名函数&quot; class=&quot;headerlink&quot; title=&quot;第八章 - Python 匿名函数&quot;&gt;&lt;/a&gt;第八章 - Python 匿名函数&lt;/h1&gt;&lt;h2 id=&quot;匿名函数&quot;&gt;&lt;a 
+      
+    
+    </summary>
+    
+      <category term="python-magedu" scheme="https://herodanny.github.io/categories/python-magedu/"/>
+    
+    
+      <category term="python" scheme="https://herodanny.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>python全栈-magedu-2018-笔记17</title>
