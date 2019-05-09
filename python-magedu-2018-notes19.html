@@ -148,20 +148,22 @@
 
 
 
-  <meta name="description" content="第三章 - Python 内置数据结构简单选择排序 简单选择排序  属于选择排序 两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端 结果分为升序和降序排列   降序  n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，">
-<meta name="keywords" content="python, Algorithm">
+  <meta name="description" content="第九章 - Python 生成器生成器*** 生成器generator  生成器指的是生成器对象，可以由生成器表达式得到，也可以使用yield关键字得到一个生成器函数，调用这个函数得到一个生成器对象   生成器函数  函数体中包含yield语句的函数，返回生成器对象 生成器对象，是一个可迭代对象，是一个迭代器 生成器对象，是延迟计算、惰性求值的    生成器 举例def inc():&amp;emsp;">
+<meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python全栈-magedu-2018-笔记11">
-<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes11.html">
+<meta property="og:title" content="python全栈-magedu-2018-笔记19">
+<meta property="og:url" content="https://herodanny.github.io/python-magedu-2018-notes19.html">
 <meta property="og:site_name" content="从菜鸟到老鸟">
-<meta property="og:description" content="第三章 - Python 内置数据结构简单选择排序 简单选择排序  属于选择排序 两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端 结果分为升序和降序排列   降序  n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，">
+<meta property="og:description" content="第九章 - Python 生成器生成器*** 生成器generator  生成器指的是生成器对象，可以由生成器表达式得到，也可以使用yield关键字得到一个生成器函数，调用这个函数得到一个生成器对象   生成器函数  函数体中包含yield语句的函数，返回生成器对象 生成器对象，是一个可迭代对象，是一个迭代器 生成器对象，是延迟计算、惰性求值的    生成器 举例def inc():&amp;emsp;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/jiandanxuanzepaixu.jpg">
-<meta property="og:updated_time" content="2019-05-07T10:27:51.137Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/shengchengqi1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/shengchengqi2.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/yieldfrom1.jpg">
+<meta property="og:updated_time" content="2019-05-09T00:05:57.455Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python全栈-magedu-2018-笔记11">
-<meta name="twitter:description" content="第三章 - Python 内置数据结构简单选择排序 简单选择排序  属于选择排序 两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端 结果分为升序和降序排列   降序  n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/jiandanxuanzepaixu.jpg">
+<meta name="twitter:title" content="python全栈-magedu-2018-笔记19">
+<meta name="twitter:description" content="第九章 - Python 生成器生成器*** 生成器generator  生成器指的是生成器对象，可以由生成器表达式得到，也可以使用yield关键字得到一个生成器函数，调用这个函数得到一个生成器对象   生成器函数  函数体中包含yield语句的函数，返回生成器对象 生成器对象，是一个可迭代对象，是一个迭代器 生成器对象，是延迟计算、惰性求值的    生成器 举例def inc():&amp;emsp;">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/shengchengqi1.jpg">
 
 
 
@@ -171,7 +173,7 @@
 
   
   
-  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes11">
+  <link rel="canonical" href="https://herodanny.github.io/python-magedu-2018-notes19">
 
 
 
@@ -181,7 +183,7 @@
   };
 </script>
 
-  <title>python全栈-magedu-2018-笔记11 | 从菜鸟到老鸟</title>
+  <title>python全栈-magedu-2018-笔记19 | 从菜鸟到老鸟</title>
   
 
 
@@ -509,7 +511,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes11.html">
+    <link itemprop="mainEntityOfPage" href="https://herodanny.github.io/python-magedu-2018-notes19.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="herodanny">
@@ -526,7 +528,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记11
+          <h2 class="post-title" itemprop="name headline">python全栈-magedu-2018-笔记19
 
               
             
@@ -552,24 +554,12 @@
                 
               
 
-              <time title="创建时间：2019-04-29 23:16:55" itemprop="dateCreated datePublished" datetime="2019-04-29T23:16:55+08:00">2019-04-29</time>
+              <time title="创建时间：2019-05-09 08:04:58 / 修改时间：08:05:57" itemprop="dateCreated datePublished" datetime="2019-05-09T08:04:58+08:00">2019-05-09</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-07 18:27:51" itemprop="dateModified" datetime="2019-05-07T18:27:51+08:00">2019-05-07</time>
               
             
           </span>
@@ -605,8 +595,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/python-magedu-2018-notes11.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes11.html" itemprop="commentCount"></span>
+                <a href="/python-magedu-2018-notes19.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/python-magedu-2018-notes19.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -614,7 +604,7 @@
 
           
           
-            <span id="/python-magedu-2018-notes11.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记11">
+            <span id="/python-magedu-2018-notes19.html" class="leancloud_visitors" data-flag-title="python全栈-magedu-2018-笔记19">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -639,7 +629,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.3k</span>
+                <span title="本文字数">3.2k</span>
               
 
               
@@ -653,7 +643,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -673,47 +663,107 @@
       
 
       
-        <h1 id="第三章-Python-内置数据结构"><a href="#第三章-Python-内置数据结构" class="headerlink" title="第三章 - Python 内置数据结构"></a>第三章 - Python 内置数据结构</h1><h2 id="简单选择排序"><a href="#简单选择排序" class="headerlink" title="简单选择排序"></a>简单选择排序</h2><ul>
-<li><p>简单选择排序</p>
+        <h1 id="第九章-Python-生成器"><a href="#第九章-Python-生成器" class="headerlink" title="第九章 - Python 生成器"></a>第九章 - Python 生成器</h1><h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器***"></a>生成器***</h2><ul>
+<li><p>生成器generator</p>
 <ul>
-<li>属于选择排序</li>
-<li>两两比较大小，找出极值（极大值或极小值）被放置在固定的位置，这个固定位置一般指的是某一端</li>
-<li>结果分为升序和降序排列</li>
+<li>生成器指的是生成器对象，可以由生成器表达式得到，也可以使用yield关键字得到一个生成器函数，调用这个函数得到一个生成器对象</li>
 </ul>
 </li>
-<li><p>降序</p>
+<li><p>生成器函数</p>
 <ul>
-<li>n个数从左至右，索引从0开始到n-1，两两依次比较，记录大值索引，此轮所有数比较完毕，将大数和索引0数交换，如果大数就是索引1，不交换。第二轮，从1开始比较，找到最大值，将它和索引1位置交换，如果它就在索引1位置则不交换。依次类推，每次左边都会固定下一个大数。</li>
+<li>函数体中包含yield语句的函数，返回生成器对象</li>
+<li>生成器对象，是一个可迭代对象，是一个迭代器</li>
+<li>生成器对象，是延迟计算、惰性求值的</li>
 </ul>
 </li>
-<li>升序<ul>
-<li>和降序相反</li>
+</ul>
+<h2 id="生成器-1"><a href="#生成器-1" class="headerlink" title="生成器"></a>生成器</h2><ul>
+<li><p>举例<br>def inc():<br>&emsp; for i in range(5):<br>&emsp;&emsp; yield i<br>print(type(inc))  # <class 'function'><br>print(type(inc()))  # 生成器函数inc返回值是生成器 <class 'generator'><br>x = inc()<br>print(type(x))  # <class 'generator'><br>print(next(x))  # 0<br>for m in x:<br>&emsp; print(m, ‘<em>‘)  # 输出：1 </em>、2 <em>、3 </em>、4 *<br>for m in x:  # 生成器用完了，再迭代也不会报StopIteration，如果直接next(x)会<br>&emsp; print(m, ‘**’)  </class></class></class></p>
+</li>
+<li><p>举例<br>y = (i for i in range(5))  # 生成器表达式等价于上面的生成器函数<br>print(type(y))<br>print(next(y))<br>print(next(y))  </p>
+</li>
+<li><p>普通的函数调用fn()，函数会立即执行完毕，但是生成器函数可以使用next函数多次执行</p>
+</li>
+<li>生成器函数等价于生成器表达式，只不过生成器函数可以更加的复杂</li>
+</ul>
+<h2 id="生成器-2"><a href="#生成器-2" class="headerlink" title="生成器"></a>生成器</h2><ul>
+<li>举例  </li>
+</ul>
+<p>def gen():<br>&emsp; print(‘line 1’)<br>&emsp; yield 1<br>&emsp; print(‘line 2’)<br>&emsp; yield 2<br>&emsp; print(‘line 3’)<br>&emsp; return 3</p>
+<p>&emsp; next(gen()) # line 1，生成器函数gen()返回值是生成器<br>&emsp; next(gen()) # line 1，gen()又新创建一个生成器<br>&emsp; g = gen()<br>&emsp; print(next(g)) # line 1<br>&emsp; print(next(g)) # line 2<br>&emsp; print(next(g)) # StopIteration，gen中最后是return所以报错<br>&emsp; print(next(g, ‘End’)) # 没有元素给个缺省值  </p>
+<ul>
+<li>在生成器函数中，使用多个 yield 语句，执行一次后会暂停执行，把yield表达式的值返回</li>
+<li>再次执行会执行下一个yield语句</li>
+<li>return语句依然可以终止函数运行，但return语句的返回值不能被获取到</li>
+<li>return会导致无法继续获取下一个值，抛出StopIteration异常</li>
+<li>如果函数没有显示return语句，如果生成器函数执行到结尾，一样会抛出StopIteration异常</li>
+</ul>
+<h2 id="生成器-3"><a href="#生成器-3" class="headerlink" title="生成器"></a>生成器</h2><ul>
+<li>生成器函数<ul>
+<li>包含yield语句的生成器函数生成 生成器对象 的时候，<strong>生成器函数的函数体不会立即执行</strong>。  </li>
+<li>next(generator)会从函数的当前位置向后执行之后碰到的第一个yield语句，会弹出值，并暂停函数执行</li>
+<li>再次调用next 函数，和上一条一样的处理过程</li>
+<li>没有多余的yield语句能被执行，继续调用next函数，会抛出StopIterator异常</li>
 </ul>
 </li>
 </ul>
-<h2 id="简单选择排序-1"><a href="#简单选择排序-1" class="headerlink" title="简单选择排序"></a>简单选择排序</h2><p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/jiandanxuanzepaixu.jpg" alt="jiandanxuanzepaixu"></p>
-<h2 id="简单选择排序代码实现（一）"><a href="#简单选择排序代码实现（一）" class="headerlink" title="简单选择排序代码实现（一）*"></a>简单选择排序代码实现（一）*</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">m_list = [</span><br><span class="line">    [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">    [<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</span><br><span class="line">]</span><br><span class="line">nums = m_list[<span class="number">1</span>]</span><br><span class="line">length = len(nums)</span><br><span class="line">print(nums)</span><br><span class="line"></span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length):</span><br><span class="line">    maxindex = i</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length):</span><br><span class="line">        count_iter += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">            maxindex = j</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> i != maxindex:</span><br><span class="line">        tmp = nums[i]</span><br><span class="line">        nums[i] = nums[maxindex]</span><br><span class="line">        nums[maxindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
-<h2 id="简单选择排序代码实现（二）"><a href="#简单选择排序代码实现（二）" class="headerlink" title="简单选择排序代码实现（二）"></a>简单选择排序代码实现（二）</h2><ul>
-<li>优化实现<br>二元选择排序<br>同时固定左边最大值和右边最小值<br>优点：<br>减少迭代元素的次数  </li>
+<h2 id="生成器-4"><a href="#生成器-4" class="headerlink" title="生成器"></a>生成器</h2><ul>
+<li>无限循环  </li>
 </ul>
-<p>&emsp; 1、length//2 整除，通过几次运算就可以发现规律<br>&emsp; 2、由于使用了负索引，所以条件中要增加<br>&emsp; i == length + minindex  </p>
-<p>&emsp; 还有没有优化的可能？  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 二元选择排序</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length // <span class="number">2</span>):</span><br><span class="line">    maxindex = i</span><br><span class="line">    minindex = -i - <span class="number">1</span></span><br><span class="line">    minorigin = minindex</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length - i): <span class="comment"># 每次左右都要少比较一个</span></span><br><span class="line">    count_iter += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">        maxindex = j</span><br><span class="line">    <span class="keyword">if</span> nums[minindex] &gt; nums[-j - <span class="number">1</span>]:</span><br><span class="line">        minindex = -j - <span class="number">1</span></span><br><span class="line">        <span class="comment"># print(maxindex, minindex)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> i != maxindex:</span><br><span class="line">        tmp = nums[i]</span><br><span class="line">        nums[i] = nums[maxindex]</span><br><span class="line">        nums[maxindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 如果最小值被交换过，要更新索引</span></span><br><span class="line">        <span class="keyword">if</span> i == minindex <span class="keyword">or</span> i == length + minindex:</span><br><span class="line">            minindex = maxindex</span><br><span class="line">    <span class="keyword">if</span> minorigin != minindex:</span><br><span class="line">        tmp = nums[minorigin]</span><br><span class="line">        nums[minorigin] = nums[minindex]</span><br><span class="line">        nums[minindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
-<h2 id="简单选择排序代码实现（二）-1"><a href="#简单选择排序代码实现（二）-1" class="headerlink" title="简单选择排序代码实现（二）"></a>简单选择排序代码实现（二）</h2><ul>
-<li>改进实现<br>如果一轮比较后，极大值、极小值的值相等，说明比较的序列元素全部相等</li>
+<p>def counter():<br>&emsp; i = 0<br>&emsp; while True:<br>&emsp;&emsp; i += 1<br>&emsp;&emsp; yield i  </p>
+<p>def inc(c):<br>&emsp; return next(c)<br>c = counter()<br>print(inc(c))<br>print(inc(c))  </p>
+<p>def counter():<br>&emsp; i = 0<br>&emsp; while True:<br>&emsp;&emsp; i += 1<br>&emsp;&emsp; yield i  </p>
+<p>def inc():<br>&emsp; c = counter()<br>&emsp; return next(c)  </p>
+<p>print(inc()) # 是什么<br>print(inc()) # 是什么<br>print(inc()) # 是什么  </p>
+<h2 id="生成器应用"><a href="#生成器应用" class="headerlink" title="生成器应用"></a>生成器应用</h2><ul>
+<li>计数器  </li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">m_list = [</span><br><span class="line">    [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">    [<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">nums = m_list[<span class="number">3</span>]</span><br><span class="line">length = len(nums)</span><br><span class="line">print(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"><span class="comment"># 二元选择排序</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length // <span class="number">2</span>):</span><br><span class="line">    maxindex = i</span><br><span class="line">    minindex = -i - <span class="number">1</span></span><br><span class="line">    minorigin = minindex</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length - i): <span class="comment"># 每次左右都要少比较一个</span></span><br><span class="line">    count_iter += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">        maxindex = j</span><br><span class="line">    <span class="keyword">if</span> nums[minindex] &gt; nums[-j - <span class="number">1</span>]:</span><br><span class="line">        minindex = -j - <span class="number">1</span></span><br><span class="line"><span class="comment"># print(maxindex, minindex)</span></span><br><span class="line"><span class="keyword">if</span> nums[maxindex] == nums[minindex]: <span class="comment"># 元素全相同</span></span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line"><span class="keyword">if</span> i != maxindex:</span><br><span class="line">    tmp = nums[i]</span><br><span class="line">    nums[i] = nums[maxindex]</span><br><span class="line">    nums[maxindex] = tmp</span><br><span class="line">    count_swap += <span class="number">1</span></span><br><span class="line">    <span class="comment"># 如果最小值被交换过，要更新索引</span></span><br><span class="line">    <span class="keyword">if</span> i == minindex <span class="keyword">or</span> i == length + minindex:</span><br><span class="line">        minindex = maxindex</span><br><span class="line"><span class="keyword">if</span> minorigin != minindex:</span><br><span class="line">    tmp = nums[minorigin]</span><br><span class="line">    nums[minorigin] = nums[minindex]</span><br><span class="line">    nums[minindex] = tmp</span><br><span class="line">    count_swap += <span class="number">1</span></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
-<h2 id="简单选择排序代码实现（二"><a href="#简单选择排序代码实现（二" class="headerlink" title="简单选择排序代码实现（二)"></a>简单选择排序代码实现（二)</h2><ul>
-<li>改进实现<br>[1, 1, 1, 1, 1, 1, 1, 1, 2] 这种情况，找到的最小值索引是-2，最大值索引8，上面的代码会交换2次，最小值两个1交换是无用功，所以，增加一个判断</li>
+<p>def inc():<br>&emsp; def counter():<br>&emsp;&emsp; i = 0<br>&emsp;&emsp; while True:<br>&emsp;&emsp;&emsp; i += 1<br>&emsp;&emsp;&emsp; yield i<br>&emsp;&emsp; c = counter()  # c是生成器<br>&emsp;&emsp; return lambda : next(c)  </p>
+<p>foo = inc()<br>print(foo())<br>print(foo())  </p>
+<ul>
+<li>lambda 表达式是匿名函数</li>
+<li>return 返回的是一个匿名函数。且c是外层自由变量，有闭包  </li>
+<li>等价于下面的代码  </li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">m_list = [</span><br><span class="line">    [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">    [<span class="number">9</span>, <span class="number">8</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">nums = m_list[<span class="number">4</span>]</span><br><span class="line">length = len(nums)</span><br><span class="line">print(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count_iter = <span class="number">0</span></span><br><span class="line"><span class="comment"># 二元选择排序</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length // <span class="number">2</span>):</span><br><span class="line">    maxindex = i</span><br><span class="line">    minindex = -i - <span class="number">1</span></span><br><span class="line">    minorigin = minindex</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i + <span class="number">1</span>, length - i): <span class="comment"># 每次左右都要少比较一个</span></span><br><span class="line">        count_iter += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[maxindex] &lt; nums[j]:</span><br><span class="line">            maxindex = j</span><br><span class="line">        <span class="keyword">if</span> nums[minindex] &gt; nums[-j - <span class="number">1</span>]:</span><br><span class="line">            minindex = -j - <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    print(maxindex, minindex)</span><br><span class="line">    <span class="keyword">if</span> nums[maxindex] == nums[minindex]: <span class="comment"># 元素相同</span></span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> i != maxindex:</span><br><span class="line">        tmp = nums[i]</span><br><span class="line">        nums[i] = nums[maxindex]</span><br><span class="line">        nums[maxindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line">        <span class="comment"># 如果最小值被交换过，要更新索引</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> i == minindex <span class="keyword">or</span> i == length + minindex:</span><br><span class="line">            minindex = maxindex</span><br><span class="line">    <span class="comment"># 最小值索引不同，但值相同就没有必要交换了</span></span><br><span class="line">    <span class="keyword">if</span> minorigin != minindex <span class="keyword">and</span> nums[minorigin] != nums[minindex]:</span><br><span class="line">        tmp = nums[minorigin]</span><br><span class="line">        nums[minorigin] = nums[minindex]</span><br><span class="line">        nums[minindex] = tmp</span><br><span class="line">        count_swap += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">print(nums, count_swap, count_iter)</span><br></pre></td></tr></table></figure>
-<h2 id="简单选择排序总结"><a href="#简单选择排序总结" class="headerlink" title="简单选择排序总结"></a>简单选择排序总结</h2><ul>
-<li>简单选择排序需要数据一轮轮比较，并在每一轮中发现极值</li>
-<li>没有办法知道当前轮是否已经达到排序要求，但是可以知道极值是否在目标索引位置上</li>
-<li>遍历次数1,…,n-1之和n(n-1)/2</li>
-<li>时间复杂度O(n2)</li>
-<li>减少了交换次数，提高了效率，性能略好于冒泡法</li>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/shengchengqi1.jpg" alt="shengchengqi1"></p>
+<p>简单函数都可以用lambda函数代替，慢慢练。  </p>
+<h2 id="生成器应用-1"><a href="#生成器应用-1" class="headerlink" title="生成器应用"></a>生成器应用</h2><ul>
+<li>处理递归问题</li>
 </ul>
+<p>def fib():<br>&emsp; x = 0<br>&emsp; y = 1<br>&emsp; while True:<br>&emsp;&emsp; yield y<br>&emsp;&emsp; x, y = y, x+y  </p>
+<p>foo = fib()<br>for _ in range(5):<br>&emsp; print(next(foo))  </p>
+<p>for _ in range(100):<br>&emsp; next(foo)<br>print(next(foo))  </p>
+<ul>
+<li>等价于下面的代码  </li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/shengchengqi2.jpg" alt="shengchengqi2">  </p>
+<h2 id="生成器应用-2"><a href="#生成器应用-2" class="headerlink" title="生成器应用"></a>生成器应用</h2><ul>
+<li>协程 coroutine  <ul>
+<li>生成器的高级用法</li>
+<li>比进程、线程轻量级</li>
+<li>是在用户控件调度函数的一种实现</li>
+<li>Python3 asyncio 就是协程实现，已经加入到标准库</li>
+<li>Python3.5 使用 async、await 关键字直接原生支持协程</li>
+<li>协程调度器实现思路<ul>
+<li>有2个生成器A、B</li>
+<li>next(A)后，A执行到了yield语句暂停，然后去执行next(B)，B执行到yield语句也暂停，然后再次调用next(A)，再调用next(B)在，周而复始，就实现了调度的效果</li>
+<li>可以引入调度的策略来实现切换的方式</li>
+</ul>
+</li>
+<li>协程是一种非抢占式调度</li>
+</ul>
+</li>
+</ul>
+<h2 id="yield-from"><a href="#yield-from" class="headerlink" title="yield from"></a>yield from</h2><p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/yieldfrom1.jpg" alt="yieldfrom1"></p>
+<h2 id="yield-from-1"><a href="#yield-from-1" class="headerlink" title="yield from"></a>yield from</h2><ul>
+<li>yield from 是 Python3.3出现的新的语法</li>
+<li>yield from iterable 是 for item in iterable: yield item 形式的语法糖<ul>
+<li>从可迭代对象中一个个拿元素<br>def counter(n): # 生成器<br>&emsp;&emsp; for x in range(n):<br>&emsp;&emsp;&emsp; yield x  </li>
+</ul>
+</li>
+</ul>
+<p>&emsp;&emsp;&emsp;&emsp; def inc(n):<br>&emsp;&emsp;&emsp;&emsp;&emsp; yield from counter(n)<br>&emsp;&emsp;&emsp;&emsp;&emsp; 等价为：<br>&emsp;&emsp;&emsp;&emsp;&emsp; for x in counter(n):<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; yield x</p>
+<p>&emsp;&emsp;&emsp;&emsp; foo = inc(10)<br>&emsp;&emsp;&emsp;&emsp; print(next(foo))<br>&emsp;&emsp;&emsp;&emsp; print(next(foo))  </p>
 
       
     </div>
@@ -744,12 +794,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>python全栈-magedu-2018-笔记11</p>
+  <p><span>本文标题:</span>python全栈-magedu-2018-笔记19</p>
   <p><span>文章作者:</span>herodanny</p>
-  <p><span>发布时间:</span>2019年04月29日 - 23:16:55</p>
-  <p><span>最后更新:</span>2019年05月07日 - 18:27:51</p>
-  <p><span>原始链接:</span><a href="/python-magedu-2018-notes11.html" title="python全栈-magedu-2018-笔记11">https://herodanny.github.io/python-magedu-2018-notes11.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes11.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年05月09日 - 08:04:58</p>
+  <p><span>最后更新:</span>2019年05月09日 - 08:05:57</p>
+  <p><span>原始链接:</span><a href="/python-magedu-2018-notes19.html" title="python全栈-magedu-2018-笔记19">https://herodanny.github.io/python-magedu-2018-notes19.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes19.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -808,7 +858,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/python-Algorithm/" rel="tag"><i class="fa fa-tag"></i> python, Algorithm</a>
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
           
         </div>
       
@@ -821,8 +871,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-magedu-2018-notes10.html" rel="next" title="python全栈-magedu-2018-笔记10">
-                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记10
+              <a href="/python-magedu-2018-notes18.html" rel="next" title="python全栈-magedu-2018-笔记18">
+                <i class="fa fa-chevron-left"></i> python全栈-magedu-2018-笔记18
               </a>
             
           </div>
@@ -830,10 +880,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-magedu-2018-notes12.html" rel="prev" title="python全栈-magedu-2018-笔记12">
-                python全栈-magedu-2018-笔记12 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1054,7 +1100,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序"><span class="nav-number">1.1.</span> <span class="nav-text">简单选择排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序-1"><span class="nav-number">1.2.</span> <span class="nav-text">简单选择排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（一）"><span class="nav-number">1.3.</span> <span class="nav-text">简单选择排序代码实现（一）*</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（二）"><span class="nav-number">1.4.</span> <span class="nav-text">简单选择排序代码实现（二）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（二）-1"><span class="nav-number">1.5.</span> <span class="nav-text">简单选择排序代码实现（二）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序代码实现（二"><span class="nav-number">1.6.</span> <span class="nav-text">简单选择排序代码实现（二)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简单选择排序总结"><span class="nav-number">1.7.</span> <span class="nav-text">简单选择排序总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第九章-Python-生成器"><span class="nav-number">1.</span> <span class="nav-text">第九章 - Python 生成器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器"><span class="nav-number">1.1.</span> <span class="nav-text">生成器***</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器-1"><span class="nav-number">1.2.</span> <span class="nav-text">生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器-2"><span class="nav-number">1.3.</span> <span class="nav-text">生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器-3"><span class="nav-number">1.4.</span> <span class="nav-text">生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器-4"><span class="nav-number">1.5.</span> <span class="nav-text">生成器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器应用"><span class="nav-number">1.6.</span> <span class="nav-text">生成器应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器应用-1"><span class="nav-number">1.7.</span> <span class="nav-text">生成器应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器应用-2"><span class="nav-number">1.8.</span> <span class="nav-text">生成器应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#yield-from"><span class="nav-number">1.9.</span> <span class="nav-text">yield from</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#yield-from-1"><span class="nav-number">1.10.</span> <span class="nav-text">yield from</span></a></li></ol></li></ol></div>
             
 
           </div>

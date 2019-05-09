@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://herodanny.github.io/"/>
-  <updated>2019-05-08T07:42:45.610Z</updated>
+  <updated>2019-05-09T00:05:57.455Z</updated>
   <id>https://herodanny.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python全栈-magedu-2018-笔记19</title>
+    <link href="https://herodanny.github.io/python-magedu-2018-notes19.html"/>
+    <id>https://herodanny.github.io/python-magedu-2018-notes19.html</id>
+    <published>2019-05-09T00:04:58.000Z</published>
+    <updated>2019-05-09T00:05:57.455Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第九章-Python-生成器"><a href="#第九章-Python-生成器" class="headerlink" title="第九章 - Python 生成器"></a>第九章 - Python 生成器</h1><h2 id="生成器"><a href="#生成器" class="headerlink" title="生成器***"></a>生成器***</h2><ul><li><p>生成器generator</p><ul><li>生成器指的是生成器对象，可以由生成器表达式得到，也可以使用yield关键字得到一个生成器函数，调用这个函数得到一个生成器对象</li></ul></li><li><p>生成器函数</p><ul><li>函数体中包含yield语句的函数，返回生成器对象</li><li>生成器对象，是一个可迭代对象，是一个迭代器</li><li>生成器对象，是延迟计算、惰性求值的</li></ul></li></ul><h2 id="生成器-1"><a href="#生成器-1" class="headerlink" title="生成器"></a>生成器</h2><ul><li><p>举例<br>def inc():<br>&emsp; for i in range(5):<br>&emsp;&emsp; yield i<br>print(type(inc))  # <class 'function'><br>print(type(inc()))  # 生成器函数inc返回值是生成器 <class 'generator'><br>x = inc()<br>print(type(x))  # <class 'generator'><br>print(next(x))  # 0<br>for m in x:<br>&emsp; print(m, ‘<em>‘)  # 输出：1 </em>、2 <em>、3 </em>、4 *<br>for m in x:  # 生成器用完了，再迭代也不会报StopIteration，如果直接next(x)会<br>&emsp; print(m, ‘**’)  </class></class></class></p></li><li><p>举例<br>y = (i for i in range(5))  # 生成器表达式等价于上面的生成器函数<br>print(type(y))<br>print(next(y))<br>print(next(y))  </p></li><li><p>普通的函数调用fn()，函数会立即执行完毕，但是生成器函数可以使用next函数多次执行</p></li><li>生成器函数等价于生成器表达式，只不过生成器函数可以更加的复杂</li></ul><h2 id="生成器-2"><a href="#生成器-2" class="headerlink" title="生成器"></a>生成器</h2><ul><li>举例  </li></ul><p>def gen():<br>&emsp; print(‘line 1’)<br>&emsp; yield 1<br>&emsp; print(‘line 2’)<br>&emsp; yield 2<br>&emsp; print(‘line 3’)<br>&emsp; return 3</p><p>&emsp; next(gen()) # line 1，生成器函数gen()返回值是生成器<br>&emsp; next(gen()) # line 1，gen()又新创建一个生成器<br>&emsp; g = gen()<br>&emsp; print(next(g)) # line 1<br>&emsp; print(next(g)) # line 2<br>&emsp; print(next(g)) # StopIteration，gen中最后是return所以报错<br>&emsp; print(next(g, ‘End’)) # 没有元素给个缺省值  </p><ul><li>在生成器函数中，使用多个 yield 语句，执行一次后会暂停执行，把yield表达式的值返回</li><li>再次执行会执行下一个yield语句</li><li>return语句依然可以终止函数运行，但return语句的返回值不能被获取到</li><li>return会导致无法继续获取下一个值，抛出StopIteration异常</li><li>如果函数没有显示return语句，如果生成器函数执行到结尾，一样会抛出StopIteration异常</li></ul><h2 id="生成器-3"><a href="#生成器-3" class="headerlink" title="生成器"></a>生成器</h2><ul><li>生成器函数<ul><li>包含yield语句的生成器函数生成 生成器对象 的时候，<strong>生成器函数的函数体不会立即执行</strong>。  </li><li>next(generator)会从函数的当前位置向后执行之后碰到的第一个yield语句，会弹出值，并暂停函数执行</li><li>再次调用next 函数，和上一条一样的处理过程</li><li>没有多余的yield语句能被执行，继续调用next函数，会抛出StopIterator异常</li></ul></li></ul><h2 id="生成器-4"><a href="#生成器-4" class="headerlink" title="生成器"></a>生成器</h2><ul><li>无限循环  </li></ul><p>def counter():<br>&emsp; i = 0<br>&emsp; while True:<br>&emsp;&emsp; i += 1<br>&emsp;&emsp; yield i  </p><p>def inc(c):<br>&emsp; return next(c)<br>c = counter()<br>print(inc(c))<br>print(inc(c))  </p><p>def counter():<br>&emsp; i = 0<br>&emsp; while True:<br>&emsp;&emsp; i += 1<br>&emsp;&emsp; yield i  </p><p>def inc():<br>&emsp; c = counter()<br>&emsp; return next(c)  </p><p>print(inc()) # 是什么<br>print(inc()) # 是什么<br>print(inc()) # 是什么  </p><h2 id="生成器应用"><a href="#生成器应用" class="headerlink" title="生成器应用"></a>生成器应用</h2><ul><li>计数器  </li></ul><p>def inc():<br>&emsp; def counter():<br>&emsp;&emsp; i = 0<br>&emsp;&emsp; while True:<br>&emsp;&emsp;&emsp; i += 1<br>&emsp;&emsp;&emsp; yield i<br>&emsp;&emsp; c = counter()  # c是生成器<br>&emsp;&emsp; return lambda : next(c)  </p><p>foo = inc()<br>print(foo())<br>print(foo())  </p><ul><li>lambda 表达式是匿名函数</li><li>return 返回的是一个匿名函数。且c是外层自由变量，有闭包  </li><li>等价于下面的代码  </li></ul><p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/shengchengqi1.jpg" alt="shengchengqi1"></p><p>简单函数都可以用lambda函数代替，慢慢练。  </p><h2 id="生成器应用-1"><a href="#生成器应用-1" class="headerlink" title="生成器应用"></a>生成器应用</h2><ul><li>处理递归问题</li></ul><p>def fib():<br>&emsp; x = 0<br>&emsp; y = 1<br>&emsp; while True:<br>&emsp;&emsp; yield y<br>&emsp;&emsp; x, y = y, x+y  </p><p>foo = fib()<br>for _ in range(5):<br>&emsp; print(next(foo))  </p><p>for _ in range(100):<br>&emsp; next(foo)<br>print(next(foo))  </p><ul><li>等价于下面的代码  </li></ul><p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/shengchengqi2.jpg" alt="shengchengqi2">  </p><h2 id="生成器应用-2"><a href="#生成器应用-2" class="headerlink" title="生成器应用"></a>生成器应用</h2><ul><li>协程 coroutine  <ul><li>生成器的高级用法</li><li>比进程、线程轻量级</li><li>是在用户控件调度函数的一种实现</li><li>Python3 asyncio 就是协程实现，已经加入到标准库</li><li>Python3.5 使用 async、await 关键字直接原生支持协程</li><li>协程调度器实现思路<ul><li>有2个生成器A、B</li><li>next(A)后，A执行到了yield语句暂停，然后去执行next(B)，B执行到yield语句也暂停，然后再次调用next(A)，再调用next(B)在，周而复始，就实现了调度的效果</li><li>可以引入调度的策略来实现切换的方式</li></ul></li><li>协程是一种非抢占式调度</li></ul></li></ul><h2 id="yield-from"><a href="#yield-from" class="headerlink" title="yield from"></a>yield from</h2><p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/yieldfrom1.jpg" alt="yieldfrom1"></p><h2 id="yield-from-1"><a href="#yield-from-1" class="headerlink" title="yield from"></a>yield from</h2><ul><li>yield from 是 Python3.3出现的新的语法</li><li>yield from iterable 是 for item in iterable: yield item 形式的语法糖<ul><li>从可迭代对象中一个个拿元素<br>def counter(n): # 生成器<br>&emsp;&emsp; for x in range(n):<br>&emsp;&emsp;&emsp; yield x  </li></ul></li></ul><p>&emsp;&emsp;&emsp;&emsp; def inc(n):<br>&emsp;&emsp;&emsp;&emsp;&emsp; yield from counter(n)<br>&emsp;&emsp;&emsp;&emsp;&emsp; 等价为：<br>&emsp;&emsp;&emsp;&emsp;&emsp; for x in counter(n):<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; yield x</p><p>&emsp;&emsp;&emsp;&emsp; foo = inc(10)<br>&emsp;&emsp;&emsp;&emsp; print(next(foo))<br>&emsp;&emsp;&emsp;&emsp; print(next(foo))  </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第九章-Python-生成器&quot;&gt;&lt;a href=&quot;#第九章-Python-生成器&quot; class=&quot;headerlink&quot; title=&quot;第九章 - Python 生成器&quot;&gt;&lt;/a&gt;第九章 - Python 生成器&lt;/h1&gt;&lt;h2 id=&quot;生成器&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+      <category term="python-magedu" scheme="https://herodanny.github.io/categories/python-magedu/"/>
+    
+    
+      <category term="python" scheme="https://herodanny.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>python全栈-magedu-2018-笔记18</title>
