@@ -156,10 +156,13 @@
 <meta property="og:site_name" content="从菜鸟到老鸟">
 <meta property="og:description" content="第三章 - Python 内置数据结构元组tuple 一个有序的元素组成的集合 使用小括号 ( ) 表示 元组是不可变对象    元组的定义 初始化 定义 tuple() -&amp;gt; empty tuple tuple(iterable) -&amp;gt; tuple initialized from iterable’s item    &amp;emsp;&amp;emsp; t = tuple() # 工厂方法，">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-26T14:57:00.243Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/maopaopaixu1.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/maopaopaixu2.jpg">
+<meta property="og:updated_time" content="2019-05-10T15:17:00.088Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python全栈-magedu-2018-笔记4">
 <meta name="twitter:description" content="第三章 - Python 内置数据结构元组tuple 一个有序的元素组成的集合 使用小括号 ( ) 表示 元组是不可变对象    元组的定义 初始化 定义 tuple() -&amp;gt; empty tuple tuple(iterable) -&amp;gt; tuple initialized from iterable’s item    &amp;emsp;&amp;emsp; t = tuple() # 工厂方法，">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/maopaopaixu1.jpg">
 
 
 
@@ -567,7 +570,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-26 22:57:00" itemprop="dateModified" datetime="2019-04-26T22:57:00+08:00">2019-04-26</time>
+                <time title="修改时间：2019-05-10 23:17:00" itemprop="dateModified" datetime="2019-05-10T23:17:00+08:00">2019-05-10</time>
               
             
           </span>
@@ -637,7 +640,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.4k</span>
+                <span title="本文字数">3k</span>
               
 
               
@@ -651,7 +654,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -685,7 +688,7 @@
 </ul>
 </li>
 </ul>
-<p>&emsp;&emsp; t = tuple() # 工厂方法，空元组是不能插入的<br>&emsp;&emsp; t = ()<br>&emsp;&emsp; t = tuple(range(1,7,2)) # iteratable<br>&emsp;&emsp; t = (2,4,6,3,4,2)<br>&emsp;&emsp; t = (1,) # 一个元素元组的定义，注意有个逗号<br>&emsp;&emsp; t = (1,)<em>5<br>&emsp;&emsp; t = (1,2,3) </em> 6<br>&emsp;&emsp; 元组就像个只读列表，好处就是比列表占用空间少。<br>&emsp;&emsp; t1 = (1, [2, 3], 4)<br>&emsp;&emsp; t1[1][0] = 10</p>
+<p>&emsp;&emsp; t = tuple() # 工厂方法，空元组是不能插入的<br>&emsp;&emsp; t = ()<br>&emsp;&emsp; t = tuple(range(1,7,2)) # iteratable<br>&emsp;&emsp; t = (2,4,6,3,4,2)<br>&emsp;&emsp; t = (1,) # 一个元素元组的定义，注意有个逗号<br>&emsp;&emsp; t = (1,)*5<br>&emsp;&emsp; t = (1,2,3) * 6<br>&emsp;&emsp; 元组就像个只读列表，好处就是比列表占用空间少。<br>&emsp;&emsp; t1 = (1, [2, 3], 4)<br>&emsp;&emsp; t1[1][0] = 10</p>
 <h2 id="元组元素的访问"><a href="#元组元素的访问" class="headerlink" title="元组元素的访问"></a>元组元素的访问</h2><ul>
 <li>支持索引（下标）</li>
 <li>正索引：从左至右，从0开始，为列表中每一个元素编号</li>
@@ -777,7 +780,12 @@
 </ul>
 </li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">num_list = [[<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span> ,<span class="number">2</span>],</span><br><span class="line">            [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">            [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">8</span>]]</span><br><span class="line"></span><br><span class="line">nums = num_list[<span class="number">2</span>]</span><br><span class="line">print(nums)</span><br><span class="line">length = len(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="comment"># bubble_sort</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length): <span class="comment"># 有n个数要排序</span></span><br><span class="line">    flag = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(length-i<span class="number">-1</span>): <span class="comment"># 比较的次数</span></span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[j] &gt; nums[j+<span class="number">1</span>]:</span><br><span class="line">            tmp = nums[j]</span><br><span class="line">            nums[j] = nums[j+<span class="number">1</span>]</span><br><span class="line">            nums[j+<span class="number">1</span>] = tmp</span><br><span class="line">            flag = <span class="literal">True</span> <span class="comment"># swapped</span></span><br><span class="line">            count_swap += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> flag:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">print(nums, count_swap, count)</span><br></pre></td></tr></table></figure>
+<h2 id="冒泡法-1"><a href="#冒泡法-1" class="headerlink" title="冒泡法"></a>冒泡法</h2><p><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/maopaopaixu1.jpg" alt="maopaopaixu1"><br><img src="https://raw.githubusercontent.com/herodanny/Image-Hosting/master/data/maopaopaixu2.jpg" alt="maopaopaixu2">  </p>
+<h2 id="冒泡法代码实现（一）"><a href="#冒泡法代码实现（一）" class="headerlink" title="冒泡法代码实现（一）"></a>冒泡法代码实现（一）</h2><ul>
+<li>简单冒泡实现  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">num_list = [</span><br><span class="line">    [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span> ,<span class="number">2</span>],</span><br><span class="line">    [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">8</span>]</span><br><span class="line">]</span><br><span class="line">nums = num_list[<span class="number">1</span>]</span><br><span class="line">print(nums)</span><br><span class="line">length = len(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="comment"># bubble_sort</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length<span class="number">-1</span>):  <span class="comment"># 要比较n-1趟</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(length-i<span class="number">-1</span>):  <span class="comment"># 每趟要比较的次数</span></span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[j] &gt; nums[j+<span class="number">1</span>]:</span><br><span class="line">            tmp = nums[j]</span><br><span class="line">            nums[j] = nums[j+<span class="number">1</span>]</span><br><span class="line">            nums[j+<span class="number">1</span>] = tmp</span><br><span class="line">            count_swap += <span class="number">1</span></span><br><span class="line">print(nums, count_swap, count)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="冒泡法代码实现（二）"><a href="#冒泡法代码实现（二）" class="headerlink" title="冒泡法代码实现（二）"></a>冒泡法代码实现（二）</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">num_list = [</span><br><span class="line">            [<span class="number">1</span>, <span class="number">9</span>, <span class="number">8</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">4</span>, <span class="number">3</span> ,<span class="number">2</span>],</span><br><span class="line">            [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>],</span><br><span class="line">            [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">9</span>, <span class="number">8</span>]</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">nums = num_list[<span class="number">2</span>]</span><br><span class="line">print(nums)</span><br><span class="line">length = len(nums)</span><br><span class="line">count_swap = <span class="number">0</span></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="comment"># bubble_sort</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(length<span class="number">-1</span>):  <span class="comment"># 要比较n-1趟</span></span><br><span class="line">    flag = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(length-i<span class="number">-1</span>):  <span class="comment"># 每趟要比较的次数</span></span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> nums[j] &gt; nums[j+<span class="number">1</span>]:</span><br><span class="line">            tmp = nums[j]</span><br><span class="line">            nums[j] = nums[j+<span class="number">1</span>]</span><br><span class="line">            nums[j+<span class="number">1</span>] = tmp</span><br><span class="line">            flag = <span class="literal">True</span> <span class="comment"># swapped</span></span><br><span class="line">            count_swap += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> flag:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">print(nums, count_swap, count)</span><br></pre></td></tr></table></figure>
 <h2 id="冒泡法总结"><a href="#冒泡法总结" class="headerlink" title="冒泡法总结"></a>冒泡法总结</h2><ul>
 <li>冒泡法需要数据一轮轮比较</li>
 <li>可以设定一个标记判断此轮是否有数据交换发生，如果没有发生交换，可以结束排序，如果发生交换，继续下一轮排序</li>
@@ -818,7 +826,7 @@
   <p><span>本文标题:</span>python全栈-magedu-2018-笔记4</p>
   <p><span>文章作者:</span>herodanny</p>
   <p><span>发布时间:</span>2019年04月25日 - 14:04:39</p>
-  <p><span>最后更新:</span>2019年04月26日 - 22:57:00</p>
+  <p><span>最后更新:</span>2019年05月10日 - 23:17:00</p>
   <p><span>原始链接:</span><a href="/python-magedu-2018-notes4.html" title="python全栈-magedu-2018-笔记4">https://herodanny.github.io/python-magedu-2018-notes4.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes4.html" aria-label="复制成功！"></i></span>
   </p>
@@ -1125,7 +1133,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#元组tuple"><span class="nav-number">1.1.</span> <span class="nav-text">元组tuple</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组的定义-初始化"><span class="nav-number">1.2.</span> <span class="nav-text">元组的定义 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组元素的访问"><span class="nav-number">1.3.</span> <span class="nav-text">元组元素的访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组查询"><span class="nav-number">1.4.</span> <span class="nav-text">元组查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组其它操作"><span class="nav-number">1.5.</span> <span class="nav-text">元组其它操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名元组namedtuple"><span class="nav-number">1.6.</span> <span class="nav-text">命名元组namedtuple</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#练习"><span class="nav-number">1.7.</span> <span class="nav-text">练习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡法"><span class="nav-number">1.8.</span> <span class="nav-text">冒泡法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡法总结"><span class="nav-number">1.9.</span> <span class="nav-text">冒泡法总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-Python-内置数据结构"><span class="nav-number">1.</span> <span class="nav-text">第三章 - Python 内置数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#元组tuple"><span class="nav-number">1.1.</span> <span class="nav-text">元组tuple</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组的定义-初始化"><span class="nav-number">1.2.</span> <span class="nav-text">元组的定义 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组元素的访问"><span class="nav-number">1.3.</span> <span class="nav-text">元组元素的访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组查询"><span class="nav-number">1.4.</span> <span class="nav-text">元组查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#元组其它操作"><span class="nav-number">1.5.</span> <span class="nav-text">元组其它操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名元组namedtuple"><span class="nav-number">1.6.</span> <span class="nav-text">命名元组namedtuple</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#练习"><span class="nav-number">1.7.</span> <span class="nav-text">练习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡法"><span class="nav-number">1.8.</span> <span class="nav-text">冒泡法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡法-1"><span class="nav-number">1.9.</span> <span class="nav-text">冒泡法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡法代码实现（一）"><span class="nav-number">1.10.</span> <span class="nav-text">冒泡法代码实现（一）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡法代码实现（二）"><span class="nav-number">1.11.</span> <span class="nav-text">冒泡法代码实现（二）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#冒泡法总结"><span class="nav-number">1.12.</span> <span class="nav-text">冒泡法总结</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1182,7 +1190,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">96k</span>
+    <span title="站点总字数">97k</span>
   
 
   
@@ -1191,7 +1199,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:27</span>
+    <span title="站点阅读时长">1:28</span>
   
 </div>
 

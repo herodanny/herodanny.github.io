@@ -156,7 +156,7 @@
 <meta property="og:site_name" content="从菜鸟到老鸟">
 <meta property="og:description" content="第三章 - Python 内置数据结构字典dict key-value键值对的数据的集合 可变的、无序的、key不重复  字典dict定义 初始化 d = dict() 或者 d = {} dict(**kwargs) 使用name=value对初始化一个字典 dict(iterable, **kwarg) 使用可迭代对象和name=value对构造字典，不过可迭代对象的元素必须是一个二元结构 d">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-30T14:15:42.113Z">
+<meta property="og:updated_time" content="2019-05-12T00:40:19.815Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python全栈-magedu-2018-笔记12">
 <meta name="twitter:description" content="第三章 - Python 内置数据结构字典dict key-value键值对的数据的集合 可变的、无序的、key不重复  字典dict定义 初始化 d = dict() 或者 d = {} dict(**kwargs) 使用name=value对初始化一个字典 dict(iterable, **kwarg) 使用可迭代对象和name=value对构造字典，不过可迭代对象的元素必须是一个二元结构 d">
@@ -550,12 +550,24 @@
                 
               
 
-              <time title="创建时间：2019-04-30 22:14:41 / 修改时间：22:15:42" itemprop="dateCreated datePublished" datetime="2019-04-30T22:14:41+08:00">2019-04-30</time>
+              <time title="创建时间：2019-04-30 22:14:41" itemprop="dateCreated datePublished" datetime="2019-04-30T22:14:41+08:00">2019-04-30</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-12 08:40:19" itemprop="dateModified" datetime="2019-05-12T08:40:19+08:00">2019-05-12</time>
               
             
           </span>
@@ -668,7 +680,7 @@
 <li><strong>dict(**kwargs)</strong> 使用name=value对初始化一个字典</li>
 <li>dict(iterable, **kwarg) 使用可迭代对象和name=value对构造字典，不过可迭代对象的元素必须是一个<strong>二元</strong>结构<ul>
 <li>d = dict(((1,’a’),(2,’b’))) 或者 d = dict(([1,’a’],[2,’b’]))</li>
-<li>**kwarg是表示在二元结构后面还是可以加k-v参数来初始化<br>d2 = dict(d, c=3)</li>
+<li>**kwarg是表示在二元结构后面还是可以加k=v参数来初始化<br>d2 = dict(d, c=3)</li>
 </ul>
 </li>
 <li>dict(mapping, **kwarg) 使用一个字典构建另一个字典</li>
@@ -755,9 +767,9 @@
 </ul>
 </li>
 </ul>
-<p>&emsp;&emsp; for item in d.items():<br>&emsp;&emsp;&emsp; print(item)</p>
+<p>&emsp;&emsp; for item in d.items():<br>&emsp;&emsp;&emsp; print(item) # item是(k,v)元组，不推荐这种写法</p>
 <p>&emsp;&emsp; for item in d.items():<br>&emsp;&emsp;&emsp; print(item[0], item[1])</p>
-<p>&emsp;&emsp; for k,v in d.items():<br>&emsp;&emsp;&emsp; print(k, v)</p>
+<p>&emsp;&emsp; for k,v in d.items():<br>&emsp;&emsp;&emsp; print(k, v) # 推荐这种写法</p>
 <p>&emsp;&emsp; for k, _ in d.items():<br>&emsp;&emsp;&emsp; print(k)</p>
 <p>&emsp;&emsp; for _ ,v in d.items():<br>&emsp;&emsp;&emsp; print(v)</p>
 <h2 id="字典遍历-3"><a href="#字典遍历-3" class="headerlink" title="字典遍历"></a>字典遍历</h2><ul>
@@ -870,7 +882,7 @@
   <p><span>本文标题:</span>python全栈-magedu-2018-笔记12</p>
   <p><span>文章作者:</span>herodanny</p>
   <p><span>发布时间:</span>2019年04月30日 - 22:14:41</p>
-  <p><span>最后更新:</span>2019年04月30日 - 22:15:42</p>
+  <p><span>最后更新:</span>2019年05月12日 - 08:40:19</p>
   <p><span>原始链接:</span><a href="/python-magedu-2018-notes12.html" title="python全栈-magedu-2018-笔记12">https://herodanny.github.io/python-magedu-2018-notes12.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes12.html" aria-label="复制成功！"></i></span>
   </p>
@@ -1234,7 +1246,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">96k</span>
+    <span title="站点总字数">97k</span>
   
 
   
@@ -1243,7 +1255,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:27</span>
+    <span title="站点阅读时长">1:28</span>
   
 </div>
 

@@ -156,7 +156,7 @@
 <meta property="og:site_name" content="从菜鸟到老鸟">
 <meta property="og:description" content="第三章 - Python 内置数据结构线性结构 线性结构  可迭代 for … in len()可以获取长度 通过下标可以访问 可以切片   学过的线性结构  列表、元组、字符串、bytes、bytearray    切片 切片 通过索引区间访问线性结构的一段数据 sequence[start:stop] 表示返回[start, stop)区间的子序列 支持负索引 start为0，可以省略 sto">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-27T15:46:46.468Z">
+<meta property="og:updated_time" content="2019-05-11T02:49:25.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python全栈-magedu-2018-笔记7">
 <meta name="twitter:description" content="第三章 - Python 内置数据结构线性结构 线性结构  可迭代 for … in len()可以获取长度 通过下标可以访问 可以切片   学过的线性结构  列表、元组、字符串、bytes、bytearray    切片 切片 通过索引区间访问线性结构的一段数据 sequence[start:stop] 表示返回[start, stop)区间的子序列 支持负索引 start为0，可以省略 sto">
@@ -550,12 +550,24 @@
                 
               
 
-              <time title="创建时间：2019-04-27 23:40:52 / 修改时间：23:46:46" itemprop="dateCreated datePublished" datetime="2019-04-27T23:40:52+08:00">2019-04-27</time>
+              <time title="创建时间：2019-04-27 23:40:52" itemprop="dateCreated datePublished" datetime="2019-04-27T23:40:52+08:00">2019-04-27</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-11 10:49:25" itemprop="dateModified" datetime="2019-05-11T10:49:25+08:00">2019-05-11</time>
               
             
           </span>
@@ -625,7 +637,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">870</span>
+                <span title="本文字数">1.3k</span>
               
 
               
@@ -697,6 +709,10 @@
 <li>step要和start:stop同向，否则返回空序列<br>‘<a href="http://www.github.com&#39;[4:10:2]" target="_blank" rel="noopener">www.github.com&#39;[4:10:2]</a><br>list(‘<a href="http://www.github.com&#39;)[4:10:-2]" target="_blank" rel="noopener">www.github.com&#39;)[4:10:-2]</a><br>tuple(‘<a href="http://www.github.com&#39;)[-10:-4:2]" target="_blank" rel="noopener">www.github.com&#39;)[-10:-4:2]</a><br>b’<a href="http://www.github.com&#39;[-4:-10:2]" target="_blank" rel="noopener">www.github.com&#39;[-4:-10:2]</a><br>bytearray(b’<a href="http://www.github.com&#39;)[-4:-10:-2]" target="_blank" rel="noopener">www.github.com&#39;)[-4:-10:-2]</a>  </li>
 </ul>
 </li>
+<li><p>切片可以赋值<br>arr = [ ‘C’, ‘python’, ‘js’, ‘css’, ‘html’, ‘node’]<br>arr[2:4] = [‘pc’,’wd’]<br>arr  # [‘C’, ‘python’, ‘pc’, ‘wd’, ‘html’, ‘node’]  </p>
+</li>
+<li><p>切片可以插入和删除元素<br>arr = [‘C’, ‘python’, ‘js’, ‘css’, ‘html’, ‘node’]<br>arr[1:1] = [‘pc’,’wd’]  # [1:1]表示在1开始查找，但没有查找，所以是在索引1添加元素<br>arr  # [‘C’, ‘pc’, ‘wd’, ‘python’, ‘js’, ‘css’, ‘html’, ‘node’]<br>arr[2:3] = []  # 删除索引2的元素<br>arr  # [‘C’, ‘pc’, ‘python’, ‘js’, ‘css’, ‘html’, ‘node’]  </p>
+</li>
 </ul>
 
       
@@ -731,7 +747,7 @@
   <p><span>本文标题:</span>python全栈-magedu-2018-笔记7</p>
   <p><span>文章作者:</span>herodanny</p>
   <p><span>发布时间:</span>2019年04月27日 - 23:40:52</p>
-  <p><span>最后更新:</span>2019年04月27日 - 23:46:46</p>
+  <p><span>最后更新:</span>2019年05月11日 - 10:49:25</p>
   <p><span>原始链接:</span><a href="/python-magedu-2018-notes7.html" title="python全栈-magedu-2018-笔记7">https://herodanny.github.io/python-magedu-2018-notes7.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://herodanny.github.io/python-magedu-2018-notes7.html" aria-label="复制成功！"></i></span>
   </p>
@@ -1095,7 +1111,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">96k</span>
+    <span title="站点总字数">97k</span>
   
 
   
@@ -1104,7 +1120,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:27</span>
+    <span title="站点阅读时长">1:28</span>
   
 </div>
 
